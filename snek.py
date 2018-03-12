@@ -46,8 +46,7 @@ while key != 27:                                                   # While Esc k
     # Calculates the new coordinates of the head of the snake. NOTE: len(snake) increases.
     # This is taken care of later at [1].
     snake.insert(0, [snake[0][0] + (key == KEY_DOWN and 1) + (key == KEY_UP and -1), snake[0][1] + (key == KEY_LEFT and -1) + (key == KEY_RIGHT and 1)])
-warning: Vous semblez avoir cloné un dépôt vide.
-Vérification de la connectivité... fait.
+
 
     # If snake crosses the boundaries, make it enter from the other side
     #if snake[0][0] == 0: snake[0][0] = 18
