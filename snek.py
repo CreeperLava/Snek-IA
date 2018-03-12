@@ -53,7 +53,6 @@ while key != 27:                                                   # While Esc k
     # If snake runs over itself
     if snake[0] in snake[1:]: break
 
-
     if snake[0] == food:                                            # When snake eats the food
         food = []
         score += 1
@@ -68,3 +67,7 @@ while key != 27:                                                   # While Esc k
 
 curses.endwin()
 print("\nScore - " + str(score))
+
+def fitness (score):
+	return score
+
