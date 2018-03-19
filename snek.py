@@ -43,7 +43,7 @@ class game:
 		continue
 
 		if key not in [KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN, 27]:	 # If an invalid key is pressed
-		key = prevKey
+			key = prevKey
 
 		# Calculates the new coordinates of the head of the snake. NOTE: len(snake) increases.
 		# This is taken care of later at [1].
@@ -56,15 +56,15 @@ class game:
 		if snake[0] in snake[1:]: break
 
 		if snake[0] == food:											# When snake eats the food
-		food = []
-		score += 1
-		while food == []:
-			food = [randint(1, size_y - 2), randint(1, size_x - 2)]				 # Calculating next food's coordinates
-			if food in snake: food = []
-		win.addch(food[0], food[1], '*')
+			food = []
+			score += 1
+			while food == []:
+				food = [randint(1, size_y - 2), randint(1, size_x - 2)]				 # Calculating next food's coordinates
+				if food in snake: food = []
+			win.addch(food[0], food[1], '*')
 		else:
-		last = snake.pop()										  # [1] If it does not eat the food, length decreases
-		win.addch(last[0], last[1], ' ')
+			last = snake.pop()										  # [1] If it does not eat the food, length decreases
+			win.addch(last[0], last[1], ' ')
 		win.addch(snake[0][0], snake[0][1], '#')
 
 	curses.endwin()
@@ -79,19 +79,19 @@ class snekbot:
 	Sneks
 	"""
 	# Population
-	def sneks :
+	def sneks:
 
 	# Random
-	def random_snek :
+	def random_snek:
 
 	# Mutation
-	def weird_snek :
+	def weird_snek:
 
 	# Selection
-	def most_stronk_snek :
+	def most_stronk_snek:
 
 	# All availables movements
-	def sick_moves :
+	def sick_moves:
 		moves = []
 		moves.append([snake[0][0] + 1, snake[0][1]])
 		moves.append([snake[0][0] - 1, snake[0][1]])
@@ -104,7 +104,7 @@ class snekbot:
 				break
 
 	# Best move
-	def sickestest_move :
+	def sickestest_move:
 		tab2 =[][]
 		tab = self.sick_moves()
 		for move in tab
