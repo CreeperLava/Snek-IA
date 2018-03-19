@@ -37,10 +37,10 @@ class game:
 
 		if key == ord(' '):											# If SPACE BAR is pressed, wait for another
 			key = -1														# one (Pause/Resume)
-		while key != ord(' '):
-			key = win.getch()
+			while key != ord(' '):
+				key = win.getch()
 			key = prevKey
-		continue
+			continue
 
 		if key not in [KEY_LEFT, KEY_RIGHT, KEY_UP, KEY_DOWN, 27]:	 # If an invalid key is pressed
 			key = prevKey
@@ -79,19 +79,19 @@ class snekbot:
 	Sneks
 	"""
 	# Population
-	def sneks:
-
+	def sneks(self):
+		return
 	# Random
-	def random_snek:
-
+	def random_snek(self):
+		return
 	# Mutation
-	def weird_snek:
-
+	def weird_snek(self):
+		return
 	# Selection
-	def most_stronk_snek:
-
+	def most_stronk_snek(self):
+		return
 	# All availables movements
-	def sick_moves:
+	def sick_moves(self):
 		moves = []
 		moves.append([snake[0][0] + 1, snake[0][1]])
 		moves.append([snake[0][0] - 1, snake[0][1]])
@@ -102,13 +102,15 @@ class snekbot:
 			if move == snake[1]:
 				moves.remove(move)
 				break
+		return moves
 
 	# Best move
-	def sickestest_move:
-		tab2 =[][]
+	def sickestest_move(self):
+		tab2 =[[]]
 		tab = self.sick_moves()
-		for move in tab
+		for move in tab:
 			tab2.append(poid(move), move)
 		tab2.sort
 		return tab2[0][1]
+
 
