@@ -1,6 +1,6 @@
 # SNAKES GAME
 # Use ARROW KEYS to play, SPACE BAR for pausing/resuming and Esc Key for exiting
-class game
+class game:
 	import curses
 	from curses import KEY_RIGHT, KEY_LEFT, KEY_UP, KEY_DOWN
 	from random import randint
@@ -36,7 +36,7 @@ class game
 
 
 	    if key == ord(' '):                                            # If SPACE BAR is pressed, wait for another
-		key = -1                                                   # one (Pause/Resume)
+			key = -1		                                                # one (Pause/Resume)
 		while key != ord(' '):
 		    key = win.getch()
 		key = prevKey
@@ -70,7 +70,7 @@ class game
 	curses.endwin()
 	print("\nScore - " + str(score))
 
-class snekbot
+class snekbot:
 
 	# Returns the score
 	def fitness (score):
@@ -82,7 +82,7 @@ class snekbot
 	def sneks :
 
 	# Random
-	def random_snek : 
+	def random_snek :
 
 	# Mutation
 	def weird_snek :
@@ -111,4 +111,4 @@ class snekbot
 			tab2.append(poid(move), move)
 		tab2.sort
 		return tab2[0][1]
-		
+
