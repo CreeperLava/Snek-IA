@@ -55,15 +55,15 @@ class game:
 		# If snake runs over itself
 		if snake[0] in snake[1:]: break
 
-		if snake[0] == food: 
+		if snake[0] == food:
 			self.eat_food()
-		#else: last = snake.pop()										
+		#else: last = snake.pop()
 			#win.addch(last[0], last[1], ' ')
 		def eat_food(self):
 			self.food = []
 			self.score += 1
 			self.moar_food
-			win.addch(food[0], food[1], '*')	
+			win.addch(food[0], food[1], '*')
 			win.addch(snake[0][0], snake[0][1], '#')
 
 
@@ -89,7 +89,7 @@ class snekbot:
 	#position du snek
 	pos = game.snake
 
-	
+
 	def __init__(self,game):
 		self.game=game
 		self.pos = [(1,1),(1,2)]#.append((0,0))
@@ -97,7 +97,7 @@ class snekbot:
 		#self.weight_selfd = random.uniform(-5,0)
 
 	def play(self):
-		sneks = sneks([])		
+		sneks = sneks([])
 		for snek in sneks:
 
 
@@ -110,8 +110,8 @@ class snekbot:
 		else:
 			self.move(m)
 			return ''
-			
-			
+
+
 	def move(self,to):
 		self.pos.pop()
 		self.pos.insert(0,to)
@@ -137,14 +137,14 @@ class snekbot:
 			// prendre les premiers sneks, et générer aléatoirement les autres
 		return
 
-	#calcule la distance entre deux points du jeu 
+	#calcule la distance entre deux points du jeu
 	def distance(a,b):
 		return ((a[0]-b[0])**2)+((a[1]-b[1])**2)
 
 	#retourne la distance entre la tête du snek et la bouffe
 	def distance_food(self):
 		return distance(game.food,self.pos[0])
-		
+
 
 
 	# Random
@@ -165,7 +165,7 @@ class snekbot:
 		moves.append([pos[0][0], pos[0][1] - 1])
 
 		for move in moves:
-			if move == snake[1] and (move[0] <= 0) and (move[0] > self.game.grid_size[0]) and 
+			if move == snake[1] and (move[0] <= 0) and (move[0] > self.game.grid_size[0]) and
 (move[1] <= 0) and (move[1] > self.game.grid_size[1])):
 				moves.remove(move)
 				break
@@ -177,10 +177,11 @@ class snekbot:
 		tab = self.sick_moves()
 		#if taille = 0, on perd
 		if len(tab) == 0: return None
- 
+
 		for move in tab:
 			tab2.append(poid(move), move)
 		tab2.sort
 		return tab2[0][1]
 
 #https://github.com/stephennancekivell/growing-snakes/blob/master/snake.py
+#https://becominghuman.ai/designing-ai-solving-snake-with-evolution-f3dd6a9da867
