@@ -1,11 +1,9 @@
 #https://github.com/han-gyeol/Genetic-Algorithm-Snake/blob/master/heuristic.js
-include './game.rb'
 
 # class for individual snakes
 class Snek
 	def initialize(pos_x, pos_y)
-		@pos_x = pos_x # initial position of snek
-		@pos_y = pos_y
+		@pos = [[pos_x, pos_y]] # coordinates of the snek's body, from head to tail
 
 		# weights
 		random = Random.new
@@ -26,5 +24,35 @@ class Snek
 		# pour chaque poids, on a une valeur à chaque tic
 		# à chaque tic, on multiplie les valeurs aux poids et on somme le tout
 		# on récupère ainsi la fitness
+	end
+
+	def eat(x, y)
+		@pos.push [x,y]
+	end
+
+	def move(key, snake_ate)
+		case key # and move head
+			when "\e[A" # up
+				pos.unshift [pos.first[0]+1, pos.first[1]]
+			when "\e[B" # down
+				pos.unshift [pos.first[0]-1, pos.first[1]]
+			when "\e[C" # right
+				pos.unshift [pos.first[0], pos.first[1]+1]
+			when "\e[D" # left
+				pos.unshift [pos.first[0], pos.first[1]-1]
+		end
+		pos.pop unless snake_ate # remove tail
+	end
+
+	def head
+		return @pos.first
+	end
+
+	def tail
+		return @pos.last
+	end
+
+	def pos
+		return @pos
 	end
 end
