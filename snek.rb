@@ -1,3 +1,4 @@
+#https://github.com/han-gyeol/Genetic-Algorithm-Snake/blob/master/heuristic.js
 include './game.rb'
 
 # class for individual snakes
