@@ -86,8 +86,10 @@ class game:
 
 class snekbot:
 
+	#position du snek
 	pos = game.snake
 
+	
 	def __init__(self,game):
 		self.game=game
 		self.pos = [(1,1),(1,2)]#.append((0,0))
@@ -134,6 +136,17 @@ class snekbot:
 		else:
 			// prendre les premiers sneks, et générer aléatoirement les autres
 		return
+
+	#calcule la distance entre deux points du jeu 
+	def distance(a,b):
+		return ((a[0]-b[0])**2)+((a[1]-b[1])**2)
+
+	#retourne la distance entre la tête du snek et la bouffe
+	def distance_food(self):
+		return distance(game.food,self.pos[0])
+		
+
+
 	# Random
 	def random_snek(self):
 		return
