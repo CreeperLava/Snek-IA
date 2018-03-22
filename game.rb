@@ -102,6 +102,8 @@ class Game
 
 	def new_food
 		a = @rng.rand(@free_tiles.length)
+		p a
+		p @free_tiles.length
 		@food = [@free_tiles[a][0], @free_tiles[a][1]] # new position of food, within borders
 	end
 
@@ -114,7 +116,6 @@ class Game
 			move_snek
 			sleep(1) # 1 FPS 1080p
 		end
-
 
 		if @display
 			draw! # update game display on console
@@ -162,6 +163,7 @@ class Game
 		str = StringIO.new
 
 		@size_y.times do |y|
+			p @board[y].to_s
 			str.printf("%s\n", @board[y].to_s)
 		end
 
@@ -174,9 +176,9 @@ class Game
 	def game_over?
 		head_x = @snek.head[0]
 		head_y = @snek.head[1]
-    hit = @snek.pos.find_all { |e| e == ([head_x, head_y]) } != 1 # we hit ourselves if there is another tile of the snek with the coordinates of the head
-    # if we hit a wall or ourselves, return true
-		if head_x <= 0 || head_x >= 50 || head_y <= 0 || head_y >= 50 || hit
+    hit = @snek.pos.find_all { |e| e == [head_x, head_y] } # we hit ourselves if there is another tile of the snek with the coordinates of the head
+		# if we hit a wall or ourselves, return true
+		if head_x <= 0 || head_x >= 50 || head_y <= 0 || head_y >= 50 || hit.length != 1
 			return true
 		end
 		false

@@ -1,5 +1,5 @@
-include './game.rb'
-include './snek.rb'
+include './game'
+include './snek'
 
 
 class Heuristic
