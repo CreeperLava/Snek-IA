@@ -96,7 +96,11 @@ class Game
 	# play the game
 	def play
 		# check if game is over each frame
-		next_frame until game_over?
+
+		until game_over?
+			read_char # get key pressed
+			next_frame @last_key_pressed
+		end
 	end
 
 	def new_food
@@ -105,11 +109,11 @@ class Game
 	end
 
 	# for each frame, run game logic
-	def next_frame
+	def next_frame move
 		if @ai
 			# await the AI's decision -> call a method from heuristic
+			move_snek
 		else
-			read_char # get key pressed
 			move_snek
 			sleep(1) # 1 FPS 1080p
 		end
