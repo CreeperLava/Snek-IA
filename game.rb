@@ -6,10 +6,10 @@ require 'io/console'
 
 # y
 # *----------------*
-# |				         |
-# |		 ~~~^	       |
-# |				         |
-# |				       x |
+# |                |
+# |      ~~~^      |
+# |                |
+# |              x |
 # *----------------* x
 #
 
@@ -95,15 +95,11 @@ class Game
 	# play the game
 	def play
 		# check if game is over each frame
-		until game_over?
-			next_frame
-		end
+		next_frame until game_over?
 	end
 
 	def new_food
 		a = @rng.rand(@free_tiles.length)
-		p a
-		p @free_tiles.length
 		@food = [@free_tiles[a][0], @free_tiles[a][1]] # new position of food, within borders
 	end
 
@@ -123,20 +119,27 @@ class Game
 		# otherwise, just display current score
 	end
 
-	def read_char
+	def read_ch
 		STDIN.echo = false
 		STDIN.raw!
 
-		key = STDIN.getc.chr
-		if key == "\e"
-			key << STDIN.read_nonblock(3) rescue nil
-			key << STDIN.read_nonblock(2) rescue nil
-		elsif key == "\e[A" || key == "\e[B" || key == "\e[C" || key == "\e[D"
-			@last_key_pressed = key
+		input = STDIN.getc.chr
+		if input == "\e" then
+			input << STDIN.read_nonblock(3) rescue nil
+			input << STDIN.read_nonblock(2) rescue nil
 		end
 	ensure
 		STDIN.echo = true
 		STDIN.cooked!
+
+		return input
+	end
+
+	def read_char
+		key = read_ch
+		if key == "\e[A" || key == "\e[B" || key == "\e[C" || key == "\e[D"
+			@last_key_pressed = key
+		end
 	end
 
 	# move snek : remove tail, move head
@@ -149,7 +152,6 @@ class Game
 		if @just_ate # if snake ate, it grew, thus don't remove tail
 			@board[@snek.tail[1]][@snek.tail[0]] = ' '
 			@free_tiles.push(@snek.tail)
-
 			@just_ate = false
 		end
 
@@ -173,6 +175,10 @@ class Game
 		str
 	end
 
+	def food
+		return @food
+	end
+
 	def game_over?
 		head_x = @snek.head[0]
 		head_y = @snek.head[1]
@@ -185,4 +191,4 @@ class Game
 	end
 end
 
-Game.new(true, false)
+Game.new(true, true)
