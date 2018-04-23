@@ -37,6 +37,7 @@ class Heuristic
 
 	def rand_population(n)
 		pop=[]
+	
 		n.times{
 			weight=[]
 			heuristic.length.times weight.push random.rand(5)	
@@ -46,15 +47,40 @@ class Heuristic
 		return pop
 	end
 
+	#crée un enfant, (un tableau de poids donc) à partir de deux parents
+	def child(s1,s2)
+		poids= []
+		#pour chaque poids dans chaque tableau de pois des deux sneks
+		[s1.weights,s2.weights].each_with_index  do |w1,w2, i|
+			poids[i]= [w1,w2].sample
+			
+			#Mutation à rajouter
+		end
+
+	end
+
+	#crée tous les enfants et remplissasse la population
+	def children(pop)
+		children = []
+		#On rempli la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamismes quoi
+		for i in 0..(pop.length)
+			if i < pop.length
+				children[i]= Snek.new(((@game.@size_x)/2),((@game.@size_y)/2),child(pop[i],pop[i+1]))
+			end
+			else children[i]= Snek.new(((@game.@size_x)/2),((@game.@size_y)/2),child(pop[i],pop[0]))
+			
+		end
+	end
 	def genetic_algorithm
 	
 		population= rand_population(50)
 		@nb_iterations.times {
-		#meilleur individu
-		sickestest_snek = best(population)
+		#meilleurs individus
+		sneks_to_breed = best(population)
 		#nouvelle population
-		}
+		children = children(sneks_to_breed)
 
+		}
 		
 	end
 
@@ -76,6 +102,7 @@ class Heuristic
 		return best_fit[0]
 	end	
 
+	#On va faire jouer tous les sneks et voir qui sont les meilleurs avec sickestest
 	def best(pop)
 		@game = Game.new(true, true, snek)
 		@score_pop = Hash.new
@@ -90,18 +117,32 @@ class Heuristic
 			# le snek est mort, l'ajouter à la hash map
 			@score_pop[snek] = game_snek.score
 		end
-		sickestest_snek = sickestest(@score_pop)
+		sickestest_sneks = sickestest(@score_pop, 0.1)
+		return sickestest_sneks
 	end 
 	
-	def sickestest(pop)
+	#Rend les meilleurs sneks parmis une population de snek, avec pourvent le pourcentage des meilleurs
+	def sickestest(pop, pourcent)	
+		#nb de meilleurs snek à garder 
+		@nb_breeding_pool= (pourcent*pop.length).round
+
+		sneks_to_breed = [@nb_breeding_pool]
+		#on prend le meilleur et on l'enlève de la pop, pour recommencer jusqu'à temps qu'on ai les 10% de meilleurs sneks dans 'sneks_to_breed'
+		for i in 0..@nb_breeding_pool
+			best = max(pop)
+			pop.delete(best)
+		end
+		return sneks_to_breed
+	end
+
+	def max(pop)
 		max=0
 		pop.each do |key, value| 
 			if value > max	do 				
 				max = value 
 				snek = key
 			end 	
-		end	
-		return snek
+		end
 	end
 end
 

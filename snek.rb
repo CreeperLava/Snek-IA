@@ -3,12 +3,16 @@
 # class for individual snakes
 class Snek
 	def initialize(pos_x, pos_y)
-		@pos = [[pos_x, pos_y]] # coordinates of the snek's body, from head to tail
+		@pos = [pos_x, pos_y] # coordinates of the snek's body, from head to tail
 
 		# weights
+		@weights= []
 		random = Random.new
 		@w_staying_alive = random.rand(5)
+		weights[0] = @w_staying_alive
 		@w_eating_food = random.rand(5)
+		weights[1]=@w_eating_food
+		
 		# 7 heuristiques par snek :
 		# - clear straight ahead
 		# - clear to the left
@@ -24,6 +28,13 @@ class Snek
 		# pour chaque poids, on a une valeur à chaque tic
 		# à chaque tic, on multiplie les valeurs aux poids et on somme le tout
 		# on récupère ainsi la fitness
+	end
+
+	def initialize(pos_x, pos_y, weights)
+
+		@pos=[pos_x,pos_y]
+		@weights = weights
+
 	end
 
 	def eat(x, y)
