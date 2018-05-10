@@ -37,15 +37,16 @@ class Heuristic
 
 	#Fitnesse pour chacun des moves du snek
 	def calcFitness(game_sim)
+		fitness = []
 		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
 		@heuristic[1] = game_sim.snek.weights[1]*game_sim.score 
 			
 		@heuristic.each do |h|
-			@fitness.push h
+			fitness.push h
 		end
 		
-		puts "[SNEK][DEBUG][calcFitness] Heuristics : #{@fitness}"
-		return @fitness
+		puts "[SNEK][DEBUG][calcFitness] Heuristics : #{fitness}"
+		return fitness
 	end
 
 	def rand_population(n)
