@@ -41,12 +41,9 @@ class Heuristic
 		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
 		
 		@heuristic[1] = game_sim.snek.weights[1]*game_sim.score 
-		puts "[SNEK][DEBUG][calcFitness] Heuristic 2 : #{@heuristic[1]}"
 		@heuristic.each do |h|
 			fitness += h
 		end
-		
-		puts "[SNEK][DEBUG][calcFitness] Heuristics : #{fitness}"
 		return fitness
 	end
 
