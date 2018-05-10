@@ -108,7 +108,7 @@ class Game
     next_frame @last_key_pressed until game_over?
   end
   def distance_from_food    
-    return Math.sqrt(((@snek.head[0] - @food[0]) ** 2)+(@snek.head[1] - @food[1])**2))
+    return Math.sqrt(((@snek.head[0] - @food[0]) ** 2)+((@snek.head[1] - @food[1])**2))
   end
   
   def new_food
