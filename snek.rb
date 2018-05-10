@@ -41,6 +41,7 @@ class Snek
 
 	def move(key,food)
 		old_head = head
+		puts "YOU IDIOT TELL ME WHERE TO MOVE" if key == ""
 		case key # and move head
 			when "\e[A" # up
 				@pos.unshift [@pos.first[0]+1, @pos.first[1]]
