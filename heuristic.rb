@@ -151,10 +151,7 @@ class Heuristic
 	def max(pop)
 		max=0
 		pop.each do |key, value| 
-			if value > max	do 				
-				max = value 
-				snek = key
-			end 	
+			max,snek = value,key if value > max
 		end
 	end
 end
