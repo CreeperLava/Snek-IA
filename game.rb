@@ -109,12 +109,10 @@ class Game
   end
 
   def new_food
-  	xr = @rng.rand(1..@size_x-1)
-    yr = @rng.rand(1..@size_y-1)
-    ir = @rng.rand(1..@size_y-1)
-    a = yr*ir+xr
+  	free = @free_tiles.compact
+  	a = @rng(free.length)
 
-    @food = [@free_tiles[a][0], @free_tiles[a][1]] # new position of food, within borders
+    @food = [free[a][0], free[a][1]] # new position of food, within borders
   end
 
   # for each frame, run game logic
