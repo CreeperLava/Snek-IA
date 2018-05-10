@@ -50,6 +50,7 @@ class Game
         end
       end
     end
+    # if ai, heuristics takes over and plays the frames one by one itself
   end
 
   def init_snek
@@ -133,7 +134,7 @@ class Game
 	  @board[@snek.tail[0]][@snek.tail[1]] = ' ' # remove tail
     end
 
-    @board[@snek.pos[1][0]][@snek.pos[1][1]] = '~' #
+    @board[@snek.pos[1][0]][@snek.pos[1][1]] = '~' unless @snek.pos.length == 1
   end
 
   def draw!
@@ -141,14 +142,14 @@ class Game
     str = StringIO.new
 
     @size_x.times do |x|
-      p @board[x].to_s
-      str.printf("%s\n", @board[x].to_s)
+      puts @board[x].to_s
+      #str.printf("%s\n", @board[x].to_s)
     end
 
-    str.rewind
-    puts str.read
-    str.rewind
-    str
+   # str.rewind
+   # puts str.read
+   # str.rewind
+   # str
   end
 
   def game_over?
@@ -162,5 +163,3 @@ class Game
     false
   end
 end
-
-Game.new(true, true, Snek.new(25, 25, []))
