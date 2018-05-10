@@ -85,6 +85,7 @@ class Heuristic
 				children[i] = Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[0]))
 			end
 		end
+		mutate(children)
 		return children
 	end
 	
