@@ -188,6 +188,10 @@ class Game
   def food
     return @food
   end
+  
+  def score
+    return @score
+  end
 
   def game_over?
     head_x = @snek.head[0]
