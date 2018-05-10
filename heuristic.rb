@@ -156,9 +156,10 @@ class Heuristic
 
 	def max(pop)
 		max=0
-		pop.each do |key, value| 
-			max,snek = value,key if value > max
+		pop.each do |snek| 
+			max =  @score_pop[snek] if  @score_pop[snek] > max
 		end
+		return max
 	end
 		
 	def mutate(sneks)
