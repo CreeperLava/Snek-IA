@@ -74,6 +74,7 @@ class Game
 	0.upto(@size_x) do |x|
 		0.upto(@size_y) do |y|
 			if i <= 0 && @board[x][y] == ' '
+				@board[@food[0]][@food[1]] = ' ' unless @food.nil?
 				@food = [x,y]
 				@board[x][y] = 'x'
 				return
@@ -128,10 +129,10 @@ class Game
     @board[@snek.head[0]][@snek.head[1]] = '^' # move head to new position
 
     # if snek just ate, it grew, so leave tail
-    unless @just_ate
+    if @just_ate
       new_food
       @just_ate = false
-	  @board[@snek.tail[0]][@snek.tail[1]] = ' ' # remove tail
+      @board[@snek.tail[0]][@snek.tail[1]] = ' ' # remove tail
     end
 
     @board[@snek.pos[1][0]][@snek.pos[1][1]] = '~' unless @snek.pos.length == 1
