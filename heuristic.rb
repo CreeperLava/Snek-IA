@@ -1,4 +1,4 @@
-require'./game.rb'
+require './game.rb'
 require './snek.rb'
 require 'scanf'
 
@@ -24,8 +24,8 @@ class Heuristic
 
 		@moves=["e\[A","e\[B","e\[C","e\[D"]   # up, down, right, left
 		
-		game = Game.new(true, true, Snek.new(25, 25, []))
-		@food = game.food_pos
+		@game = Game.new(true, true, Snek.new(25, 25, []))
+		@food = @game.food
 		puts "[SNEK][DEBUG][initialize] Initial position of food : #{@food}"
 		random = Random.new
 		
@@ -51,7 +51,7 @@ class Heuristic
 	
 		n.times do
 			weight = []
-			heuristic.length.times do weight.push random.rand(5) end
+			@heuristic.length.times do weight.push random.rand(5) end
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
 		end
 		
@@ -77,18 +77,18 @@ class Heuristic
 		#On rempli avec des nouveaux sneks random
 		children = rand_population(@taille_pop-pop.length)
 		#On rempli la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
-		for i in @taille_pop-1..(pop.length)
+		(@taille_pop-1).upto(pop.length) do |i|
 			if i < pop.length
-				children[i]= Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[i+1]))
-			else children[i]= Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[0]))
+				children[i] = Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[i+1]))
+			else
+				children[i] = Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[0]))
 			end
 		end
 		return children
 	end
 	
 	def genetic_algorithm
-	
-		population= rand_population(50)
+		population = rand_population(50)
 		@nb_iterations.times do |i|
 			#meilleurs individus
 			sneks_to_breed = best(population)
