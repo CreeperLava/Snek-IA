@@ -125,14 +125,15 @@ class Game
   # edit matrix
   # edit snek pos
   def move_snek move
-    @just_ate = @snek.move(move,food)
+    @just_ate,old_head = @snek.move(move,food)
+    @board[old_head[0]][old_head[1]] = ' '
     @board[@snek.head[0]][@snek.head[1]] = '^' # move head to new position
 
     # if snek just ate, it grew, so leave tail
     if @just_ate
       new_food
       @just_ate = false
-      @board[@snek.tail[0]][@snek.tail[1]] = ' ' # remove tail
+	  @board[@snek.tail[0]][@snek.tail[1]] = ' ' # remove tail
     end
 
     @board[@snek.pos[1][0]][@snek.pos[1][1]] = '~' unless @snek.pos.length == 1
