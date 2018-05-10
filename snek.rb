@@ -9,9 +9,9 @@ class Snek
 		@weights= []
 		random = Random.new
 		@w_staying_alive = random.rand(5)
-		weights[0] = @w_staying_alive
+		@weights.push @w_staying_alive
 		@w_eating_food = random.rand(5)
-		weights[1]=@w_eating_food
+		@weights.push @w_eating_food
 		
 		# 7 heuristiques par snek :
 		# - clear straight ahead
