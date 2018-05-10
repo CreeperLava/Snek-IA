@@ -14,6 +14,8 @@ require 'io/console'
 #
 
 class Game
+  attr_accessor :@size_x, :@size_y
+  
   def initialize(display, ai, snek)
     @display = display # is display of the game activated or not
     @ai = ai # is snek controlled by an AI or a human
