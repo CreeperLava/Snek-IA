@@ -2,7 +2,7 @@
 # class for individual snakes
 
 class Snek
-	attr_accessor :id, :weights
+	attr_accessor :id, :weights, :pos
 	@@id = 0
 
 	def initialize(pos_x, pos_y)
@@ -66,10 +66,6 @@ class Snek
 
 	def size
 		return @pos.length
-	end
-
-	def pos
-		return @pos
 	end
 
 	def to_s
