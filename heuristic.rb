@@ -23,6 +23,8 @@ class Heuristic
 		@heuristic = []
 
 		@moves=["e\[A","e\[B","e\[C","e\[D"]   # up, down, right, left
+		
+		game = Game.new
 		@food = game.food_pos
 		puts "[SNEK][DEBUG][initialize] Initial position of food : #{@food}"
 		random = Random.new
