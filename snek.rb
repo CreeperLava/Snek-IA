@@ -71,6 +71,10 @@ class Snek
 		return "Snek #{@pos}"
 	end
 	
+	def to_str
+		return "Snek #{@pos}"
+	end
+	
 	def getWeigths()
 		return @weights
 	end
