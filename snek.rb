@@ -40,6 +40,7 @@ class Snek
 	end
 
 	def move(key,food)
+		old_head = head
 		case key # and move head
 			when "\e[A" # up
 				pos.unshift [@pos.first[0]+1, @pos.first[1]]
@@ -52,7 +53,7 @@ class Snek
 		end
 		snake_ate = (head == food)
 		@pos.pop unless snake_ate # remove tail
-		return snake_ate
+		return snake_ate,old_head
 	end
 
 	def head
