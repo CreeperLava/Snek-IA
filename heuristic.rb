@@ -48,7 +48,7 @@ class Heuristic
 	end
 
 	def rand_population(n)
-		pop = []
+		pop = [n]
 	
 		n.times do
 			weight = [@heuristic.length]
