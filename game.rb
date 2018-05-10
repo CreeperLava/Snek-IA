@@ -107,9 +107,10 @@ class Game
     # check if game is over each frame
     next_frame @last_key_pressed until game_over?
   end
-  def distance_from_food
+  def distance_from_food    
     return Math.sqrt(((@snek.head[0] - @food[0]) ** 2)+(@snek.head[1] - @food[1])**2))
   end
+  
   def new_food
   	xr = @rng.rand(1..@size_x-1)
     yr = @rng.rand(1..@size_y-1)
@@ -206,5 +207,3 @@ class Game
     false
   end
 end
-
-Game.new(true, true, Snek.new(25, 25, []))
