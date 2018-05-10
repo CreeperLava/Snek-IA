@@ -132,7 +132,7 @@ class Heuristic
 			
 
 			# le snek est mort, l'ajouter à la hash map
-			@score_pop[snek] = game_snek.score
+			@score_pop[snek] = @game_snek.score
 		end
 		sickestest_sneks = sickestest(@score_pop, 0.1)
 		return sickestest_sneks
