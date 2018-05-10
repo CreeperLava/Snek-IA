@@ -112,6 +112,7 @@ class Game
 
   def new_food
     a = @rng.rand(@free_tiles.length)
+    a = 1 if a.nil?
     @food = [@free_tiles[a][0], @free_tiles[a][1]] # new position of food, within borders
   end
 
