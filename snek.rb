@@ -7,7 +7,7 @@ class Snek
 	@@id = 0
 	
 	def initialize(pos_x, pos_y)
-		@pos = [pos_x, pos_y] # coordinates of the snek's body, from head to tail
+		@pos = [[pos_x, pos_y]] # coordinates of the snek's body, from head to tail
 
 		# weights
 		@id = @@id + 1
@@ -36,10 +36,8 @@ class Snek
 	end
 
 	def initialize(pos_x, pos_y, weights)
-
-		@pos=[pos_x,pos_y]
+		@pos=[[pos_x, pos_y]]
 		@weights = weights
-
 	end
 
 	def eat(x, y)
