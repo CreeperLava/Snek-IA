@@ -60,7 +60,6 @@ class Heuristic
 				weight.push p
 				
 			end
-			puts " #{weight}"
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
 			
 			
@@ -143,7 +142,7 @@ class Heuristic
 			# On joue jusqu'à la mort 
 			@game_snek.next_frame one_move until @game_snek.game_over?				
 			
-			puts" score pour le snek : #{@game_snek.score}"
+			puts" score pour le snek #{snek.id} : #{@game_snek.score}"
 			# le snek est mort, l'ajouter à la hash map
 			@score_pop[snek] = @game_snek.score
 		end
