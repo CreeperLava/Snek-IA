@@ -125,6 +125,7 @@ class Heuristic
 			p "snek avant : #{@game_snek.snek}"
 			game_sim=Game.new(false,true,@game_snek.snek)
 			game_sim.food=@game_snek.food
+			game_sim.snek.pos = @game_snek.snek.pos.clone
 			p "snek apres : #{game_sim.snek}"
 			game_sim.next_frame(m)	
 			@fitness=calcFitness(game_sim)	
