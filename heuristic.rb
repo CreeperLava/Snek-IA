@@ -123,6 +123,7 @@ class Heuristic
 		@moves.each do |m| 
 			puts "snek avant : #{@game_snek.snek}"
 			game_sim=Game.new(true,true,@game_snek.snek)
+			game_sim.food=@game_snek.food
 			puts "snek avant : #{@game_sim.snek}"
 			game_sim.next_frame(m)	
 			@fitness=calcFitness(game_sim)	
