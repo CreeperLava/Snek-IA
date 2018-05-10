@@ -121,11 +121,10 @@ class Heuristic
 
 	#On va faire jouer tous les sneks et voir qui sont les meilleurs avec sickestest
 	def best(pop)
-		@game = Game.new(true, true, snek)
 		@score_pop = Hash.new
 		
 		pop.each do |snek| 
-			@game_snek = @game
+			@game_snek = Game.new(true, true, snek)
 			
 			# On joue jusqu'à la mort 
 			@game_snek.next_frame one_move until @game_snek.game_over?				
