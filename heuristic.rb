@@ -44,6 +44,7 @@ class Heuristic
 		@heuristic.each do |h|
 			fitness += h
 		end
+		print "LA FITNESS DU SNEK NIL : "
 		return fitness
 	end
 
@@ -175,11 +176,13 @@ class Heuristic
 	end
 		
 	def mutate(sneks)
+		print "la population de sneks : "
+		print sneks
 		sneks.each do |snek|
-			next if random.rand >= mutation_rate
+			next if @random.rand >= @@mutation_rate
 			newWeights = snek.getWeights()
-			for i in 0..random.rand(newWeights.length)
-				newWeights[random.rand(newWeights.length)] = random.rand(5)
+			for i in 0..@random.rand(newWeights.length)
+				newWeights[@random.rand(newWeights.length)] = @random.rand(5)
 			end
 			snek.setWeights(newWeights)
 		end
