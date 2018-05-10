@@ -55,7 +55,7 @@ class Heuristic
 			weight = []
 
 			@nb_heuristic.times do
-				p= @random.rand(5)
+				p= @random.rand(5.0)
 				weight.push p
 			end
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
@@ -182,7 +182,7 @@ class Heuristic
 			next if @random.rand >= @@mutation_rate
 			newWeights = snek.getWeights()
 			for i in 0..@random.rand(newWeights.length)
-				newWeights[@random.rand(newWeights.length)] = @random.rand(5)
+				newWeights[@random.rand(newWeights.length)] = @random.rand(5.0)
 			end
 			snek.setWeights(newWeights)
 		end
