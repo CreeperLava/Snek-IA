@@ -52,9 +52,9 @@ class Heuristic
 		pop = []
 	
 		n.times do
-			weight = Array.new(@nb_heuristic,0)
+			weight = Array.new(@nb_heuristic)
 			
-			@heuristic.length.times do 
+			@nb_heuristic.times do 
 				p= @random.rand(5)
 				puts " p = #{p}"
 				weight.push p
