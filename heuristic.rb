@@ -21,7 +21,7 @@ class Heuristic
 		end
 		
 		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime"
-		@heuristic = []
+		@heuristic = [2]
 
 		@moves=["e\[A","e\[B","e\[C","e\[D"]   # up, down, right, left
 		
