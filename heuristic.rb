@@ -39,9 +39,9 @@ class Heuristic
 	def calcFitness(game_sim)
 		fitness = []
 		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
-		puts "[SNEK][DEBUG][calcFitness] Heuristic : #{@heuristic[0]}"
+		
 		@heuristic[1] = game_sim.snek.weights[1]*game_sim.score 
-			
+		puts "[SNEK][DEBUG][calcFitness] Heuristic 2 : #{@heuristic[1]}"
 		@heuristic.each do |h|
 			fitness.push h
 		end
