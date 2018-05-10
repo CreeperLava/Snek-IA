@@ -52,7 +52,7 @@ class Heuristic
 		pop = []
 	
 		n.times do
-			weight = Array.new(@nb_heursitic,0)
+			weight = Array.new(@nb_heuristic,0)
 			puts "#{n}  :  #{weight}"
 			@heuristic.length.times do 
 				p= @random.rand(5)
