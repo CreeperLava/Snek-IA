@@ -169,7 +169,7 @@ class Heuristic
 		max=0
 		pop.each do |snek, score| 
 			puts"#{score}"
-			max =  score if  score > max
+			max =  score if  score >= max
 		end
 		return max
 	end
