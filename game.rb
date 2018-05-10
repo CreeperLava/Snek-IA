@@ -139,11 +139,8 @@ class Game
 
   def draw!
     # check if it is possible to keep the StringIO from frame to frame and just edit what changed, then rewind and read
-    str = StringIO.new
-
     @size_x.times do |x|
-      puts @board[x].to_s
-      #str.printf("%s\n", @board[x].to_s)
+      puts @board[x].join
     end
 
    # str.rewind
