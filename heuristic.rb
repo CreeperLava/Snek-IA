@@ -61,6 +61,8 @@ class Heuristic
 			puts "#{weight}"
 		end
 		
+		puts " Sneks = #{pop}"
+		
 		puts "[SNEK][DEBUG][rand_population] First 10 individuals of population :"
 		puts pop[0..10]
 		return pop
