@@ -52,13 +52,15 @@ class Heuristic
 	
 		n.times do
 			weight = [@heuristic.length]
+			puts "#{weight}"
 			@heuristic.length.times do 
 				p= @random.rand(5)
 				puts " p = #{p}"
 				weight.push p
 			end
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
-			puts "#{weight}"
+			
+			
 		end
 		
 		puts " Sneks = #{pop}"
