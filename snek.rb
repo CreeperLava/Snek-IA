@@ -1,11 +1,10 @@
 #https://github.com/han-gyeol/Genetic-Algorithm-Snake/blob/master/heuristic.js
-
-
 # class for individual snakes
+
 class Snek
 	attr_accessor :id
 	@@id = 0
-	
+
 	def initialize(pos_x, pos_y)
 		@pos = [[pos_x, pos_y]] # coordinates of the snek's body, from head to tail
 
@@ -17,7 +16,7 @@ class Snek
 		@weights.push @w_staying_alive
 		@w_eating_food = random.rand(5)
 		@weights.push @w_eating_food
-		
+
 		# 7 heuristiques par snek :
 		# - clear straight ahead
 		# - clear to the left
@@ -36,26 +35,24 @@ class Snek
 	end
 
 	def initialize(pos_x, pos_y, weights)
-		@pos=[[pos_x, pos_y]]
+		@pos = [[pos_x,pos_y]]
 		@weights = weights
 	end
 
-	def eat(x, y)
-		@pos.push [x,y]
-	end
-
-	def move(key, snake_ate)
+	def move(key,food)
 		case key # and move head
 			when "\e[A" # up
-				pos.unshift [pos.first[0]+1, pos.first[1]]
+				pos.unshift [@pos.first[0]+1, @pos.first[1]]
 			when "\e[B" # down
-				pos.unshift [pos.first[0]-1, pos.first[1]]
+				pos.unshift [@pos.first[0]-1, @pos.first[1]]
 			when "\e[C" # right
-				pos.unshift [pos.first[0], pos.first[1]+1]
+				pos.unshift [@pos.first[0], @pos.first[1]+1]
 			when "\e[D" # left
-				pos.unshift [pos.first[0], pos.first[1]-1]
+				pos.unshift [@pos.first[0], @pos.first[1]-1]
 		end
-		pos.pop unless snake_ate # remove tail
+		snake_ate = (head == food)
+		@pos.pop unless snake_ate # remove tail
+		return snake_ate
 	end
 
 	def head
@@ -66,22 +63,26 @@ class Snek
 		return @pos.last
 	end
 
+	def size
+		return @pos.length
+	end
+
 	def pos
 		return @pos
 	end
-	
+
 	def to_s
 		return "S p:#{@pos} w:#{@weights}"
 	end
-	
+
 	def to_str
 		return "S p:#{@pos} w:#{@weights}"
 	end
-	
+
 	def getWeigths()
 		return @weights
 	end
-	
+
 	def setWeights(a)
 		@weights = a
 	end
