@@ -21,7 +21,8 @@ class Heuristic
 		end
 		
 		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime"
-		@heuristic = [2]
+		@nb_heuristic = 2
+		@heuristic = Array.new(@nb_heuristic)
 
 		@moves=["e\[A","e\[B","e\[C","e\[D"]   # up, down, right, left
 		
@@ -48,10 +49,10 @@ class Heuristic
 	end
 
 	def rand_population(n)
-		pop = [n]
+		pop = []
 	
 		n.times do
-			weight = [@heuristic.length]
+			weight = Array.new(@nb_heursitic)
 			puts "#{weight}"
 			@heuristic.length.times do 
 				p= @random.rand(5)
