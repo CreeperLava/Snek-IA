@@ -36,9 +36,9 @@ class Heuristic
 	
 
 	#Fitnesse pour chacun des moves du snek
-	def calcFitness	
-		@heuristic[0] = @snek.weights[0]*@game_sim.distance_from_food
-		@heuristic[1] = @snek.weights[1]*@game_sim.score 
+	def calcFitness(game_sim)
+		@heuristic[0] = @snek.weights[0]*game_sim.distance_from_food
+		@heuristic[1] = @snek.weights[1]*game_sim.score 
 			
 		@heuristic.each do |h|
 			@fitness.push h
@@ -116,18 +116,18 @@ class Heuristic
 	end
 
 	def one_move
-		game_sim=@game_snek
+		
 		best_fit=["",0]
 
 		#faire jouer le snek
 		@moves.each do |m| 
-			@game_sim.next_frame(m)	
-			@fitness=calcFitness	
+			game_sim=@game_snek
+			game_sim.next_frame(m)	
+			@fitness=calcFitness(game_sim)	
 			if @fitness > @best_fit[1]
 				best_fit[0]=m
 				best_fit[1]=@fitness
 			end
-			@game_sim=game_snek
 		end	
 		return best_fit[0]
 	end	
