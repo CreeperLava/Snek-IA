@@ -28,7 +28,7 @@ class Heuristic
 		@game = Game.new(true, true, Snek.new(25, 25, []))
 		@food = @game.food
 		puts "[SNEK][DEBUG][initialize] Initial position of food : #{@food}"
-		random = Random.new
+		@random = Random.new
 		
 		genetic_algorithm
 	end
@@ -52,7 +52,7 @@ class Heuristic
 	
 		n.times do
 			weight = []
-			@heuristic.length.times do weight.push random.rand(5) end
+			@heuristic.length.times do weight.push @random.rand(5) end
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
 			puts "#{weight}"
 		end
