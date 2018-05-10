@@ -1,5 +1,5 @@
-include './game.rb'
-include './snek.rb'
+require'./game.rb'
+require './snek.rb'
 require 'scanf'
 
 class Heuristic
