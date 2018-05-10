@@ -158,7 +158,7 @@ class Heuristic
 
 		sneks_to_breed = [@nb_breeding_pool]
 		#on prend le meilleur et on l'enlève de la pop, pour recommencer jusqu'à temps qu'on ai les 10% de meilleurs sneks dans 'sneks_to_breed'
-		for i in 0..@nb_breeding_pool
+		@nb_breeding_pool.times do
 			best = max(pop)
 			pop.delete(best)
 		end
