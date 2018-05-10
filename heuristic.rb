@@ -3,6 +3,7 @@ require './snek.rb'
 require 'scanf'
 
 class Heuristic
+	@@mutation_rate = 0.9
 	def initialize
 		@nb_iterations = 1000
 		@taille_pop = 50
@@ -154,6 +155,16 @@ class Heuristic
 		max=0
 		pop.each do |key, value| 
 			max,snek = value,key if value > max
+		end
+	end
+		
+	def mutate(sneks)
+		sneks.each do |snek|
+			next if random.rand >= mutation_rate
+			newWeights = snek.getWeights()
+			for i in 0..random.rand(newWeights.length)
+				newWeights[random.rand(newWeights.length)] = random.rand(5)
+			end
 		end
 	end
 end
