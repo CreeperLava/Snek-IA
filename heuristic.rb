@@ -115,7 +115,7 @@ class Heuristic
 
 	def one_move
 		
-		best_fit=["",0]
+		best_fit=["",-1]
 
 		#faire jouer le snek
 		@moves.each do |m| 
