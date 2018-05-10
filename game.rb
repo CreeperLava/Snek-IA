@@ -75,7 +75,7 @@ class Game
 		0.upto(@size_y) do |y|
 			if i <= 0 && @board[x][y] == ' '
 				@food = [x,y]
-				@board[x][y] == 'x'
+				@board[x][y] = 'x'
 				return
 			else
 				i -= 1
