@@ -21,7 +21,7 @@ class Heuristic
 		end
 
 		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime"
-		@nb_heuristic = 2
+		@nb_heuristic = 4
 		@heuristic = Array.new(@nb_heuristic)
 
 		@moves=["\e[A","\e[B","\e[C","\e[D"]   # up, down, right, left
@@ -39,8 +39,9 @@ class Heuristic
 	def calcFitness(game_sim)
 		fitness = 0
 		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
-
 		@heuristic[1] = game_sim.snek.weights[1]*game_sim.score
+		@heuristic[2] = game_sim.snek.weights[2]*game_sim.squareness
+		@heuristic[3] = game_sim.snek.weights[3]*game_sim.compactness
 		@heuristic.each do |h|
 			fitness += h
 		end
