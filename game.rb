@@ -110,7 +110,7 @@ class Game
 
   def new_food
   	free = @free_tiles.compact
-  	a = @rng(free.length)
+  	a = @rng.rand free.length
 
     @food = [free[a][0], free[a][1]] # new position of food, within borders
   end
