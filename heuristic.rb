@@ -53,7 +53,7 @@ class Heuristic
 	
 		n.times do
 			weight = Array.new(@nb_heursitic)
-			puts "#{weight}"
+			puts "#{n}  :  #{weight}"
 			@heuristic.length.times do 
 				p= @random.rand(5)
 				puts " p = #{p}"
