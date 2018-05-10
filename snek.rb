@@ -66,4 +66,8 @@ class Snek
 	def pos
 		return @pos
 	end
+	
+	def to_s
+		return "Snek #{@pos}"
+	end
 end
