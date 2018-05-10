@@ -119,7 +119,7 @@ class Heuristic
 
 		#faire jouer le snek
 		@moves.each do |m| 
-			game_sim=Game.new(false,true,@game_snek.snek)
+			game_sim=Game.new(false,true,@game_snek.snek.clone)
 			game_sim.food=@game_snek.food
 			game_sim.snek.pos = @game_snek.snek.pos.clone
 			game_sim.next_frame(m)	
