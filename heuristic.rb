@@ -140,7 +140,7 @@ class Heuristic
 		return sickestest_sneks
 	end 
 	
-	#Rend les meilleurs sneks parmis une population de snek, avec pourvent le pourcentage des meilleurs
+	#Rend les meilleurs sneks parmis une population de snek et score, avec pourvent le pourcentage des meilleurs
 	def sickestest(pop, pourcent)	
 		#nb de meilleurs snek à garder 
 		@nb_breeding_pool= (pourcent*pop.length).round
@@ -156,8 +156,9 @@ class Heuristic
 
 	def max(pop)
 		max=0
-		pop.each do |snek| 
-			max =  @score_pop[snek] if  @score_pop[snek] > max
+		pop.each do |snek, score| 
+			puts "score #{score}"
+			max =  score if  score > max
 		end
 		return max
 	end
