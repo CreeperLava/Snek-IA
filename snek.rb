@@ -43,13 +43,13 @@ class Snek
 		old_head = head
 		case key # and move head
 			when "\e[A" # up
-				pos.unshift [@pos.first[0]+1, @pos.first[1]]
+				@pos.unshift [@pos.first[0]+1, @pos.first[1]]
 			when "\e[B" # down
-				pos.unshift [@pos.first[0]-1, @pos.first[1]]
+				@pos.unshift [@pos.first[0]-1, @pos.first[1]]
 			when "\e[C" # right
-				pos.unshift [@pos.first[0], @pos.first[1]+1]
+				@pos.unshift [@pos.first[0], @pos.first[1]+1]
 			when "\e[D" # left
-				pos.unshift [@pos.first[0], @pos.first[1]-1]
+				@pos.unshift [@pos.first[0], @pos.first[1]-1]
 		end
 		snake_ate = (head == food)
 		@pos.pop unless snake_ate # remove tail
