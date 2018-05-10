@@ -58,8 +58,9 @@ class Heuristic
 				p= @random.rand(5)
 				puts " p = #{p}"
 				weight.push p
-				puts " #{weight}"
+				
 			end
+			puts " #{weight}"
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
 			
 			
