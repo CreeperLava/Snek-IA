@@ -70,4 +70,12 @@ class Snek
 	def to_s
 		return "Snek #{@pos}"
 	end
+	
+	def getWeigths()
+		return @weights
+	end
+	
+	def setWeights(a)
+		@weights = a
+	end
 end
