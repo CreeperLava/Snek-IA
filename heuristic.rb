@@ -91,16 +91,18 @@ class Heuristic
 	end
 	
 	def genetic_algorithm
-		population = rand_population(50)
+		population = rand_population(@taille_pop)
 		@nb_iterations.times do |i|
 			#meilleurs individus
 			sneks_to_breed = best(population)
 			#nouvelle population
+			@best_snek = sickestest(sneks_to_breed, (1/@taille_pop))
 			children = children(sneks_to_breed)
 			puts "[SNEK][DEBUG][genetic_algorithm] Iteration #{i}"
 			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks : #{sneks_to_breed}"
 			puts "[SNEK][DEBUG][genetic_algorithm] Children of best sneks : #{children}"
 		end
+		puts "Sickestest snek after #{i} iterations : #{@best_snek}
 	end
 
 	def one_move
