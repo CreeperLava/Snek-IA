@@ -37,7 +37,7 @@ class Heuristic
 
 	#Fitnesse pour chacun des moves du snek
 	def calcFitness(game_sim)
-		fitness
+		fitness = 0
 		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
 		
 		@heuristic[1] = game_sim.snek.weights[1]*game_sim.score 
