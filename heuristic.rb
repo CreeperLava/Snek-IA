@@ -122,11 +122,9 @@ class Heuristic
 
 		#faire jouer le snek
 		@moves.each do |m| 
-			p "snek avant : #{@game_snek.snek}"
 			game_sim=Game.new(false,true,@game_snek.snek)
 			game_sim.food=@game_snek.food
 			game_sim.snek.pos = @game_snek.snek.pos.clone
-			p "snek apres : #{game_sim.snek}"
 			game_sim.next_frame(m)	
 			@fitness=calcFitness(game_sim)	
 			puts " fit = #{@fitness}"
@@ -140,12 +138,11 @@ class Heuristic
 
 	#On va faire jouer tous les sneks et voir qui sont les meilleurs avec sickestest
 	def best(pop)
-		puts " on est là"
 		@score_pop = Hash.new
 		
 		pop.each do |snek| 
 			@game_snek = Game.new(true, true, snek)
-			
+			puts " #{snek}"
 			# On joue jusqu'à la mort 
 			@game_snek.next_frame one_move until @game_snek.game_over?				
 			
