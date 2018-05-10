@@ -56,7 +56,8 @@ class Heuristic
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
 		end
 		
-		puts "[SNEK][DEBUG][rand_population] First 10 individuals of population : #{pop[0..10]}"
+		puts "[SNEK][DEBUG][rand_population] First 10 individuals of population :"
+		puts pop[0..10]
 		return pop
 	end
 
