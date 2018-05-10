@@ -158,7 +158,7 @@ class Game
     head_y = @snek.head[1]
     hit = @snek.pos.select { |e| e == [head_x, head_y] } # we hit ourselves if there is another tile of the snek with the coordinates of the head
     # if we hit a wall or ourselves, return true
-    if head_x < 0 || head_x > @size_x || head_y < 0 || head_y > @size_y || hit.length != 1
+    if head_x < 0 || head_x >= @size_x || head_y < 0 || head_y >= @size_y || hit.length != 1
       return true
     end
     false
