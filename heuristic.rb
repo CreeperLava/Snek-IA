@@ -138,7 +138,7 @@ class Heuristic
 		@score_pop = Hash.new
 		
 		pop.each do |snek| 
-			@game_snek = Game.new(true, true, snek)
+			@game_snek = Game.new(false, true, snek)
 			puts " On joue avec : #{snek}"
 			# On joue jusqu'à la mort 
 			@game_snek.next_frame one_move until @game_snek.game_over?				
