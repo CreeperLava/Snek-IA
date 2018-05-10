@@ -66,7 +66,6 @@ class Heuristic
 			
 		end
 		
-		puts " Sneks = #{pop}"
 		
 		puts "[SNEK][DEBUG][rand_population] First 10 individuals of population :"
 		puts pop[0..10]
@@ -169,7 +168,7 @@ class Heuristic
 	def max(pop)
 		max=0
 		pop.each do |snek, score| 
-
+			puts"#{score}"
 			max =  score if  score > max
 		end
 		return max
