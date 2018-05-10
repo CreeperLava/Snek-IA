@@ -158,4 +158,4 @@ class Heuristic
 	end
 end
 
-
+Heuristic.new
