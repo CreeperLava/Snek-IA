@@ -54,6 +54,7 @@ class Game
   end
 
   def init_snek
+    return if game_over?
   	h = @snek.head
   	@board[h[0]][h[1]] = '^'
   end
@@ -163,7 +164,7 @@ class Game
     end
     false
   end
-    
+
   def distance_from_food
     return Math.sqrt(((@snek.head[0] - @food[0])**2)+((@snek.head[1] - @food[1])**2))
   end
