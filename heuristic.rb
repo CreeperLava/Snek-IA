@@ -4,7 +4,20 @@ include './snek.rb'
 class Heuristic
 	def initialize
 		@nb_iterations = 1000
-		@taille_pop=50
+		@taille_pop = 50
+		@percent_best_snek = 0.1
+		
+		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
+		custom = scanf("%c").first
+		if custom == 'y'
+			puts "[SNEK][RUN][initialize] Type the size of the snek population"
+			@taille_pop = scanf("%d").first
+			puts "[SNEK][RUN][initialize] Type how many times the algorithm must iterate"
+			@nb_iterations = scanf("%d").first
+			puts "[SNEK][RUN][initialize] Type the percentage of best sneks that must be used for the next generation"
+			@percent_best_snek = scanf("%d").first
+		end
+		
 		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime"
 		@heuristic = []
 
