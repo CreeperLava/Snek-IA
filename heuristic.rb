@@ -133,6 +133,7 @@ class Heuristic
 
 	#On va faire jouer tous les sneks et voir qui sont les meilleurs avec sickestest
 	def best(pop)
+		puts " on est là"
 		@score_pop = Hash.new
 		
 		pop.each do |snek| 
