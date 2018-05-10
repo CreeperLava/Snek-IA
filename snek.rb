@@ -2,7 +2,7 @@
 # class for individual snakes
 
 class Snek
-	attr_accessor :id
+	attr_accessor :id, :weights
 	@@id = 0
 
 	def initialize(pos_x, pos_y)
@@ -77,13 +77,5 @@ class Snek
 
 	def to_str
 		return "S p:#{@pos} w:#{@weights}"
-	end
-
-	def getWeigths()
-		return @weights
-	end
-
-	def setWeights(a)
-		@weights = a
 	end
 end
