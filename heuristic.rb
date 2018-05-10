@@ -54,7 +54,7 @@ class Heuristic
 			weight = []
 			@heuristic.length.times do weight.push random.rand(5) end
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
-			puts "#{wieght}"
+			puts "#{weight}"
 		end
 		
 		puts "[SNEK][DEBUG][rand_population] First 10 individuals of population :"
