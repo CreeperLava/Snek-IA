@@ -14,7 +14,7 @@ require 'io/console'
 #
 
 class Game
-  attr_accessor :size_x, :size_y, :food, :score
+  attr_accessor :size_x, :size_y, :food, :score, :snek
 
   def initialize(display, ai, snek)
     @display = display # is display of the game activated or not
