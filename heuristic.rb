@@ -50,7 +50,7 @@ class Heuristic
 		n.times do
 			weight = []
 			heuristic.length.times do weight.push random.rand(5) end
-			pop.push Snek.new(((@game.@size_x)/2),((@game.@size_y)/2), weight)
+			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
 		end
 		
 		puts "[SNEK][DEBUG][rand_population] First 10 individuals of population : #{pop[0..10]}"
@@ -77,9 +77,9 @@ class Heuristic
 		#On rempli la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
 		for i in @taille_pop-1..(pop.length)
 			if i < pop.length
-				children[i]= Snek.new(((@game.@size_x)/2),((@game.@size_y)/2),child(pop[i],pop[i+1]))
+				children[i]= Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[i+1]))
 			end
-			else children[i]= Snek.new(((@game.@size_x)/2),((@game.@size_y)/2),child(pop[i],pop[0]))
+			else children[i]= Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[0]))
 		end
 		return children
 	end
