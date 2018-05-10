@@ -124,7 +124,8 @@ class Heuristic
 			game_sim=@game_snek
 			game_sim.next_frame(m)	
 			@fitness=calcFitness(game_sim)	
-			if @fitness > @best_fit[1]
+			puts " fit = #{@fitness}"
+			if @fitness > best_fit[1]
 				best_fit[0]=m
 				best_fit[1]=@fitness
 			end
