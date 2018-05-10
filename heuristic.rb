@@ -2,7 +2,6 @@ include './game.rb'
 include './snek.rb'
 
 class Heuristic
-
 	def initialize
 		@nb_iterations = 1000
 		@taille_pop=50
