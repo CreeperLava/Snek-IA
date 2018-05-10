@@ -5,6 +5,7 @@ class Heuristic
 
 	def initialize
 		@nb_iterations = 1000
+		@taille_pop=50
 		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime"
 		@heuristic = []
 
@@ -12,6 +13,8 @@ class Heuristic
 		@food = game.food_pos
 		puts "[SNEK][DEBUG][initialize] Initial position of food : #{@food}"
 		random = Random.new
+		
+		genetic_algorithm
 	end
 	
 
@@ -56,8 +59,10 @@ class Heuristic
 	#crée tous les enfants et remplissasse la population
 	def children(pop)
 		children = []
-		#On rempli la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamismes quoi
-		for i in 0..(pop.length)
+		#On rempli avec des nouveaux sneks random
+		children = rand_population(@taille_pop-pop.length)
+		#On rempli la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
+		for i in @taille_pop-1..(pop.length)
 			if i < pop.length
 				children[i]= Snek.new(((@game.@size_x)/2),((@game.@size_y)/2),child(pop[i],pop[i+1]))
 			end
