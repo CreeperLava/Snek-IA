@@ -165,6 +165,7 @@ class Heuristic
 			for i in 0..random.rand(newWeights.length)
 				newWeights[random.rand(newWeights.length)] = random.rand(5)
 			end
+			snek.setWeights(newWeights)
 		end
 	end
 end
