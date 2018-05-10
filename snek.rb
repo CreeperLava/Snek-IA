@@ -1,11 +1,16 @@
 #https://github.com/han-gyeol/Genetic-Algorithm-Snake/blob/master/heuristic.js
 
+
 # class for individual snakes
 class Snek
+	attr_accessor :id
+	@@id = 0
+	
 	def initialize(pos_x, pos_y)
 		@pos = [pos_x, pos_y] # coordinates of the snek's body, from head to tail
 
 		# weights
+		@id = @@id + 1
 		@weights= []
 		random = Random.new
 		@w_staying_alive = random.rand(5)
