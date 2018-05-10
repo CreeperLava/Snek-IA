@@ -143,7 +143,7 @@ class Heuristic
 			# On joue jusqu'à la mort 
 			@game_snek.next_frame one_move until @game_snek.game_over?				
 			
-
+			puts" score pour le snek : #{@game_snek.score}"
 			# le snek est mort, l'ajouter à la hash map
 			@score_pop[snek] = @game_snek.score
 		end
