@@ -1,5 +1,6 @@
 include './game.rb'
 include './snek.rb'
+require 'scanf'
 
 class Heuristic
 	def initialize
