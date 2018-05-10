@@ -126,6 +126,8 @@ class Game
   # edit snek pos
   def move_snek move
     @just_ate,old_head = @snek.move(move,food)
+
+    return if game_over?
     @board[old_head[0]][old_head[1]] = ' '
     @board[@snek.head[0]][@snek.head[1]] = '^' # move head to new position
 
