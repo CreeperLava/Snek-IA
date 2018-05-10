@@ -102,7 +102,7 @@ class Heuristic
 			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks : #{sneks_to_breed}"
 			puts "[SNEK][DEBUG][genetic_algorithm] Children of best sneks : #{children}"
 		end
-		puts "Sickestest snek after #{i} iterations : #{@best_snek}
+		puts "Sickestest snek after #{i} iterations : #{@best_snek}"
 	end
 
 	def one_move
