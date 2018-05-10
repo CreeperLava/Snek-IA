@@ -102,7 +102,7 @@ class Heuristic
 	
 	def genetic_algorithm
 		population = rand_population(@taille_pop)
-		puts " population : #{population}
+		puts " population : #{population}"
 		@nb_iterations.times do |i|
 			#meilleurs individus
 			sneks_to_breed = best(population)
