@@ -78,8 +78,8 @@ class Heuristic
 		for i in @taille_pop-1..(pop.length)
 			if i < pop.length
 				children[i]= Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[i+1]))
-			end
 			else children[i]= Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[0]))
+			end
 		end
 		return children
 	end
