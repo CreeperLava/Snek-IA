@@ -24,7 +24,7 @@ class Heuristic
 		@nb_heuristic = 2
 		@heuristic = Array.new(@nb_heuristic)
 
-		@moves=["e\[A","e\[B","e\[C","e\[D"]   # up, down, right, left
+		@moves=["\e[A","\e[B","\e[C","\e[D"]   # up, down, right, left
 		
 		@game = Game.new(true, true, Snek.new(25, 25, []))
 		@food = @game.food
