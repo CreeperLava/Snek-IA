@@ -1,58 +1,52 @@
 include './game.rb'
 include './snek.rb'
 
-
-########
-#rajouter dans le jeu un truc pour accéder à la position de la food
-
-
-
-
 class Heuristic
 
 	def initialize
 		@nb_iterations = 1000
+		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime"
 		@heuristic = []
 
 		@moves=["e\[A","e\[B","e\[C","e\[D"]   # up, down, right, left
-		@food= game.food_pos
+		@food = game.food_pos
+		puts "[SNEK][DEBUG][initialize] Initial position of food : #{@food}"
 		random = Random.new
 	end
 	
 
 	#Fitnesse pour chacun des moves du snek
 	def calcFitness	
-
-		
-		heuristic[0]= @snek.weights[0]*@game_sim.distance_from_food
-		heuristic[1]=@snek.weights[1]*@game_sim.score 
+		heuristic[0] = @snek.weights[0]*@game_sim.distance_from_food
+		heuristic[1] = @snek.weights[1]*@game_sim.score 
 			
-		for i in @heuristic.length
-			@fitness+=heuristic[i]
-			end
-		end	
-
+		@heuristic.each do |h|
+			@fitness.push h
+		end
+		
+		puts "[SNEK][DEBUG][calcFitness] Heuristics : #{@fitness}"
 		return @fitness
 	end
 
 	def rand_population(n)
-		pop=[]
+		pop = []
 	
-		n.times{
-			weight=[]
-			heuristic.length.times weight.push random.rand(5)	
+		n.times do
+			weight = []
+			heuristic.length.times do weight.push random.rand(5) end
 			pop.push Snek.new(((@game.@size_x)/2),((@game.@size_y)/2), weight)
-			
-		}
+		end
+		
+		puts "[SNEK][DEBUG][rand_population] First 10 individuals of population : #{pop[0..10]}"
 		return pop
 	end
 
-	#crée un enfant, (un tableau de poids donc) à partir de deux parents
+	# crée un enfant, (un tableau de poids donc) à partir de deux parents
 	def child(s1,s2)
-		poids= []
+		poids = []
 		#pour chaque poids dans chaque tableau de pois des deux sneks
 		[s1.weights,s2.weights].each_with_index  do |w1,w2, i|
-			poids[i]= [w1,w2].sample
+			poids[i] = [w1,w2].sample
 			
 			#Mutation à rajouter
 		end
@@ -68,27 +62,26 @@ class Heuristic
 				children[i]= Snek.new(((@game.@size_x)/2),((@game.@size_y)/2),child(pop[i],pop[i+1]))
 			end
 			else children[i]= Snek.new(((@game.@size_x)/2),((@game.@size_y)/2),child(pop[i],pop[0]))
-			
 		end
-		
-	return children
+		return children
 	end
+	
 	def genetic_algorithm
 	
 		population= rand_population(50)
-		@nb_iterations.times {
-		#meilleurs individus
-		sneks_to_breed = best(population)
-		#nouvelle population
-		children = children(sneks_to_breed)
-
-		}
-		
+		@nb_iterations.times do |i|
+			#meilleurs individus
+			sneks_to_breed = best(population)
+			#nouvelle population
+			children = children(sneks_to_breed)
+			puts "[SNEK][DEBUG][genetic_algorithm] Iteration #{i}"
+			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks : #{sneks_to_breed}"
+			puts "[SNEK][DEBUG][genetic_algorithm] Children of best sneks : #{children}"
+		end
 	end
 
 	def one_move
 		game_sim=@game_snek
-
 		best_fit=["",0]
 
 		#faire jouer le snek
