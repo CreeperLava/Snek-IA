@@ -90,12 +90,10 @@ class Game
   # store empty tiles where food can spawn
   def init_free_tiles
     @free_tiles = []
-    i = 0
-    (1..@size_y-1).each do |y|
+    (1..@size_y-1).each.with_index do |y,i|
       (1..@size_x-1).each do |x|
         @free_tiles[y*i+x] = [x, y]
       end
-      i+=1
     end
     @free_tiles.delete(@snek.head)
   end
@@ -111,8 +109,11 @@ class Game
   end
 
   def new_food
-    a = @rng.rand(@free_tiles.length)
-    a = 1 if a.nil?
+  	xr = @rng.rand(1..@size_x-1)
+    yr = @rng.rand(1..@size_y-1)
+    ir = @rng.rand(1..@size_y-1)
+    a = yr*ir+xr
+
     @food = [@free_tiles[a][0], @free_tiles[a][1]] # new position of food, within borders
   end
 
