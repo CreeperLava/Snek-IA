@@ -5,8 +5,8 @@ require 'scanf'
 class Heuristic
 	@@mutation_rate = 0.9
 	def initialize
-		@nb_iterations = 1000
-		@taille_pop = 50
+		@nb_iterations = 2
+		@taille_pop = 20
 		@percent_best_snek = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
@@ -105,7 +105,9 @@ class Heuristic
 			#meilleurs individus
 			sneks_to_breed = best(population)
 			#nouvelle population
-			@best_snek = sickestest(sneks_to_breed, (1/@taille_pop))
+			puts "breed pool : #{sneks_to_breed}"
+			@best_snek = max(sneks_to_breed)
+			puts " best snek pour l'instant : #{@best_snek}"
 			children = children(sneks_to_breed)
 			puts "[SNEK][DEBUG][genetic_algorithm] Iteration #{i}"
 			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks : #{sneks_to_breed}"
@@ -116,7 +118,7 @@ class Heuristic
 
 	def one_move
 
-		best_fit=["",-1]
+		best_fit=["",-2]
 
 		#faire jouer le snek
 		@moves.each do |m|
@@ -157,22 +159,29 @@ class Heuristic
 		#nb de meilleurs snek à garder
 		@nb_breeding_pool= (pourcent*pop.length).round
 
-		sneks_to_breed = [@nb_breeding_pool]
+		sneks_to_breed = []
 		#on prend le meilleur et on l'enlève de la pop, pour recommencer jusqu'à temps qu'on ai les 10% de meilleurs sneks dans 'sneks_to_breed'
-		@nb_breeding_pool.times do
+		@nb_breeding_pool.times do |i|
 			best = max(pop)
+			puts " best snake : #{best}"
 			pop.delete(best)
+			sneks_to_breed.push best
 		end
+		puts "SNEK TO BREED PUTAIN #{sneks_to_breed}"
 		return sneks_to_breed
 	end
 
 	def max(pop)
 		max=0
-		p "here",pop
+		max_snek = nil
 		pop.each do |snek, score|
+			
+			puts "max         #{snek}"
 			max =  score if score >= max
+			max_snek = snek
 		end
-		return max
+		
+		return max_snek
 	end
 
 	def mutate(sneks)
