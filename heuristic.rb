@@ -56,7 +56,7 @@ class Heuristic
 			
 			#Mutation à rajouter
 		end
-
+		return poids
 	end
 
 	#crée tous les enfants et remplissasse la population
@@ -70,6 +70,8 @@ class Heuristic
 			else children[i]= Snek.new(((@game.@size_x)/2),((@game.@size_y)/2),child(pop[i],pop[0]))
 			
 		end
+		
+	return children
 	end
 	def genetic_algorithm
 	
