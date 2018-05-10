@@ -14,8 +14,8 @@ require 'io/console'
 #
 
 class Game
-  attr_accessor :size_x, :size_y, :food, :score, :snek
-
+  attr_accessor :size_x, :size_y, :food
+  
   def initialize(display, ai, snek)
     @display = display # is display of the game activated or not
     @ai = ai # is snek controlled by an AI or a human
@@ -34,7 +34,9 @@ class Game
     # init to ' ' except for borders (*,|,_), food(x) and snek head (^)
     # create array to store list of free tiles -> avoid looking up the whole matrix
 
-    @board = Array.new(@size_x, ' ') { Array.new(@size_y, ' ') } # store the game's board in a matrix, stored line by line. board[2][14] -> line 2, column 14
+    @board = [[]] # store the game's board in a matrix, stored line by line. board[2][14] -> line 2, column 14
+    init_board
+    init_free_tiles # store the empty tiles of the board
     init_snek
     new_food
 
@@ -50,16 +52,54 @@ class Game
         end
       end
     end
-    # if ai, heuristics takes over and plays the frames one by one itself
+  end
+
+  def init_board
+    (0..@size_y).each do |y| @board[y] = [] end
+
+    # top border (y=0)
+    @board[0][0] = '*'
+    (1..@size_x-1).each do |x|
+      @board[0][x] = '_'
+    end
+    @board[0][@size_x] = '*'
+
+    # inside (y=1..49) and vertical borders (x=0, x=50)
+    (1..@size_y-1).each do |y|
+      @board[y][0] = '|'
+      (1..@size_x-1).each do |x|
+        @board[y][x] = ' '
+      end
+      @board[y][@size_x] = '|'
+    end
+
+    # bottom border (y=50)
+    @board[@size_y][0] = '*'
+    (1..@size_x-1).each do |x|
+      @board[@size_y][x] = '_'
+    end
+    @board[@size_y][@size_x] = '*'
   end
 
   def init_snek
-  	h = @snek.head
-  	@board[h[0]][h[1]] = '^'
+    @snek.head do |x, y|
+      @board[y][x] = '^'
+    end
+  end
+
+  # store empty tiles where food can spawn
+  def init_free_tiles
+    @free_tiles = []
+    (1..@size_y-1).each.with_index do |y,i|
+      (1..@size_x-1).each do |x|
+        @free_tiles[y*i+x] = [x, y]
+      end
+    end
+    @free_tiles.delete(@snek.head)
   end
 
   def free_tile?(x, y)
-    return @board[x][y] == ' '
+    return @free_tiles.find_index([x, y]) != nil
   end
 
   # play the game
@@ -67,31 +107,26 @@ class Game
     # check if game is over each frame
     next_frame @last_key_pressed until game_over?
   end
-
+  def distance_from_food
+    return Math.sqrt(((@snek.head[0] - @food[0]) ** 2)+(@snek.head[1] - @food[1])**2))
+  end
   def new_food
-  	i = @rng.rand((@size_x-1)*(@size_y-1) - @snek.size - 1) # i-ième case du board
+  	xr = @rng.rand(1..@size_x-1)
+    yr = @rng.rand(1..@size_y-1)
+    ir = @rng.rand(1..@size_y-1)
+    a = yr*ir+xr
 
-	0.upto(@size_x) do |x|
-		0.upto(@size_y) do |y|
-			if i <= 0 && @board[x][y] == ' '
-				@food = [x,y]
-				@board[x][y] = 'x'
-				return
-			else
-				i -= 1
-			end
-		end
-	end
+    @food = [@free_tiles[a][0], @free_tiles[a][1]] # new position of food, within borders
   end
 
   # for each frame, run game logic
   def next_frame move
     if @ai
       # await the AI's decision -> call a method from heuristic
-      move_snek move
+      move_snek
     else
       read_char # get key pressed
-      move_snek move
+      move_snek
       sleep(1) # 1 FPS 1080p
     end
 
@@ -114,7 +149,7 @@ class Game
     STDIN.echo = true
     STDIN.cooked!
 
-    if input == "\e[A" || input == "\e[B" || input == "\e[C" || input == "\e[D"
+    if input == "\e[A" || key == "\e[B" || key == "\e[C" || key == "\e[D"
       @last_key_pressed = input
     end
   end
@@ -123,40 +158,53 @@ class Game
   # edit free tiles
   # edit matrix
   # edit snek pos
-  def move_snek move
-    @just_ate = @snek.move(move,food)
-    @board[@snek.head[0]][@snek.head[1]] = '^' # move head to new position
+  def move_snek
+    @snek.move(@last_key_pressed, @just_ate)
 
-    # if snek just ate, it grew, so leave tail
-    unless @just_ate
-      new_food
+    if @just_ate # if snake ate, it grew, thus don't remove tail
+      @board[@snek.tail[1]][@snek.tail[0]] = ' '
+      @free_tiles.push(@snek.tail)
       @just_ate = false
-	  @board[@snek.tail[0]][@snek.tail[1]] = ' ' # remove tail
     end
 
-    @board[@snek.pos[1][0]][@snek.pos[1][1]] = '~' unless @snek.pos.length == 1
+    @board[@snek.head[1]][@snek.head[0]] = '^'
+    @free_tiles.delete(@snek.head)
+    @board[@snek.pos[1][1]][@snek.pos[1][0]] = '~'
   end
 
   def draw!
     # check if it is possible to keep the StringIO from frame to frame and just edit what changed, then rewind and read
-    @size_x.times do |x|
-      puts @board[x].join
+    str = StringIO.new
+
+    @size_y.times do |y|
+      p @board[y].to_s
+      str.printf("%s\n", @board[y].to_s)
     end
 
-   # str.rewind
-   # puts str.read
-   # str.rewind
-   # str
+    str.rewind
+    puts str.read
+    str.rewind
+    str
+  end
+
+  def food
+    return @food
+  end
+  
+  def score
+    return @score
   end
 
   def game_over?
     head_x = @snek.head[0]
     head_y = @snek.head[1]
-    hit = @snek.pos.select { |e| e == [head_x, head_y] } # we hit ourselves if there is another tile of the snek with the coordinates of the head
+    hit = @snek.pos.find_all { |e| e == [head_x, head_y] } # we hit ourselves if there is another tile of the snek with the coordinates of the head
     # if we hit a wall or ourselves, return true
-    if head_x < 0 || head_x > @size_x || head_y < 0 || head_y > @size_y || hit.length != 1
+    if head_x <= 0 || head_x >= 50 || head_y <= 0 || head_y >= 50 || hit.length != 1
       return true
     end
     false
   end
 end
+
+Game.new(true, true, Snek.new(25, 25, []))
