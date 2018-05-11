@@ -12,7 +12,7 @@ class Heuristic
 		@percent_best_snek = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
-		# custom = scanf("%c").first
+		custom = ' ' # scanf("%c").first
 		if custom == 'y'
 			puts "[SNEK][RUN][initialize] Type the size of the snek population"
 			@taille_pop = scanf("%d").first
