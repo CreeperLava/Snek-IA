@@ -48,7 +48,6 @@ class Heuristic
 		@heuristic.each do |h|
 			fitness += h
 		end
-		puts "[SNEK][DEBUG][calcFitness] LA FITNESS DU SNEK NIL : #{fitness}" if @debug
 		return fitness
 	end
 
@@ -137,10 +136,25 @@ class Heuristic
 			game_sim.snek.pos = @game_snek.snek.pos.clone
 			game_sim.next_frame(m)
 			@fitness = calcFitness(game_sim)
-			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}" if @debug
 
 			best_fit = [m, @fitness] if @fitness > best_fit[1]
 		end
+
+		if @debug
+			move = ""
+			case best_fit[0]
+			when "\e[A" # up
+				move = "up"
+			when "\e[B" # down
+				move = "down"
+			when "\e[C" # right
+				move = "right"
+			when "\e[D" # left
+				move = "left"
+			end
+			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}, snek moving #{move}"
+		end
+
 		return best_fit[0]
 	end
 

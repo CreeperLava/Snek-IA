@@ -134,6 +134,7 @@ class Game
 
     # if snek just ate, it grew, so leave tail
     if @just_ate
+      @score += 1
       new_food
       @just_ate = false
 	  @board[@snek.tail[0]][@snek.tail[1]] = ' ' # remove tail
