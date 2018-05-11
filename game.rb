@@ -166,9 +166,9 @@ class Game
   end
 
   def distance_from_food
-    return Math.sqrt(((@snek.head[0] - @food[0])**2)+((@snek.head[1] - @food[1])**2))
+    return Math.sqrt(((@snek.head[0] - @food[0])**2)+((@snek.head[1] - @food[1])**2)).to_f
   end
-	  
+
   def squareness
   	xmax = @snek.head[0]
   	ymax = @snek.head[1]
@@ -186,8 +186,8 @@ class Game
   	row = (ymin/@scale)
   	col = (xmin/@scale)
 
-  	row.upto(ymax/@scale) do |r|
-  		col.upto(xmax/@scale) do |c|
+  	row.upto(ymax/@scale-1) do |r|
+  		col.upto(xmax/@scale-1) do |c|
   			blankcount += 1 if @board[row][col] == ' '
   		end
   	end
@@ -196,31 +196,31 @@ class Game
   end
 
   def compactness
-    count = 0.0
-    1.upto(@snek.size-1) do |i|
-      1.upto(@snek.size-1) do |j|
-        if ((@snek.pos[i][0] + @scale == @snek.pos[j][0] && @snek.pos[i][1] == @snek.pos[j][1]) ||
-         (@snek.pos[i][0] - @scale == @snek.pos[j][0] && @snek.pos[i][1] == @snek.pos[j][1]) ||
-         (@snek.pos[i][0] == @snek.pos[j][0] && @snek.pos[i][1] + @scale == @snek.pos[j][1]) ||
-         (@snek.pos[i][0] == @snek.pos[j][0] && @snek.pos[i][1] - @scale == @snek.pos[j][1]))
-              count += 1
-            end
-      end
-      if ((@snek.pos[i][0] + @scale == @snek.head[0] && @snek.pos[i][1] == @snek.head[1]) ||
-       (@snek.pos[i][0] - @scale == @snek.head[0] && @snek.pos[i][1] == @snek.head[1]) ||
-       (@snek.pos[i][0] == @snek.head[0] && @snek.pos[i][1] + @scale == @snek.head[1]) ||
-       (@snek.pos[i][0] == @snek.head[0] && @snek.pos[i][1] - @scale == @snek.head[1]))
-           count += 1
-    end
-    end
-    1.upto(@snek.size-1) do |j|
+  	count = 0.0
+  	1.upto(@snek.size-1) do |i|
+  		1.upto(@snek.size-1) do |j|
+  			if ((@snek.pos[i][0] + @scale == @snek.pos[j][0] && @snek.pos[i][1] == @snek.pos[j][1]) ||
+  			 (@snek.pos[i][0] - @scale == @snek.pos[j][0] && @snek.pos[i][1] == @snek.pos[j][1]) ||
+  			 (@snek.pos[i][0] == @snek.pos[j][0] && @snek.pos[i][1] + @scale == @snek.pos[j][1]) ||
+  			 (@snek.pos[i][0] == @snek.pos[j][0] && @snek.pos[i][1] - @scale == @snek.pos[j][1]))
+          		count += 1
+          	end
+  		end
+  		if ((@snek.pos[i][0] + @scale == @snek.head[0] && @snek.pos[i][1] == @snek.head[1]) ||
+  		 (@snek.pos[i][0] - @scale == @snek.head[0] && @snek.pos[i][1] == @snek.head[1]) ||
+  		 (@snek.pos[i][0] == @snek.head[0] && @snek.pos[i][1] + @scale == @snek.head[1]) ||
+  		 (@snek.pos[i][0] == @snek.head[0] && @snek.pos[i][1] - @scale == @snek.head[1]))
+       		count += 1
+		end
+  	end
+  	1.upto(@snek.size-1) do |j|
       if ((@snek.head[0] + @scale == @snek.pos[j][0] && @snek.head[1] == @snek.pos[j][1]) ||
        (@snek.head[0] - @scale == @snek.pos[j][0] && @snek.head[1] == @snek.pos[j][1]) ||
        (@snek.head[0] == @snek.pos[j][0] && @snek.head[1] + @scale == @snek.pos[j][1]) ||
        (@snek.head[0] == @snek.pos[j][0] && @snek.head[1] - @scale == @snek.pos[j][1]))
-          count += 1
+        	count += 1
       end
-    end
-  return count/@snek.size
-  end
+  	end
+	return count/@snek.size
+	end
 end
