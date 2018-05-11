@@ -4,9 +4,11 @@ require 'scanf'
 
 class Heuristic
 	@@mutation_rate = 0.9
-	def initialize
-		@nb_iterations = 20
-		@taille_pop = 10
+
+	def initialize(debug)
+		@debug = debug
+		@nb_iterations = 1000
+		@taille_pop = 50
 		@percent_best_snek = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
@@ -20,7 +22,7 @@ class Heuristic
 			@percent_best_snek = scanf("%d").first
 		end
 
-		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime"
+		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime" if @debug
 		@nb_heuristic = 4
 		@heuristic = Array.new(@nb_heuristic)
 
@@ -28,7 +30,7 @@ class Heuristic
 
 		@game = Game.new(true, true, Snek.new(25, 25, []))
 		@food = @game.food
-		puts "[SNEK][DEBUG][initialize] Initial position of food : #{@food}"
+		puts "[SNEK][DEBUG][initialize] Initial position of food : #{@food}" if @debug
 		@random = Random.new
 
 		genetic_algorithm
@@ -46,7 +48,7 @@ class Heuristic
 		@heuristic.each do |h|
 			fitness += h
 		end
-		print "LA FITNESS DU SNEK NIL : "
+		puts "[SNEK][DEBUG][calcFitness] LA FITNESS DU SNEK NIL : #{fitness}" if @debug
 		return fitness
 	end
 
@@ -63,8 +65,8 @@ class Heuristic
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
 		end
 
-		puts "[SNEK][DEBUG][rand_population] Population :"
-		puts pop
+		puts "[SNEK][DEBUG][rand_population] Population :" if @debug
+		puts pop if @debug
 		return pop
 	end
 
@@ -107,17 +109,17 @@ class Heuristic
 			# On génére une nouvelle population à partir de ceux-là
 			children = children(sneks_to_breed)
 
-			puts "[SNEK][DEBUG][genetic_algorithm] Iteration #{i}"
-			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks :"
-			puts sneks_to_breed
-			puts "[SNEK][DEBUG][genetic_algorithm] Children of best sneks"
-			puts children
+			puts "[SNEK][DEBUG][genetic_algorithm] Iteration #{i}" if @debug
+			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks :" if @debug
+			puts sneks_to_breed if @debug
+			puts "[SNEK][DEBUG][genetic_algorithm] Children of best sneks" if @debug
+			puts children if @debug
 
 			# On mute les meilleurs sneks et on reset leur position
 			mutate(sneks_to_breed)
 
-			puts "[SNEK][DEBUG][genetic_algorithm] Mutated sneks :"
-			puts sneks_to_breed
+			puts "[SNEK][DEBUG][genetic_algorithm] Mutated sneks :" if @debug
+			puts sneks_to_breed if @debug
 
 			# On merge les enfants et les parents
 			population = children + sneks_to_breed
@@ -135,7 +137,7 @@ class Heuristic
 			game_sim.snek.pos = @game_snek.snek.pos.clone
 			game_sim.next_frame(m)
 			@fitness = calcFitness(game_sim)
-			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}"
+			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}" if @debug
 
 			best_fit = [m, @fitness] if @fitness > best_fit[1]
 		end
@@ -147,11 +149,11 @@ class Heuristic
 		@score_pop = Hash.new
 		pop.each do |snek|
 			@game_snek = Game.new(false, true, snek)
-			puts "[SNEK][DEBUG][best] On joue avec : #{snek}"
+			puts "[SNEK][DEBUG][best] On joue avec : #{snek}" if @debug
 			# On joue jusqu'à la mort
 			@game_snek.next_frame one_move until @game_snek.game_over?
 
-			puts "[SNEK][DEBUG][best] Score du snek #{snek.id} : #{@game_snek.score}"
+			puts "[SNEK][DEBUG][best] Score du snek #{snek.id} : #{@game_snek.score}" if @debug
 			# le snek est mort, l'ajouter à la hash map
 			@score_pop[snek.id] = @game_snek.score
 		end
@@ -175,20 +177,17 @@ class Heuristic
 	end
 
 	def max(pop)
-		puts "[SNEK][DEBUG][max] Max de la population : "
-		puts pop
+		puts "[SNEK][DEBUG][max] Max de la population : " if @debug
 		max, max_snek = 0, nil
-			puts @score_pop
 		pop.each do |snek|
-			puts snek.id
 			max, max_snek = @score_pop[snek.id], snek  if @score_pop[snek.id] >= max
 		end
 		return max_snek
 	end
 
 	def mutate(sneks)
-		puts "[SNEK][DEBUG][mutate] On mute la population : "
-		puts sneks
+		puts "[SNEK][DEBUG][mutate] On mute la population : " if @debug
+		puts sneks if @debug
 		sneks.each do |snek|
 			snek.pos = [[25,25]]
 
@@ -200,4 +199,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new
+Heuristic.new(false)
