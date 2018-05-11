@@ -208,8 +208,8 @@ class Heuristic
 			snek.pos = [[25,25]]
 
 			next if @random.rand(1.0) <= @@mutation_rate
-			0.upto(@random.rand(snek.weights.length)) do |i|
-				snek.weights[i] = @random.rand(5.0).round(5)
+			@random.rand(snek.weights.length).times do # do random number of modifications on random indexes
+				snek.weights[@random.rand(snek.weights.length)] = @random.rand(5.0).round(5)
 			end
 		end
 	end
