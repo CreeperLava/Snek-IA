@@ -3,38 +3,11 @@
 
 class Snek
 	attr_accessor :id, :weights, :pos
-	@@id = 0
-
-	def initialize(pos_x, pos_y)
-		@pos = [[pos_x, pos_y]] # coordinates of the snek's body, from head to tail
-
-		# weights
-		@id = @@id + 1
-		@weights= []
-		random = Random.new
-		@w_staying_alive = random.rand(5)
-		@weights.push @w_staying_alive
-		@w_eating_food = random.rand(5)
-		@weights.push @w_eating_food
-
-		# 7 heuristiques par snek :
-		# - clear straight ahead
-		# - clear to the left
-		# - clear to the right
-		# - food straight ahead
-		# - food to the left
-		# - food the right
-		# - distance to food
-		# En fonction des poids assignés à ces heuristiques pour ce snek, choisir la direction : left, right, ahead
-		# on définit le best move par
-
-		# on teste chaque mouvement possible, on en calcule la fitness, on choisit le best move en fonction de la fitness la plus élevée
-		# pour chaque poids, on a une valeur à chaque tic
-		# à chaque tic, on multiplie les valeurs aux poids et on somme le tout
-		# on récupère ainsi la fitness
-	end
+	@@id_static = 0
 
 	def initialize(pos_x, pos_y, weights)
+		@id = @@id_static
+		@@id_static += 1
 		@pos = [[pos_x,pos_y]]
 		@weights = weights
 	end
@@ -70,17 +43,17 @@ class Snek
 	end
 
 	def to_s
-		return "S p:#{@pos} w:#{@weights}"
+		return "S id:#{@id} p:#{@pos} w:#{@weights}"
 	end
 
 	def to_str
-		return "S p:#{@pos} w:#{@weights}"
+		return "S id:#{@id} p:#{@pos} w:#{@weights}"
 	end
-	
+
 	def getWeights
 		return @weights
 	end
-	
+
 	def setWeights(a)
 		@weights = a
 	end
