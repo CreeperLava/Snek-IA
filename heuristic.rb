@@ -93,7 +93,6 @@ class Heuristic
 				children[i] = Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[0]))
 			end
 		end
-		mutate(children)
 		return children
 	end
 
@@ -104,14 +103,25 @@ class Heuristic
 			sneks_to_breed = best(population)
 			# On génére une nouvelle population à partir de ceux-là
 			children = children(sneks_to_breed)
-			# Le meilleur snek
-			@best_snek = max(sneks_to_breed) if (i+1) == @nb_iterations
 
 			puts "[SNEK][DEBUG][genetic_algorithm] Iteration #{i}"
 			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks :"
 			puts sneks_to_breed
 			puts "[SNEK][DEBUG][genetic_algorithm] Children of best sneks"
 			puts children
+
+			# On mute les meilleurs sneks et on reset leur position
+			mutate(sneks_to_breed)
+
+			puts "[SNEK][DEBUG][genetic_algorithm] Mutated sneks :"
+			puts sneks_to_breed
+
+			# On merge les enfants et les parents
+			population = children + sneks_to_breed
+
+			# Le meilleur snek
+			@best_snek = max(sneks_to_breed) if (i+1) == @nb_iterations
+
 		end
 		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek}"
 	end
@@ -177,6 +187,8 @@ class Heuristic
 		puts "[SNEK][DEBUG][mutate] On mute la population : "
 		puts sneks
 		sneks.each do |snek|
+			snek.pos = [[25,25]]
+
 			next if @random.rand(1.0) <= @@mutation_rate
 			0.upto(@random.rand(snek.weights.length)) do |i|
 				snek.weights[i] = @random.rand(5.0).round(5)
