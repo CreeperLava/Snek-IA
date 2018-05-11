@@ -49,12 +49,4 @@ class Snek
 	def to_str
 		return "S id:#{@id} p:#{@pos} w:#{@weights}"
 	end
-
-	def getWeights
-		return @weights
-	end
-
-	def setWeights(a)
-		@weights = a
-	end
 end

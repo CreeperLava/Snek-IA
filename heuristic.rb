@@ -63,8 +63,8 @@ class Heuristic
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
 		end
 
-		puts "[SNEK][DEBUG][rand_population] First 10 individuals of population :"
-		puts pop[0..10]
+		puts "[SNEK][DEBUG][rand_population] Population :"
+		puts pop
 		return pop
 	end
 
@@ -177,12 +177,10 @@ class Heuristic
 		puts "[SNEK][DEBUG][mutate] On mute la population : "
 		puts sneks
 		sneks.each do |snek|
-			next if @random.rand >= @@mutation_rate
-			newWeights = snek.getWeights()
-			for i in 0..@random.rand(newWeights.length)
-				newWeights[@random.rand(newWeights.length)] = @random.rand(5.0).round(5)
+			next if @random.rand(1.0) <= @@mutation_rate
+			0.upto(@random.rand(snek.weights.length)) do |i|
+				snek.weights[i] = @random.rand(5.0).round(5)
 			end
-			snek.setWeights(newWeights)
 		end
 	end
 end
