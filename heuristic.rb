@@ -5,8 +5,8 @@ require 'scanf'
 class Heuristic
 	@@mutation_rate = 0.9
 	def initialize
-		@nb_iterations = 2
-		@taille_pop = 20
+		@nb_iterations = 20
+		@taille_pop = 10
 		@percent_best_snek = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
@@ -42,6 +42,7 @@ class Heuristic
 		@heuristic[1] = game_sim.snek.weights[1]*game_sim.score
 		@heuristic[2] = game_sim.snek.weights[2]*game_sim.squareness
 		@heuristic[3] = game_sim.snek.weights[3]*game_sim.compactness
+
 		@heuristic.each do |h|
 			fitness += h
 		end
@@ -56,14 +57,11 @@ class Heuristic
 			weight = []
 
 			@nb_heuristic.times do
-				p= @random.rand(5.0)
+				p = @random.rand(5.0).round(5)
 				weight.push p
 			end
 			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
-
-
 		end
-
 
 		puts "[SNEK][DEBUG][rand_population] First 10 individuals of population :"
 		puts pop[0..10]
@@ -101,38 +99,36 @@ class Heuristic
 
 	def genetic_algorithm
 		population = rand_population(@taille_pop)
-		puts " population : #{population}"
 		@nb_iterations.times do |i|
-			#meilleurs individus
+			# Renvoie les 10% des meilleurs individus
 			sneks_to_breed = best(population)
-			#nouvelle population
-			puts "breed pool : #{sneks_to_breed}"
-			@best_snek = max(sneks_to_breed)
-			puts " best snek pour l'instant : #{@best_snek}"
+			# On génére une nouvelle population à partir de ceux-là
 			children = children(sneks_to_breed)
+			# Le meilleur snek
+			@best_snek = max(sneks_to_breed) if (i+1) == @nb_iterations
+
 			puts "[SNEK][DEBUG][genetic_algorithm] Iteration #{i}"
-			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks : #{sneks_to_breed}"
-			puts "[SNEK][DEBUG][genetic_algorithm] Children of best sneks : #{children}"
+			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks :"
+			puts sneks_to_breed
+			puts "[SNEK][DEBUG][genetic_algorithm] Children of best sneks"
+			puts children
 		end
-		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek[0]}"
+		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek}"
 	end
 
 	def one_move
-
-		best_fit=["",-2]
+		best_fit=["",-1]
 
 		#faire jouer le snek
 		@moves.each do |m|
-			game_sim=Game.new(false,true,@game_snek.snek.clone)
-			game_sim.food=@game_snek.food
+			game_sim = Game.new(false,true,@game_snek.snek.clone)
+			game_sim.food = @game_snek.food
 			game_sim.snek.pos = @game_snek.snek.pos.clone
 			game_sim.next_frame(m)
 			@fitness=calcFitness(game_sim)
-			puts " fit = #{@fitness}"
-			if @fitness > best_fit[1]
-				best_fit[0]=m
-				best_fit[1]=@fitness
-			end
+			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}"
+
+			best_fit = [m, @fitness] if @fitness > best_fit[1]
 		end
 		return best_fit[0]
 	end
@@ -140,14 +136,13 @@ class Heuristic
 	#On va faire jouer tous les sneks et voir qui sont les meilleurs avec sickestest
 	def best(pop)
 		@score_pop = Hash.new
-
 		pop.each do |snek|
 			@game_snek = Game.new(false, true, snek)
-			puts " On joue avec : #{snek}"
+			puts "[SNEK][DEBUG][best] On joue avec : #{snek}"
 			# On joue jusqu'à la mort
 			@game_snek.next_frame one_move until @game_snek.game_over?
 
-			puts" score pour le snek #{snek.id} : #{@game_snek.score}"
+			puts "[SNEK][DEBUG][best] Score du snek #{snek.id} : #{@game_snek.score}"
 			# le snek est mort, l'ajouter à la hash map
 			@score_pop[snek] = @game_snek.score
 		end
@@ -158,41 +153,34 @@ class Heuristic
 	#Rend les meilleurs sneks parmis une population de snek et score, avec pourvent le pourcentage des meilleurs
 	def sickestest(pop, pourcent)
 		#nb de meilleurs snek à garder
-		@nb_breeding_pool= (pourcent*pop.length).round
+		@nb_breeding_pool = (pourcent*pop.length.to_f).round
 
 		sneks_to_breed = []
 		#on prend le meilleur et on l'enlève de la pop, pour recommencer jusqu'à temps qu'on ai les 10% de meilleurs sneks dans 'sneks_to_breed'
-		@nb_breeding_pool.times do |i|
+		@nb_breeding_pool.times do
 			best = max(pop)
-			puts " best snake : #{best}"
-			pop.delete(best)
+			pop.delete best
 			sneks_to_breed.push best
 		end
-		puts "SNEK TO BREED PUTAIN #{sneks_to_breed}"
 		return sneks_to_breed
 	end
 
 	def max(pop)
-		max=0
-		max_snek = nil
+		max, max_snek = 0, nil
 		pop.each do |snek, score|
-			
-			puts "max         #{snek}"
-			max =  score if score >= max
-			max_snek = snek
+			max, max_snek = score, snek if score >= max
 		end
-		
 		return max_snek
 	end
 
 	def mutate(sneks)
-		print "la population de sneks : "
-		print sneks
+		puts "[SNEK][DEBUG][mutate] On mute la population : "
+		puts sneks
 		sneks.each do |snek|
 			next if @random.rand >= @@mutation_rate
 			newWeights = snek.getWeights()
 			for i in 0..@random.rand(newWeights.length)
-				newWeights[@random.rand(newWeights.length)] = @random.rand(5.0)
+				newWeights[@random.rand(newWeights.length)] = @random.rand(5.0).round(5)
 			end
 			snek.setWeights(newWeights)
 		end
