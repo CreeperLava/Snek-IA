@@ -194,6 +194,7 @@ class Heuristic
 
 	def max(pop)
 		puts "[SNEK][DEBUG][max] Max de la population : " if @debug
+		puts pop if @debug
 		max, max_snek = 0, nil
 		pop.each do |snek|
 			max, max_snek = @score_pop[snek.id], snek  if @score_pop[snek.id] >= max
