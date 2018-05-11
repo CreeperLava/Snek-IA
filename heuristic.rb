@@ -99,8 +99,11 @@ class Heuristic
 	def genetic_algorithm
 		population = rand_population(@taille_pop)
 		@nb_iterations.times do |i|
+			# Le meilleur snek
+
 			# Renvoie les 10% des meilleurs individus
 			sneks_to_breed = best(population)
+			@best_snek = max(sneks_to_breed) if (i+1) == @nb_iterations
 			# On génére une nouvelle population à partir de ceux-là
 			children = children(sneks_to_breed)
 
@@ -118,12 +121,8 @@ class Heuristic
 
 			# On merge les enfants et les parents
 			population = children + sneks_to_breed
-
-			# Le meilleur snek
-			@best_snek = max(sneks_to_breed) if (i+1) == @nb_iterations
-
 		end
-		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek}"
+		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek}, with a score of #{@score_pop[@best_snek.id]}"
 	end
 
 	def one_move
@@ -135,7 +134,7 @@ class Heuristic
 			game_sim.food = @game_snek.food
 			game_sim.snek.pos = @game_snek.snek.pos.clone
 			game_sim.next_frame(m)
-			@fitness=calcFitness(game_sim)
+			@fitness = calcFitness(game_sim)
 			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}"
 
 			best_fit = [m, @fitness] if @fitness > best_fit[1]
@@ -154,9 +153,9 @@ class Heuristic
 
 			puts "[SNEK][DEBUG][best] Score du snek #{snek.id} : #{@game_snek.score}"
 			# le snek est mort, l'ajouter à la hash map
-			@score_pop[snek] = @game_snek.score
+			@score_pop[snek.id] = @game_snek.score
 		end
-		sickestest_sneks = sickestest(@score_pop, 0.1)
+		sickestest_sneks = sickestest(pop, 0.1)
 		return sickestest_sneks
 	end
 
@@ -176,9 +175,13 @@ class Heuristic
 	end
 
 	def max(pop)
+		puts "[SNEK][DEBUG][max] Max de la population : "
+		puts pop
 		max, max_snek = 0, nil
-		pop.each do |snek, score|
-			max, max_snek = score, snek if score >= max
+			puts @score_pop
+		pop.each do |snek|
+			puts snek.id
+			max, max_snek = @score_pop[snek.id], snek  if @score_pop[snek.id] >= max
 		end
 		return max_snek
 	end
