@@ -223,5 +223,13 @@ class Game
       end
   	end
 	return count/@snek.size
-	end
+  end
+
+  def food_ahead
+    return @snek.head[0] == @food[0] || @snek.head[1] == @food[1]
+  end
+
+  def dead_end
+  	return @snek.head[0] == @size_x-1 || @snek.head[0] == 0 || @snek.head[1] == @size_y-1 || @snek.head[1] == 0
+  end
 end
