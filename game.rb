@@ -14,7 +14,7 @@ require 'io/console'
 #
 
 class Game
-  attr_accessor :size_x, :size_y, :food, :score, :snek
+  attr_accessor :size_x, :size_y, :food, :score, :snek, :moves_since_food
 
   def initialize(display, ai, snek)
     @display = display # is display of the game activated or not
@@ -24,8 +24,8 @@ class Game
     @scale = @size_x/@size_y  #scale of the window, used for now in heuristic
     @snek = snek
 
-    @game_over = false
-    @moves = 0
+    @moves_since_food = 0
+
     @score = 0
 
     @rng = Random.new
@@ -133,8 +133,11 @@ class Game
     @board[@snek.head[0]][@snek.head[1]] = '^' # move head to new position
 
     # if snek just ate, it grew, so leave tail
+    @score -= 1 if @moves_since_food > 100
+  	@moves_since_food += 1
     if @just_ate
       @score += 1
+      @moves_since_food = 0
       new_food
       @just_ate = false
 	  @board[@snek.tail[0]][@snek.tail[1]] = ' ' # remove tail
@@ -160,7 +163,7 @@ class Game
     head_y = @snek.head[1]
     hit = @snek.pos.select { |e| e == [head_x, head_y] } # we hit ourselves if there is another tile of the snek with the coordinates of the head
     # if we hit a wall or ourselves, return true
-    if head_x < 0 || head_x >= @size_x || head_y < 0 || head_y >= @size_y || hit.length != 1
+    if head_x < 0 || head_x >= @size_x || head_y < 0 || head_y >= @size_y || hit.length != 1 || @score < 0
       return true
     end
     false
