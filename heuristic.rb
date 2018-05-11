@@ -7,8 +7,8 @@ class Heuristic
 
 	def initialize(debug)
 		@debug = debug
-		@nb_iterations = 1000
-		@taille_pop = 50
+		@nb_iterations = 50
+		@taille_pop = 20
 		@percent_best_snek = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
@@ -199,4 +199,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(false)
+Heuristic.new(true)
