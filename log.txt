@@ -1,0 +1,6560 @@
+[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem
+[SNEK][DEBUG][initialize] Creating most smart snek with 50 iterations of smart algorime
+[SNEK][DEBUG][initialize] Initial position of food : [45, 29]
+[SNEK][DEBUG][rand_population] Population :
+S id:1 p:[[25, 25]] w:[2.63077, 0.31701, 1.98401, 2.50551, 4.38065, 3.65761]
+S id:2 p:[[25, 25]] w:[0.73258, 3.45323, 1.80746, 3.33622, 3.27369, 0.38527]
+S id:3 p:[[25, 25]] w:[1.80671, 1.83736, 4.77868, 0.73559, 2.80165, 0.17311]
+S id:4 p:[[25, 25]] w:[1.56329, 2.66591, 4.68408, 4.72042, 4.57593, 3.62057]
+S id:5 p:[[25, 25]] w:[0.85329, 3.50134, 4.001, 1.62315, 4.29601, 3.81051]
+S id:6 p:[[25, 25]] w:[1.22807, 2.69077, 3.01011, 4.54569, 3.67373, 4.76939]
+S id:7 p:[[25, 25]] w:[4.04772, 4.99122, 2.52039, 0.50731, 0.66106, 3.98675]
+S id:8 p:[[25, 25]] w:[4.11053, 3.74313, 0.72854, 1.67149, 0.79044, 0.20131]
+S id:9 p:[[25, 25]] w:[2.61754, 4.26759, 1.73074, 0.04776, 4.51595, 1.89999]
+S id:10 p:[[25, 25]] w:[0.14784, 2.44389, 1.69301, 0.60274, 1.45645, 4.49199]
+S id:11 p:[[25, 25]] w:[2.39471, 3.57239, 2.50305, 1.03553, 4.67884, 1.27408]
+S id:12 p:[[25, 25]] w:[2.13012, 1.31107, 1.07754, 0.4771, 3.4944, 3.36569]
+S id:13 p:[[25, 25]] w:[3.34334, 3.40513, 1.27713, 0.9588, 1.93883, 4.99412]
+S id:14 p:[[25, 25]] w:[2.29921, 3.32305, 2.37872, 0.7993, 4.53004, 1.06602]
+S id:15 p:[[25, 25]] w:[1.8958, 3.28327, 0.61416, 0.97751, 3.70587, 3.57934]
+S id:16 p:[[25, 25]] w:[0.46238, 4.00221, 4.91806, 4.02722, 4.8087, 4.31572]
+S id:17 p:[[25, 25]] w:[4.22007, 3.40437, 4.62878, 0.03972, 3.57722, 1.11385]
+S id:18 p:[[25, 25]] w:[2.61559, 1.1064, 0.22497, 1.93934, 1.5231, 3.96461]
+S id:19 p:[[25, 25]] w:[3.0677, 3.00934, 0.00876, 3.19211, 2.23157, 1.18894]
+S id:20 p:[[25, 25]] w:[1.61651, 4.37919, 3.10223, 2.20607, 1.25189, 3.21703]
+[SNEK][DEBUG][best] On joue avec : S id:1 p:[[25, 25]] w:[2.63077, 0.31701, 1.98401, 2.50551, 4.38065, 3.65761]
+[3, 14]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 63.575429711906786, snek moving down
+[3, 14]
+[[24, 25]]
+[SNEK][DEBUG][one_move] Fit = 61.190149362122824, snek moving down
+[3, 14]
+[[23, 25]]
+[SNEK][DEBUG][one_move] Fit = 58.82580553167122, snek moving down
+[3, 14]
+[[22, 25]]
+[SNEK][DEBUG][one_move] Fit = 56.485027357051884, snek moving down
+[3, 14]
+[[21, 25]]
+[SNEK][DEBUG][one_move] Fit = 54.170869812008746, snek moving down
+[3, 14]
+[[20, 25]]
+[SNEK][DEBUG][one_move] Fit = 51.88689486217209, snek moving down
+[3, 14]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 49.6372690855611, snek moving down
+[3, 14]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 47.426880644761994, snek moving down
+[3, 14]
+[[17, 25]]
+[SNEK][DEBUG][one_move] Fit = 45.261478485555465, snek moving down
+[3, 14]
+[[16, 25]]
+[SNEK][DEBUG][one_move] Fit = 43.14783613682267, snek moving down
+[3, 14]
+[[15, 25]]
+[SNEK][DEBUG][one_move] Fit = 41.0939410797699, snek moving down
+[3, 14]
+[[14, 25]]
+[SNEK][DEBUG][one_move] Fit = 39.10920767838311, snek moving down
+[3, 14]
+[[13, 25]]
+[SNEK][DEBUG][one_move] Fit = 37.204706134842674, snek moving left
+[3, 14]
+[[13, 24]]
+[SNEK][DEBUG][one_move] Fit = 35.393390534320105, snek moving down
+[3, 14]
+[[12, 24]]
+[SNEK][DEBUG][one_move] Fit = 33.48423552135841, snek moving left
+[3, 14]
+[[12, 23]]
+[SNEK][DEBUG][one_move] Fit = 31.67866577004941, snek moving down
+[3, 14]
+[[11, 23]]
+[SNEK][DEBUG][one_move] Fit = 29.76376490787414, snek moving left
+[3, 14]
+[[11, 22]]
+[SNEK][DEBUG][one_move] Fit = 27.965468699767936, snek moving down
+[3, 14]
+[[10, 22]]
+[SNEK][DEBUG][one_move] Fit = 26.04329429438987, snek moving left
+[3, 14]
+[[10, 21]]
+[SNEK][DEBUG][one_move] Fit = 24.25450097191241, snek moving down
+[3, 14]
+[[9, 21]]
+[SNEK][DEBUG][one_move] Fit = 22.322823680905604, snek moving left
+[3, 14]
+[[9, 20]]
+[SNEK][DEBUG][one_move] Fit = 20.54697053988495, snek moving down
+[3, 14]
+[[8, 20]]
+[SNEK][DEBUG][one_move] Fit = 18.602353067421337, snek moving left
+[3, 14]
+[[8, 19]]
+[SNEK][DEBUG][one_move] Fit = 16.845147150111217, snek moving down
+[3, 14]
+[[7, 19]]
+[SNEK][DEBUG][one_move] Fit = 14.88188245393707, snek moving left
+[3, 14]
+[[7, 18]]
+[SNEK][DEBUG][one_move] Fit = 13.15385, snek moving down
+[3, 14]
+[[6, 18]]
+[SNEK][DEBUG][one_move] Fit = 11.161411840452802, snek moving left
+[3, 14]
+[[6, 17]]
+[SNEK][DEBUG][one_move] Fit = 9.4853761289524, snek moving down
+[3, 14]
+[[5, 17]]
+[SNEK][DEBUG][one_move] Fit = 7.440941226968535, snek moving left
+[3, 14]
+[[5, 16]]
+[SNEK][DEBUG][one_move] Fit = 5.882580553167122, snek moving down
+[3, 14]
+[[4, 16]]
+[SNEK][DEBUG][one_move] Fit = 3.7204706134842676, snek moving left
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 7.01142, snek moving up
+[3, 14]
+[[5, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.64219, snek moving down
+[3, 14]
+[[4, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.69441, snek moving up
+[SNEK][DEBUG][best] Score du snek 1 : -1
+[SNEK][DEBUG][best] On joue avec : S id:2 p:[[25, 25]] w:[0.73258, 3.45323, 1.80746, 3.33622, 3.27369, 0.38527]
+[12, 27]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 9.77383626009767, snek moving down
+[12, 27]
+[[24, 25]]
+[SNEK][DEBUG][one_move] Fit = 9.061514157644957, snek moving down
+[12, 27]
+[[23, 25]]
+[SNEK][DEBUG][one_move] Fit = 8.352697129191265, snek moving down
+[12, 27]
+[[22, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.648359742297691, snek moving down
+[12, 27]
+[[21, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.949864104858454, snek moving down
+[12, 27]
+[[20, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.259166263744716, snek moving down
+[12, 27]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 5.579163061893782, snek moving down
+[12, 27]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.914296036870388, snek moving down
+[12, 27]
+[[17, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.271638739125771, snek moving down
+[12, 27]
+[[16, 25]]
+[SNEK][DEBUG][one_move] Fit = 3.6629, snek moving down
+[12, 27]
+[[15, 25]]
+[SNEK][DEBUG][one_move] Fit = 3.1080737145698456, snek moving down
+[12, 27]
+[[14, 25]]
+[SNEK][DEBUG][one_move] Fit = 2.6413547533794093, snek moving down
+[12, 27]
+[[13, 25]]
+[SNEK][DEBUG][one_move] Fit = 2.3166213682861514, snek moving right
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.638098678956796, snek moving up
+[12, 27]
+[[14, 26]]
+[SNEK][DEBUG][one_move] Fit = 2.072049143046564, snek moving down
+[12, 27]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = -1.815131321043204, snek moving up
+[SNEK][DEBUG][best] Score du snek 2 : -1
+[SNEK][DEBUG][best] On joue avec : S id:3 p:[[25, 25]] w:[1.80671, 1.83736, 4.77868, 0.73559, 2.80165, 0.17311]
+[6, 33]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 37.98390254637088, snek moving down
+[6, 33]
+[[24, 25]]
+[SNEK][DEBUG][one_move] Fit = 36.359337380657806, snek moving down
+[6, 33]
+[[23, 25]]
+[SNEK][DEBUG][one_move] Fit = 34.752760738062236, snek moving down
+[6, 33]
+[[22, 25]]
+[SNEK][DEBUG][one_move] Fit = 33.166786777161576, snek moving down
+[6, 33]
+[[21, 25]]
+[SNEK][DEBUG][one_move] Fit = 31.604517293807856, snek moving down
+[6, 33]
+[[20, 25]]
+[SNEK][DEBUG][one_move] Fit = 30.069647215684125, snek moving down
+[6, 33]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 28.566593357014064, snek moving down
+[6, 33]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 27.10065, snek moving down
+[6, 33]
+[[17, 25]]
+[SNEK][DEBUG][one_move] Fit = 25.678173744801246, snek moving down
+[6, 33]
+[[16, 25]]
+[SNEK][DEBUG][one_move] Fit = 24.30679710208854, snek moving down
+[6, 33]
+[[15, 25]]
+[SNEK][DEBUG][one_move] Fit = 22.99566406747585, snek moving down
+[6, 33]
+[[14, 25]]
+[SNEK][DEBUG][one_move] Fit = 21.755669341449828, snek moving down
+[6, 33]
+[[13, 25]]
+[SNEK][DEBUG][one_move] Fit = 20.599663422808636, snek moving right
+[6, 33]
+[[13, 26]]
+[SNEK][DEBUG][one_move] Fit = 19.20559074132582, snek moving down
+[6, 33]
+[[12, 26]]
+[SNEK][DEBUG][one_move] Fit = 18.0671, snek moving right
+[6, 33]
+[[12, 27]]
+[SNEK][DEBUG][one_move] Fit = 16.65704316643563, snek moving down
+[6, 33]
+[[11, 27]]
+[SNEK][DEBUG][one_move] Fit = 15.541907083218584, snek moving right
+[6, 33]
+[[11, 28]]
+[SNEK][DEBUG][one_move] Fit = 14.11085619195731, snek moving down
+[6, 33]
+[[10, 28]]
+[SNEK][DEBUG][one_move] Fit = 13.028371089787088, snek moving right
+[6, 33]
+[[10, 29]]
+[SNEK][DEBUG][one_move] Fit = 11.568588591012302, snek moving down
+[6, 33]
+[[9, 29]]
+[SNEK][DEBUG][one_move] Fit = 10.534839097935954, snek moving right
+[6, 33]
+[[9, 30]]
+[SNEK][DEBUG][one_move] Fit = 9.03355, snek moving down
+[6, 33]
+[[8, 30]]
+[SNEK][DEBUG][one_move] Fit = 8.07985275125729, snek moving right
+[6, 33]
+[[8, 31]]
+[SNEK][DEBUG][one_move] Fit = 6.514185544893544, snek moving down
+[6, 33]
+[[7, 31]]
+[SNEK][DEBUG][one_move] Fit = 5.7133186714028135, snek moving right
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 4.039926375628645, snek moving up
+[6, 33]
+[[8, 32]]
+[SNEK][DEBUG][one_move] Fit = 5.11014757055019, snek moving down
+[6, 33]
+[[7, 32]]
+[SNEK][DEBUG][one_move] Fit = 2.2025663756286447, snek moving up
+[SNEK][DEBUG][best] Score du snek 3 : -1
+[SNEK][DEBUG][best] On joue avec : S id:4 p:[[25, 25]] w:[1.56329, 2.66591, 4.68408, 4.72042, 4.57593, 3.62057]
+[34, 24]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 18.64554, snek moving up
+[34, 24]
+[[26, 25]]
+[SNEK][DEBUG][one_move] Fit = 17.082250000000002, snek moving up
+[34, 24]
+[[27, 25]]
+[SNEK][DEBUG][one_move] Fit = 15.51896, snek moving up
+[34, 24]
+[[28, 25]]
+[SNEK][DEBUG][one_move] Fit = 13.95567, snek moving up
+[34, 24]
+[[29, 25]]
+[SNEK][DEBUG][one_move] Fit = 12.39238, snek moving up
+[34, 24]
+[[30, 25]]
+[SNEK][DEBUG][one_move] Fit = 10.82909, snek moving up
+[34, 24]
+[[31, 25]]
+[SNEK][DEBUG][one_move] Fit = 9.265799999999999, snek moving up
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.70251, snek moving up
+[34, 24]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.13922, snek moving down
+[34, 24]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 5.0366, snek moving up
+[SNEK][DEBUG][best] Score du snek 4 : -1
+[SNEK][DEBUG][best] On joue avec : S id:5 p:[[25, 25]] w:[0.85329, 3.50134, 4.001, 1.62315, 4.29601, 3.81051]
+[47, 0]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 27.781109652891836, snek moving left
+[47, 0]
+[[25, 24]]
+[SNEK][DEBUG][one_move] Fit = 27.158224791272715, snek moving left
+[47, 0]
+[[25, 23]]
+[SNEK][DEBUG][one_move] Fit = 26.54815439402144, snek moving left
+[47, 0]
+[[25, 22]]
+[SNEK][DEBUG][one_move] Fit = 25.95180219739084, snek moving up
+[47, 0]
+[[26, 22]]
+[SNEK][DEBUG][one_move] Fit = 25.341420103384102, snek moving left
+[47, 0]
+[[26, 21]]
+[SNEK][DEBUG][one_move] Fit = 24.74541, snek moving up
+[47, 0]
+[[27, 21]]
+[SNEK][DEBUG][one_move] Fit = 24.134685812746767, snek moving left
+[47, 0]
+[[27, 20]]
+[SNEK][DEBUG][one_move] Fit = 23.53905287262213, snek moving up
+[47, 0]
+[[28, 20]]
+[SNEK][DEBUG][one_move] Fit = 22.927951522109428, snek moving left
+[47, 0]
+[[28, 19]]
+[SNEK][DEBUG][one_move] Fit = 22.33273649843431, snek moving up
+[47, 0]
+[[29, 19]]
+[SNEK][DEBUG][one_move] Fit = 21.72121723147209, snek moving left
+[47, 0]
+[[29, 18]]
+[SNEK][DEBUG][one_move] Fit = 21.126467858430573, snek moving up
+[47, 0]
+[[30, 18]]
+[SNEK][DEBUG][one_move] Fit = 20.51448294083475, snek moving left
+[47, 0]
+[[30, 17]]
+[SNEK][DEBUG][one_move] Fit = 19.92025562422581, snek moving up
+[47, 0]
+[[31, 17]]
+[SNEK][DEBUG][one_move] Fit = 19.307748650197414, snek moving left
+[47, 0]
+[[31, 16]]
+[SNEK][DEBUG][one_move] Fit = 18.71411070267834, snek moving up
+[47, 0]
+[[32, 16]]
+[SNEK][DEBUG][one_move] Fit = 18.101014359560075, snek moving left
+[47, 0]
+[[32, 15]]
+[SNEK][DEBUG][one_move] Fit = 17.50804700548008, snek moving up
+[47, 0]
+[[33, 15]]
+[SNEK][DEBUG][one_move] Fit = 16.894280068922736, snek moving left
+[47, 0]
+[[33, 14]]
+[SNEK][DEBUG][one_move] Fit = 16.302082560105625, snek moving up
+[47, 0]
+[[34, 14]]
+[SNEK][DEBUG][one_move] Fit = 15.687545778285397, snek moving left
+[47, 0]
+[[34, 13]]
+[SNEK][DEBUG][one_move] Fit = 15.096241152793631, snek moving up
+[47, 0]
+[[35, 13]]
+[SNEK][DEBUG][one_move] Fit = 14.480811487648058, snek moving left
+[47, 0]
+[[35, 12]]
+[SNEK][DEBUG][one_move] Fit = 13.890554826445918, snek moving up
+[47, 0]
+[[36, 12]]
+[SNEK][DEBUG][one_move] Fit = 13.27407719701072, snek moving left
+[47, 0]
+[[36, 11]]
+[SNEK][DEBUG][one_move] Fit = 12.685067801399407, snek moving up
+[47, 0]
+[[37, 11]]
+[SNEK][DEBUG][one_move] Fit = 12.067342906373383, snek moving left
+[47, 0]
+[[37, 10]]
+[SNEK][DEBUG][one_move] Fit = 11.479842863127526, snek moving up
+[47, 0]
+[[38, 10]]
+[SNEK][DEBUG][one_move] Fit = 10.860608615736044, snek moving left
+[47, 0]
+[[38, 9]]
+[SNEK][DEBUG][one_move] Fit = 10.274972238137678, snek moving up
+[47, 0]
+[[39, 9]]
+[SNEK][DEBUG][one_move] Fit = 9.653874325098707, snek moving left
+[47, 0]
+[[39, 8]]
+[SNEK][DEBUG][one_move] Fit = 9.07059712054835, snek moving up
+[47, 0]
+[[40, 8]]
+[SNEK][DEBUG][one_move] Fit = 8.447140034461368, snek moving left
+[47, 0]
+[[40, 7]]
+[SNEK][DEBUG][one_move] Fit = 7.866945089963448, snek moving up
+[47, 0]
+[[41, 7]]
+[SNEK][DEBUG][one_move] Fit = 7.240405743824029, snek moving left
+[47, 0]
+[[41, 6]]
+[SNEK][DEBUG][one_move] Fit = 6.664407945954388, snek moving up
+[47, 0]
+[[42, 6]]
+[SNEK][DEBUG][one_move] Fit = 6.033671453186692, snek moving left
+[47, 0]
+[[42, 5]]
+[SNEK][DEBUG][one_move] Fit = 5.463721880559075, snek moving up
+[47, 0]
+[[43, 5]]
+[SNEK][DEBUG][one_move] Fit = 4.826937162549354, snek moving left
+[47, 0]
+[[43, 4]]
+[SNEK][DEBUG][one_move] Fit = 4.26645, snek moving up
+[47, 0]
+[[44, 4]]
+[SNEK][DEBUG][one_move] Fit = 3.6202028719120145, snek moving left
+[47, 0]
+[[44, 3]]
+[SNEK][DEBUG][one_move] Fit = 3.0765808478406673, snek moving up
+[47, 0]
+[[45, 3]]
+[SNEK][DEBUG][one_move] Fit = 2.413468581274677, snek moving left
+[47, 0]
+[[45, 2]]
+[SNEK][DEBUG][one_move] Fit = 1.9080144445207956, snek moving up
+[47, 0]
+[[46, 2]]
+[SNEK][DEBUG][one_move] Fit = 1.2067342906373384, snek moving left
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 8.959810000000001, snek moving down
+[47, 0]
+[[45, 1]]
+[SNEK][DEBUG][one_move] Fit = 9.813099999999999, snek moving up
+[47, 0]
+[[46, 1]]
+[SNEK][DEBUG][one_move] Fit = 5.45847, snek moving down
+[SNEK][DEBUG][best] Score du snek 5 : -1
+[SNEK][DEBUG][best] On joue avec : S id:6 p:[[25, 25]] w:[1.22807, 2.69077, 3.01011, 4.54569, 3.67373, 4.76939]
+[33, 22]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 10.126924651304561, snek moving up
+[33, 22]
+[[26, 25]]
+[SNEK][DEBUG][one_move] Fit = 8.940484551728726, snek moving up
+[33, 22]
+[[27, 25]]
+[SNEK][DEBUG][one_move] Fit = 7.766996652245964, snek moving up
+[33, 22]
+[[28, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.61335934469767, snek moving up
+[33, 22]
+[[29, 25]]
+[SNEK][DEBUG][one_move] Fit = 5.492096002256334, snek moving up
+[33, 22]
+[[30, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.4278693548590615, snek moving up
+[33, 22]
+[[31, 25]]
+[SNEK][DEBUG][one_move] Fit = 3.473506499087054, snek moving left
+[33, 22]
+[[31, 24]]
+[SNEK][DEBUG][one_move] Fit = 2.746048001128167, snek moving up
+[33, 22]
+[[32, 24]]
+[SNEK][DEBUG][one_move] Fit = 1.736753249543527, snek moving left
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.9018, snek moving down
+[33, 22]
+[[31, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.12987, snek moving up
+[33, 22]
+[[32, 23]]
+[SNEK][DEBUG][one_move] Fit = 2.21103, snek moving down
+[SNEK][DEBUG][best] Score du snek 6 : -1
+[SNEK][DEBUG][best] On joue avec : S id:7 p:[[25, 25]] w:[4.04772, 4.99122, 2.52039, 0.50731, 0.66106, 3.98675]
+[20, 22]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 21.797639293134473, snek moving down
+[20, 22]
+[[24, 25]]
+[SNEK][DEBUG][one_move] Fit = 18.101954147770897, snek moving down
+[20, 22]
+[[23, 25]]
+[SNEK][DEBUG][one_move] Fit = 14.594262008721097, snek moving down
+[20, 22]
+[[22, 25]]
+[SNEK][DEBUG][one_move] Fit = 11.448681041377649, snek moving left
+[20, 22]
+[[22, 24]]
+[SNEK][DEBUG][one_move] Fit = 9.050977073885448, snek moving down
+[20, 22]
+[[21, 24]]
+[SNEK][DEBUG][one_move] Fit = 5.724340520688824, snek moving left
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.159590000000001, snek moving up
+[20, 22]
+[[21, 23]]
+[SNEK][DEBUG][one_move] Fit = 4.70878, snek moving down
+J'AI MANGE LOL
+[20, 22]
+[[20, 23]]
+[SNEK][DEBUG][one_move] Fit = 1.16837, snek moving up
+[SNEK][DEBUG][best] Score du snek 7 : -1
+[SNEK][DEBUG][best] On joue avec : S id:8 p:[[25, 25]] w:[4.11053, 3.74313, 0.72854, 1.67149, 0.79044, 0.20131]
+[18, 24]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 29.564149999999998, snek moving down
+[18, 24]
+[[24, 25]]
+[SNEK][DEBUG][one_move] Fit = 25.453619999999997, snek moving down
+[18, 24]
+[[23, 25]]
+[SNEK][DEBUG][one_move] Fit = 21.34309, snek moving down
+[18, 24]
+[[22, 25]]
+[SNEK][DEBUG][one_move] Fit = 17.23256, snek moving down
+[18, 24]
+[[21, 25]]
+[SNEK][DEBUG][one_move] Fit = 13.122029999999999, snek moving down
+[18, 24]
+[[20, 25]]
+[SNEK][DEBUG][one_move] Fit = 9.0115, snek moving down
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 6.20506, snek moving up
+[18, 24]
+[[19, 25]]
+[SNEK][DEBUG][one_move] Fit = 4.90097, snek moving down
+J'AI MANGE LOL
+[18, 24]
+[[18, 25]]
+[SNEK][DEBUG][one_move] Fit = 2.4619299999999997, snek moving up
+[SNEK][DEBUG][best] Score du snek 8 : -1
+[SNEK][DEBUG][best] On joue avec : S id:9 p:[[25, 25]] w:[2.61754, 4.26759, 1.73074, 0.04776, 4.51595, 1.89999]
+[24, 28]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 10.79239389927925, snek moving right
+[24, 28]
+[[25, 26]]
+[SNEK][DEBUG][one_move] Fit = 8.27738826659714, snek moving right
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 7.403521136108143, snek moving down
+[24, 28]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 5.8529973738248, snek moving up
+[24, 28]
+[[26, 27]]
+[SNEK][DEBUG][one_move] Fit = 3.135931136108143, snek moving down
+[SNEK][DEBUG][best] Score du snek 9 : -1
+[SNEK][DEBUG][best] On joue avec : S id:10 p:[[25, 25]] w:[0.14784, 2.44389, 1.69301, 0.60274, 1.45645, 4.49199]
+[28, 34]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 1.5434949142773358, snek moving right
+[28, 34]
+[[25, 26]]
+[SNEK][DEBUG][one_move] Fit = 1.4025333878378796, snek moving right
+[28, 34]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 1.2631455137077436, snek moving right
+[28, 34]
+[[25, 28]]
+[SNEK][DEBUG][one_move] Fit = 1.1259158959709203, snek moving right
+[28, 34]
+[[25, 29]]
+[SNEK][DEBUG][one_move] Fit = 0.9917408693807068, snek moving right
+[28, 34]
+[[25, 30]]
+[SNEK][DEBUG][one_move] Fit = 0.8620479281339293, snek moving right
+[28, 34]
+[[25, 31]]
+[SNEK][DEBUG][one_move] Fit = 0.7392, snek moving up
+[28, 34]
+[[26, 31]]
+[SNEK][DEBUG][one_move] Fit = 0.6611605795871378, snek moving right
+[28, 34]
+[[26, 32]]
+[SNEK][DEBUG][one_move] Fit = 0.5330447005645962, snek moving up
+[28, 34]
+[[27, 32]]
+[SNEK][DEBUG][one_move] Fit = 0.4675111292792932, snek moving right
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.41815466612247676, snek moving up
+[28, 34]
+[[27, 33]]
+[SNEK][DEBUG][one_move] Fit = 0.3305802897935689, snek moving down
+[28, 34]
+[[26, 33]]
+[SNEK][DEBUG][one_move] Fit = -2.0257353338775235, snek moving up
+[SNEK][DEBUG][best] Score du snek 10 : -1
+[SNEK][DEBUG][best] On joue avec : S id:11 p:[[25, 25]] w:[2.39471, 3.57239, 2.50305, 1.03553, 4.67884, 1.27408]
+[36, 31]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 31.22319838352567, snek moving up
+[36, 31]
+[[26, 25]]
+[SNEK][DEBUG][one_move] Fit = 29.231160798553653, snek moving up
+[36, 31]
+[[27, 25]]
+[SNEK][DEBUG][one_move] Fit = 27.303894922391564, snek moving up
+[36, 31]
+[[28, 25]]
+[SNEK][DEBUG][one_move] Fit = 25.456116479213794, snek moving up
+[36, 31]
+[[29, 25]]
+[SNEK][DEBUG][one_move] Fit = 23.70641951965332, snek moving up
+[36, 31]
+[[30, 25]]
+[SNEK][DEBUG][one_move] Fit = 22.078135307323848, snek moving up
+[36, 31]
+[[31, 25]]
+[SNEK][DEBUG][one_move] Fit = 20.600074340239647, snek moving right
+[36, 31]
+[[31, 26]]
+[SNEK][DEBUG][one_move] Fit = 18.70328300139042, snek moving up
+[36, 31]
+[[32, 26]]
+[SNEK][DEBUG][one_move] Fit = 17.26849938973274, snek moving right
+[36, 31]
+[[32, 27]]
+[SNEK][DEBUG][one_move] Fit = 15.333625642622817, snek moving up
+[36, 31]
+[[33, 27]]
+[SNEK][DEBUG][one_move] Fit = 13.96343881210499, snek moving right
+[36, 31]
+[[33, 28]]
+[SNEK][DEBUG][one_move] Fit = 11.97355, snek moving up
+[36, 31]
+[[34, 28]]
+[SNEK][DEBUG][one_move] Fit = 10.709468692797042, snek moving right
+[36, 31]
+[[34, 29]]
+[SNEK][DEBUG][one_move] Fit = 8.63424969486637, snek moving up
+[36, 31]
+[[35, 29]]
+[SNEK][DEBUG][one_move] Fit = 7.57273793558182, snek moving right
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 5.354734346398521, snek moving down
+[36, 31]
+[[34, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.773262719900949, snek moving up
+[36, 31]
+[[35, 30]]
+[SNEK][DEBUG][one_move] Fit = 1.7823443463985211, snek moving down
+[SNEK][DEBUG][best] Score du snek 11 : -1
+[SNEK][DEBUG][best] On joue avec : S id:12 p:[[25, 25]] w:[2.13012, 1.31107, 1.07754, 0.4771, 3.4944, 3.36569]
+[36, 9]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 39.62252238541105, snek moving left
+[36, 9]
+[[25, 24]]
+[SNEK][DEBUG][one_move] Fit = 37.925708364706914, snek moving left
+[36, 9]
+[[25, 23]]
+[SNEK][DEBUG][one_move] Fit = 36.27463648578715, snek moving left
+[36, 9]
+[[25, 22]]
+[SNEK][DEBUG][one_move] Fit = 34.675841328163905, snek moving left
+[36, 9]
+[[25, 21]]
+[SNEK][DEBUG][one_move] Fit = 33.136890528303944, snek moving left
+[36, 9]
+[[25, 20]]
+[SNEK][DEBUG][one_move] Fit = 31.666510360038092, snek moving up
+[36, 9]
+[[26, 20]]
+[SNEK][DEBUG][one_move] Fit = 30.12444593482177, snek moving left
+[36, 9]
+[[26, 19]]
+[SNEK][DEBUG][one_move] Fit = 28.657833655152647, snek moving up
+[36, 9]
+[[27, 19]]
+[SNEK][DEBUG][one_move] Fit = 27.112001341339592, snek moving left
+[36, 9]
+[[27, 18]]
+[SNEK][DEBUG][one_move] Fit = 25.65004144417704, snek moving up
+[36, 9]
+[[28, 18]]
+[SNEK][DEBUG][one_move] Fit = 24.099556747857417, snek moving left
+[36, 9]
+[[28, 17]]
+[SNEK][DEBUG][one_move] Fit = 22.64348619862233, snek moving up
+[36, 9]
+[[29, 17]]
+[SNEK][DEBUG][one_move] Fit = 21.087112154375237, snek moving left
+[36, 9]
+[[29, 16]]
+[SNEK][DEBUG][one_move] Fit = 19.638736039368723, snek moving up
+[36, 9]
+[[30, 16]]
+[SNEK][DEBUG][one_move] Fit = 18.07466756089306, snek moving left
+[36, 9]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 16.63676903964228, snek moving up
+[36, 9]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 15.062222967410886, snek moving left
+[36, 9]
+[[31, 14]]
+[SNEK][DEBUG][one_move] Fit = 13.639423000640457, snek moving up
+[36, 9]
+[[32, 14]]
+[SNEK][DEBUG][one_move] Fit = 12.049778373928708, snek moving left
+[36, 9]
+[[32, 13]]
+[SNEK][DEBUG][one_move] Fit = 10.650599999999999, snek moving up
+[36, 9]
+[[33, 13]]
+[SNEK][DEBUG][one_move] Fit = 9.03733378044653, snek moving left
+[36, 9]
+[[33, 12]]
+[SNEK][DEBUG][one_move] Fit = 7.680256882891352, snek moving up
+[36, 9]
+[[34, 12]]
+[SNEK][DEBUG][one_move] Fit = 6.024889186964354, snek moving left
+[36, 9]
+[[34, 11]]
+[SNEK][DEBUG][one_move] Fit = 4.763093120231852, snek moving up
+[36, 9]
+[[35, 11]]
+[SNEK][DEBUG][one_move] Fit = 3.012444593482177, snek moving left
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 5.62452, snek moving down
+[36, 9]
+[[34, 10]]
+[SNEK][DEBUG][one_move] Fit = 7.75464, snek moving up
+[36, 9]
+[[35, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.31345, snek moving down
+[SNEK][DEBUG][best] Score du snek 12 : -1
+[SNEK][DEBUG][best] On joue avec : S id:13 p:[[25, 25]] w:[3.34334, 3.40513, 1.27713, 0.9588, 1.93883, 4.99412]
+[37, 22]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 40.673486556094495, snek moving up
+[37, 22]
+[[26, 25]]
+[SNEK][DEBUG][one_move] Fit = 37.379677559470736, snek moving up
+[37, 22]
+[[27, 25]]
+[SNEK][DEBUG][one_move] Fit = 34.0955118011506, snek moving up
+[37, 22]
+[[28, 25]]
+[SNEK][DEBUG][one_move] Fit = 30.824071765845602, snek moving up
+[37, 22]
+[[29, 25]]
+[SNEK][DEBUG][one_move] Fit = 27.5698879247051, snek moving up
+[37, 22]
+[[30, 25]]
+[SNEK][DEBUG][one_move] Fit = 24.339882597227128, snek moving up
+[37, 22]
+[[31, 25]]
+[SNEK][DEBUG][one_move] Fit = 21.1451387846947, snek moving up
+[37, 22]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 18.004436906285072, snek moving up
+[37, 22]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 14.951871023788295, snek moving up
+[37, 22]
+[[34, 25]]
+[SNEK][DEBUG][one_move] Fit = 12.054583801309773, snek moving up
+[37, 22]
+[[35, 25]]
+[SNEK][DEBUG][one_move] Fit = 9.456393543248927, snek moving left
+[37, 22]
+[[35, 24]]
+[SNEK][DEBUG][one_move] Fit = 7.475935511894147, snek moving up
+[37, 22]
+[[36, 24]]
+[SNEK][DEBUG][one_move] Fit = 4.7281967716244635, snek moving left
+[37, 22]
+[[36, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving up
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 5.28217, snek moving down
+J'AI MANGE LOL
+[37, 22]
+[[37, 23]]
+[SNEK][DEBUG][one_move] Fit = 6.30276, snek moving up
+[37, 22]
+[[38, 23]]
+[SNEK][DEBUG][one_move] Fit = 1.8770399999999998, snek moving down
+[SNEK][DEBUG][best] Score du snek 13 : -1
+[SNEK][DEBUG][best] On joue avec : S id:14 p:[[25, 25]] w:[2.29921, 3.32305, 2.37872, 0.7993, 4.53004, 1.06602]
+[32, 14]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 28.065434737251085, snek moving left
+[32, 14]
+[[25, 24]]
+[SNEK][DEBUG][one_move] Fit = 26.215027391421888, snek moving left
+[32, 14]
+[[25, 23]]
+[SNEK][DEBUG][one_move] Fit = 24.440937554097633, snek moving left
+[32, 14]
+[[25, 22]]
+[SNEK][DEBUG][one_move] Fit = 22.761017753206907, snek moving left
+[32, 14]
+[[25, 21]]
+[SNEK][DEBUG][one_move] Fit = 21.197668811652377, snek moving up
+[32, 14]
+[[26, 21]]
+[SNEK][DEBUG][one_move] Fit = 19.509443788463063, snek moving left
+[32, 14]
+[[26, 20]]
+[SNEK][DEBUG][one_move] Fit = 17.957404157341337, snek moving up
+[32, 14]
+[[27, 20]]
+[SNEK][DEBUG][one_move] Fit = 16.25786982371922, snek moving left
+[32, 14]
+[[27, 19]]
+[SNEK][DEBUG][one_move] Fit = 14.72212727794798, snek moving up
+[32, 14]
+[[28, 19]]
+[SNEK][DEBUG][one_move] Fit = 13.006295858975376, snek moving left
+[32, 14]
+[[28, 18]]
+[SNEK][DEBUG][one_move] Fit = 11.49605, snek moving up
+[32, 14]
+[[29, 18]]
+[SNEK][DEBUG][one_move] Fit = 9.754721894231531, snek moving left
+[32, 14]
+[[29, 17]]
+[SNEK][DEBUG][one_move] Fit = 8.289919548059558, snek moving up
+[32, 14]
+[[30, 17]]
+[SNEK][DEBUG][one_move] Fit = 6.503147929487688, snek moving left
+[32, 14]
+[[30, 16]]
+[SNEK][DEBUG][one_move] Fit = 5.141189854547291, snek moving up
+[32, 14]
+[[31, 16]]
+[SNEK][DEBUG][one_move] Fit = 3.251573964743844, snek moving left
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 9.12846, snek moving up
+[32, 14]
+[[31, 15]]
+[SNEK][DEBUG][one_move] Fit = 6.82925, snek moving down
+[32, 14]
+[[30, 15]]
+[SNEK][DEBUG][one_move] Fit = 5.80541, snek moving up
+[SNEK][DEBUG][best] Score du snek 14 : -1
+[SNEK][DEBUG][best] On joue avec : S id:15 p:[[25, 25]] w:[1.8958, 3.28327, 0.61416, 0.97751, 3.70587, 3.57934]
+[38, 3]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 46.82280598597226, snek moving left
+[38, 3]
+[[25, 24]]
+[SNEK][DEBUG][one_move] Fit = 45.221884051419174, snek moving left
+[38, 3]
+[[25, 23]]
+[SNEK][DEBUG][one_move] Fit = 43.64459358500202, snek moving left
+[38, 3]
+[[25, 22]]
+[SNEK][DEBUG][one_move] Fit = 42.09359115732465, snek moving left
+[38, 3]
+[[25, 21]]
+[SNEK][DEBUG][one_move] Fit = 40.571891737014184, snek moving left
+[38, 3]
+[[25, 20]]
+[SNEK][DEBUG][one_move] Fit = 39.082918225229804, snek moving left
+[38, 3]
+[[25, 19]]
+[SNEK][DEBUG][one_move] Fit = 37.63055553881712, snek moving left
+[38, 3]
+[[25, 18]]
+[SNEK][DEBUG][one_move] Fit = 36.219208144298236, snek moving left
+[38, 3]
+[[25, 17]]
+[SNEK][DEBUG][one_move] Fit = 34.85385893010987, snek moving left
+[38, 3]
+[[25, 16]]
+[SNEK][DEBUG][one_move] Fit = 33.54012583935844, snek moving up
+[38, 3]
+[[26, 16]]
+[SNEK][DEBUG][one_move] Fit = 32.17279285856296, snek moving left
+[38, 3]
+[[26, 15]]
+[SNEK][DEBUG][one_move] Fit = 30.86138808608582, snek moving up
+[38, 3]
+[[27, 15]]
+[SNEK][DEBUG][one_move] Fit = 29.49172678701605, snek moving left
+[38, 3]
+[[27, 14]]
+[SNEK][DEBUG][one_move] Fit = 28.183093131166423, snek moving up
+[38, 3]
+[[28, 14]]
+[SNEK][DEBUG][one_move] Fit = 26.810660715469137, snek moving left
+[38, 3]
+[[28, 13]]
+[SNEK][DEBUG][one_move] Fit = 25.50538046844234, snek moving up
+[38, 3]
+[[29, 13]]
+[SNEK][DEBUG][one_move] Fit = 24.12959464392222, snek moving left
+[38, 3]
+[[29, 12]]
+[SNEK][DEBUG][one_move] Fit = 22.828455002474435, snek moving up
+[38, 3]
+[[30, 12]]
+[SNEK][DEBUG][one_move] Fit = 21.44852857237531, snek moving left
+[38, 3]
+[[30, 11]]
+[SNEK][DEBUG][one_move] Fit = 20.15263043178235, snek moving up
+[38, 3]
+[[31, 11]]
+[SNEK][DEBUG][one_move] Fit = 18.767462500828394, snek moving left
+[38, 3]
+[[31, 10]]
+[SNEK][DEBUG][one_move] Fit = 17.478412382135854, snek moving up
+[38, 3]
+[[32, 10]]
+[SNEK][DEBUG][one_move] Fit = 16.08639642928148, snek moving left
+[38, 3]
+[[32, 9]]
+[SNEK][DEBUG][one_move] Fit = 14.806671335583834, snek moving up
+[38, 3]
+[[33, 9]]
+[SNEK][DEBUG][one_move] Fit = 13.405330357734568, snek moving left
+[38, 3]
+[[33, 8]]
+[SNEK][DEBUG][one_move] Fit = 12.139042929325194, snek moving up
+[38, 3]
+[[34, 8]]
+[SNEK][DEBUG][one_move] Fit = 10.724264286187655, snek moving left
+[38, 3]
+[[34, 7]]
+[SNEK][DEBUG][one_move] Fit = 9.479, snek moving up
+[38, 3]
+[[35, 7]]
+[SNEK][DEBUG][one_move] Fit = 8.04319821464074, snek moving left
+[38, 3]
+[[35, 6]]
+[SNEK][DEBUG][one_move] Fit = 6.835404108024631, snek moving up
+[38, 3]
+[[36, 6]]
+[SNEK][DEBUG][one_move] Fit = 5.362132143093827, snek moving left
+[38, 3]
+[[36, 5]]
+[SNEK][DEBUG][one_move] Fit = 4.239137671744102, snek moving up
+[38, 3]
+[[37, 5]]
+[SNEK][DEBUG][one_move] Fit = 2.6810660715469137, snek moving left
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.60167, snek moving down
+[38, 3]
+[[36, 4]]
+[SNEK][DEBUG][one_move] Fit = 7.49747, snek moving up
+[38, 3]
+[[37, 4]]
+[SNEK][DEBUG][one_move] Fit = 2.3184, snek moving down
+[SNEK][DEBUG][best] Score du snek 15 : -1
+[SNEK][DEBUG][best] On joue avec : S id:16 p:[[25, 25]] w:[0.46238, 4.00221, 4.91806, 4.02722, 4.8087, 4.31572]
+[23, 44]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 9.293722979387754, snek moving right
+[23, 44]
+[[25, 26]]
+[SNEK][DEBUG][one_move] Fit = 8.8337574964451, snek moving right
+[23, 44]
+[[25, 27]]
+[SNEK][DEBUG][one_move] Fit = 8.374057960343958, snek moving right
+[23, 44]
+[[25, 28]]
+[SNEK][DEBUG][one_move] Fit = 7.914670711356222, snek moving right
+[23, 44]
+[[25, 29]]
+[SNEK][DEBUG][one_move] Fit = 7.455653475316566, snek moving right
+[23, 44]
+[[25, 30]]
+[SNEK][DEBUG][one_move] Fit = 6.99707907255592, snek moving right
+[23, 44]
+[[25, 31]]
+[SNEK][DEBUG][one_move] Fit = 6.539040669700717, snek moving right
+[23, 44]
+[[25, 32]]
+[SNEK][DEBUG][one_move] Fit = 6.0816593739866756, snek moving right
+[23, 44]
+[[25, 33]]
+[SNEK][DEBUG][one_move] Fit = 5.625095477518581, snek moving right
+[23, 44]
+[[25, 34]]
+[SNEK][DEBUG][one_move] Fit = 5.169565557181764, snek moving right
+[23, 44]
+[[25, 35]]
+[SNEK][DEBUG][one_move] Fit = 4.7153692853900635, snek moving right
+[23, 44]
+[[25, 36]]
+[SNEK][DEBUG][one_move] Fit = 4.262932966163085, snek moving right
+[23, 44]
+[[25, 37]]
+[SNEK][DEBUG][one_move] Fit = 3.812883158346188, snek moving right
+[23, 44]
+[[25, 38]]
+[SNEK][DEBUG][one_move] Fit = 3.366177210605526, snek moving right
+[23, 44]
+[[25, 39]]
+[SNEK][DEBUG][one_move] Fit = 2.924347889017311, snek moving right
+[23, 44]
+[[25, 40]]
+[SNEK][DEBUG][one_move] Fit = 2.489992503522852, snek moving right
+[23, 44]
+[[25, 41]]
+[SNEK][DEBUG][one_move] Fit = 2.067826222872706, snek moving right
+[23, 44]
+[[25, 42]]
+[SNEK][DEBUG][one_move] Fit = 1.6671347987490392, snek moving down
+[23, 44]
+[[24, 42]]
+[SNEK][DEBUG][one_move] Fit = 1.4621739445086555, snek moving right
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.033913111436353, snek moving up
+[23, 44]
+[[25, 43]]
+[SNEK][DEBUG][one_move] Fit = 1.3078081339401435, snek moving down
+[23, 44]
+[[24, 43]]
+[SNEK][DEBUG][one_move] Fit = -2.968296888563647, snek moving up
+[SNEK][DEBUG][best] Score du snek 16 : -1
+[SNEK][DEBUG][best] On joue avec : S id:17 p:[[25, 25]] w:[4.22007, 3.40437, 4.62878, 0.03972, 3.57722, 1.11385]
+[16, 1]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 104.2280403297932, snek moving left
+[16, 1]
+[[25, 24]]
+[SNEK][DEBUG][one_move] Fit = 100.30991877560514, snek moving left
+[16, 1]
+[[25, 23]]
+[SNEK][DEBUG][one_move] Fit = 96.41728683258931, snek moving left
+[16, 1]
+[[25, 22]]
+[SNEK][DEBUG][one_move] Fit = 92.55336070158069, snek moving left
+[16, 1]
+[[25, 21]]
+[SNEK][DEBUG][one_move] Fit = 88.72189096139577, snek moving left
+[16, 1]
+[[25, 20]]
+[SNEK][DEBUG][one_move] Fit = 84.92727050826784, snek moving left
+[16, 1]
+[[25, 19]]
+[SNEK][DEBUG][one_move] Fit = 81.17466721713738, snek moving left
+[16, 1]
+[[25, 18]]
+[SNEK][DEBUG][one_move] Fit = 77.4701871770767, snek moving left
+[16, 1]
+[[25, 17]]
+[SNEK][DEBUG][one_move] Fit = 73.82107548863941, snek moving left
+[16, 1]
+[[25, 16]]
+[SNEK][DEBUG][one_move] Fit = 70.23596267552186, snek moving left
+[16, 1]
+[[25, 15]]
+[SNEK][DEBUG][one_move] Fit = 66.72516542673385, snek moving left
+[16, 1]
+[[25, 14]]
+[SNEK][DEBUG][one_move] Fit = 63.30105, snek moving left
+[16, 1]
+[[25, 13]]
+[SNEK][DEBUG][one_move] Fit = 59.978463989917245, snek moving left
+[16, 1]
+[[25, 12]]
+[SNEK][DEBUG][one_move] Fit = 56.775235232334346, snek moving left
+[16, 1]
+[[25, 11]]
+[SNEK][DEBUG][one_move] Fit = 53.712722053474444, snek moving left
+[16, 1]
+[[25, 10]]
+[SNEK][DEBUG][one_move] Fit = 50.816372034124, snek moving down
+[16, 1]
+[[24, 10]]
+[SNEK][DEBUG][one_move] Fit = 47.744641825310616, snek moving left
+[16, 1]
+[[24, 9]]
+[SNEK][DEBUG][one_move] Fit = 44.85995943994711, snek moving down
+[16, 1]
+[[23, 9]]
+[SNEK][DEBUG][one_move] Fit = 41.77656159714679, snek moving left
+[16, 1]
+[[23, 8]]
+[SNEK][DEBUG][one_move] Fit = 38.907122977887994, snek moving down
+[16, 1]
+[[22, 8]]
+[SNEK][DEBUG][one_move] Fit = 35.80848136898296, snek moving left
+[16, 1]
+[[22, 7]]
+[SNEK][DEBUG][one_move] Fit = 32.959800349803395, snek moving down
+[16, 1]
+[[21, 7]]
+[SNEK][DEBUG][one_move] Fit = 29.840401140819136, snek moving left
+[16, 1]
+[[21, 6]]
+[SNEK][DEBUG][one_move] Fit = 27.02163250066324, snek moving down
+[16, 1]
+[[20, 6]]
+[SNEK][DEBUG][one_move] Fit = 23.872320912655308, snek moving left
+[16, 1]
+[[20, 5]]
+[SNEK][DEBUG][one_move] Fit = 21.10035, snek moving down
+[16, 1]
+[[19, 5]]
+[SNEK][DEBUG][one_move] Fit = 17.90424068449148, snek moving left
+[16, 1]
+[[19, 4]]
+[SNEK][DEBUG][one_move] Fit = 15.215678771047315, snek moving down
+[16, 1]
+[[18, 4]]
+[SNEK][DEBUG][one_move] Fit = 11.936160456327654, snek moving left
+[16, 1]
+[[18, 3]]
+[SNEK][DEBUG][one_move] Fit = 9.436363389807537, snek moving down
+[16, 1]
+[[17, 3]]
+[SNEK][DEBUG][one_move] Fit = 5.968080228163827, snek moving left
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.79729, snek moving down
+J'AI MANGE LOL
+[16, 1]
+[[16, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.02131, snek moving up
+[16, 1]
+[[17, 2]]
+[SNEK][DEBUG][one_move] Fit = 4.39292, snek moving down
+[SNEK][DEBUG][best] Score du snek 17 : -1
+[SNEK][DEBUG][best] On joue avec : S id:18 p:[[25, 25]] w:[2.61559, 1.1064, 0.22497, 1.93934, 1.5231, 3.96461]
+[26, 9]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 39.3209396743084, snek moving left
+[26, 9]
+[[25, 24]]
+[SNEK][DEBUG][one_move] Fit = 36.71155508114169, snek moving left
+[26, 9]
+[[25, 23]]
+[SNEK][DEBUG][one_move] Fit = 34.103121238048, snek moving left
+[26, 9]
+[[25, 22]]
+[SNEK][DEBUG][one_move] Fit = 31.495874364343344, snek moving left
+[26, 9]
+[[25, 21]]
+[SNEK][DEBUG][one_move] Fit = 28.890135822944828, snek moving left
+[26, 9]
+[[25, 20]]
+[SNEK][DEBUG][one_move] Fit = 26.28635417584759, snek moving left
+[26, 9]
+[[25, 19]]
+[SNEK][DEBUG][one_move] Fit = 23.685174813460847, snek moving left
+[26, 9]
+[[25, 18]]
+[SNEK][DEBUG][one_move] Fit = 21.087560743872203, snek moving left
+[26, 9]
+[[25, 17]]
+[SNEK][DEBUG][one_move] Fit = 18.49501425803722, snek moving left
+[26, 9]
+[[25, 16]]
+[SNEK][DEBUG][one_move] Fit = 15.91001284662272, snek moving left
+[26, 9]
+[[25, 15]]
+[SNEK][DEBUG][one_move] Fit = 13.336944449558152, snek moving left
+[26, 9]
+[[25, 14]]
+[SNEK][DEBUG][one_move] Fit = 10.784353843309297, snek moving left
+[26, 9]
+[[25, 13]]
+[SNEK][DEBUG][one_move] Fit = 8.271221825159811, snek moving left
+[26, 9]
+[[25, 12]]
+[SNEK][DEBUG][one_move] Fit = 5.848637041268676, snek moving left
+[26, 9]
+[[25, 11]]
+[SNEK][DEBUG][one_move] Fit = 3.6990028516074442, snek moving left
+[26, 9]
+[[25, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving up
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.13869, snek moving down
+J'AI MANGE LOL
+[26, 9]
+[[26, 10]]
+[SNEK][DEBUG][one_move] Fit = 4.56884, snek moving up
+[26, 9]
+[[27, 10]]
+[SNEK][DEBUG][one_move] Fit = 3.0322899999999997, snek moving down
+[SNEK][DEBUG][best] Score du snek 18 : -1
+[SNEK][DEBUG][best] On joue avec : S id:19 p:[[25, 25]] w:[3.0677, 3.00934, 0.00876, 3.19211, 2.23157, 1.18894]
+[45, 29]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 63.242255638536484, snek moving up
+[45, 29]
+[[26, 25]]
+[SNEK][DEBUG][one_move] Fit = 60.270742072252595, snek moving up
+[45, 29]
+[[27, 25]]
+[SNEK][DEBUG][one_move] Fit = 57.30936544937485, snek moving up
+[45, 29]
+[[28, 25]]
+[SNEK][DEBUG][one_move] Fit = 54.35978249643756, snek moving up
+[45, 29]
+[[29, 25]]
+[SNEK][DEBUG][one_move] Fit = 51.424022640104695, snek moving up
+[45, 29]
+[[30, 25]]
+[SNEK][DEBUG][one_move] Fit = 48.50459589049268, snek moving up
+[45, 29]
+[[31, 25]]
+[SNEK][DEBUG][one_move] Fit = 45.60463909614898, snek moving up
+[45, 29]
+[[32, 25]]
+[SNEK][DEBUG][one_move] Fit = 42.72811671791772, snek moving up
+[45, 29]
+[[33, 25]]
+[SNEK][DEBUG][one_move] Fit = 39.8801, snek moving up
+[45, 29]
+[[34, 25]]
+[SNEK][DEBUG][one_move] Fit = 37.06716013319607, snek moving up
+[45, 29]
+[[35, 25]]
+[SNEK][DEBUG][one_move] Fit = 34.29792867288052, snek moving up
+[45, 29]
+[[36, 25]]
+[SNEK][DEBUG][one_move] Fit = 31.58390458350582, snek moving up
+[45, 29]
+[[37, 25]]
+[SNEK][DEBUG][one_move] Fit = 28.94062391881004, snek moving up
+[45, 29]
+[[38, 25]]
+[SNEK][DEBUG][one_move] Fit = 26.389353221706664, snek moving up
+[45, 29]
+[[39, 25]]
+[SNEK][DEBUG][one_move] Fit = 23.959502930778843, snek moving up
+[45, 29]
+[[40, 25]]
+[SNEK][DEBUG][one_move] Fit = 21.691914726459718, snek moving up
+[45, 29]
+[[41, 25]]
+[SNEK][DEBUG][one_move] Fit = 19.642864223172747, snek moving up
+[45, 29]
+[[42, 25]]
+[SNEK][DEBUG][one_move] Fit = 17.88761112781693, snek moving right
+[45, 29]
+[[42, 26]]
+[SNEK][DEBUG][one_move] Fit = 15.3385, snek moving up
+[45, 29]
+[[43, 26]]
+[SNEK][DEBUG][one_move] Fit = 13.71917146915221, snek moving right
+[45, 29]
+[[43, 27]]
+[SNEK][DEBUG][one_move] Fit = 11.060749647740879, snek moving up
+[45, 29]
+[[44, 27]]
+[SNEK][DEBUG][one_move] Fit = 9.700919178098538, snek moving right
+[45, 29]
+[[44, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving up
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 8.36697, snek moving up
+[45, 29]
+[[46, 28]]
+[SNEK][DEBUG][one_move] Fit = 6.859585734576105, snek moving down
+J'AI MANGE LOL
+[45, 29]
+[[45, 28]]
+[SNEK][DEBUG][one_move] Fit = 5.35763, snek moving up
+[SNEK][DEBUG][best] Score du snek 19 : -1
+[SNEK][DEBUG][best] On joue avec : S id:20 p:[[25, 25]] w:[1.61651, 4.37919, 3.10223, 2.20607, 1.25189, 3.21703]
+[47, 1]
+[[25, 25]]
+[SNEK][DEBUG][one_move] Fit = 51.44973216296952, snek moving left
+[47, 1]
+[[25, 24]]
+[SNEK][DEBUG][one_move] Fit = 50.2939880456581, snek moving left
+[47, 1]
+[[25, 23]]
+[SNEK][DEBUG][one_move] Fit = 49.164232289261875, snek moving up
+[47, 1]
+[[26, 23]]
+[SNEK][DEBUG][one_move] Fit = 48.00789767994636, snek moving left
+[47, 1]
+[[26, 22]]
+[SNEK][DEBUG][one_move] Fit = 46.878789999999995, snek moving up
+[47, 1]
+[[27, 22]]
+[SNEK][DEBUG][one_move] Fit = 45.72180731423464, snek moving left
+[47, 1]
+[[27, 21]]
+[SNEK][DEBUG][one_move] Fit = 44.593414148908806, snek moving up
+[47, 1]
+[[28, 21]]
+[SNEK][DEBUG][one_move] Fit = 43.4357169485229, snek moving left
+[47, 1]
+[[28, 20]]
+[SNEK][DEBUG][one_move] Fit = 42.308115502448224, snek moving up
+[47, 1]
+[[29, 20]]
+[SNEK][DEBUG][one_move] Fit = 41.14962658281117, snek moving left
+[47, 1]
+[[29, 19]]
+[SNEK][DEBUG][one_move] Fit = 40.02290728571951, snek moving up
+[47, 1]
+[[30, 19]]
+[SNEK][DEBUG][one_move] Fit = 38.86353621709944, snek moving left
+[47, 1]
+[[30, 18]]
+[SNEK][DEBUG][one_move] Fit = 37.73780592661025, snek moving up
+[47, 1]
+[[31, 18]]
+[SNEK][DEBUG][one_move] Fit = 36.57744585138771, snek moving left
+[47, 1]
+[[31, 17]]
+[SNEK][DEBUG][one_move] Fit = 35.4528320875512, snek moving up
+[47, 1]
+[[32, 17]]
+[SNEK][DEBUG][one_move] Fit = 34.29135548567598, snek moving left
+[47, 1]
+[[32, 16]]
+[SNEK][DEBUG][one_move] Fit = 33.168012123461665, snek moving up
+[47, 1]
+[[33, 16]]
+[SNEK][DEBUG][one_move] Fit = 32.00526511996424, snek moving left
+[47, 1]
+[[33, 15]]
+[SNEK][DEBUG][one_move] Fit = 30.88338018638018, snek moving up
+[47, 1]
+[[34, 15]]
+[SNEK][DEBUG][one_move] Fit = 29.71917475425251, snek moving left
+[47, 1]
+[[34, 14]]
+[SNEK][DEBUG][one_move] Fit = 28.59898133800048, snek moving up
+[47, 1]
+[[35, 14]]
+[SNEK][DEBUG][one_move] Fit = 27.433084388540777, snek moving left
+[47, 1]
+[[35, 13]]
+[SNEK][DEBUG][one_move] Fit = 26.314876281801133, snek moving up
+[47, 1]
+[[36, 13]]
+[SNEK][DEBUG][one_move] Fit = 25.14699402282905, snek moving left
+[47, 1]
+[[36, 12]]
+[SNEK][DEBUG][one_move] Fit = 24.031148790727837, snek moving up
+[47, 1]
+[[37, 12]]
+[SNEK][DEBUG][one_move] Fit = 22.86090365711732, snek moving left
+[47, 1]
+[[37, 11]]
+[SNEK][DEBUG][one_move] Fit = 21.74791780833512, snek moving up
+[47, 1]
+[[38, 11]]
+[SNEK][DEBUG][one_move] Fit = 20.574813291405587, snek moving left
+[47, 1]
+[[38, 10]]
+[SNEK][DEBUG][one_move] Fit = 19.465358052563534, snek moving up
+[47, 1]
+[[39, 10]]
+[SNEK][DEBUG][one_move] Fit = 18.288722925693854, snek moving left
+[47, 1]
+[[39, 9]]
+[SNEK][DEBUG][one_move] Fit = 17.183737007743687, snek moving up
+[47, 1]
+[[40, 9]]
+[SNEK][DEBUG][one_move] Fit = 16.00263255998212, snek moving left
+[47, 1]
+[[40, 8]]
+[SNEK][DEBUG][one_move] Fit = 14.903485810658523, snek moving up
+[47, 1]
+[[41, 8]]
+[SNEK][DEBUG][one_move] Fit = 13.716542194270389, snek moving left
+[47, 1]
+[[41, 7]]
+[SNEK][DEBUG][one_move] Fit = 12.625346703599865, snek moving up
+[47, 1]
+[[42, 7]]
+[SNEK][DEBUG][one_move] Fit = 11.43045182855866, snek moving left
+[47, 1]
+[[42, 6]]
+[SNEK][DEBUG][one_move] Fit = 10.350714361052573, snek moving up
+[47, 1]
+[[43, 6]]
+[SNEK][DEBUG][one_move] Fit = 9.144361462846927, snek moving left
+[47, 1]
+[[43, 5]]
+[SNEK][DEBUG][one_move] Fit = 8.08255, snek moving up
+[47, 1]
+[[44, 5]]
+[SNEK][DEBUG][one_move] Fit = 6.858271097135194, snek moving left
+[47, 1]
+[[44, 4]]
+[SNEK][DEBUG][one_move] Fit = 5.828409692300292, snek moving up
+[47, 1]
+[[45, 4]]
+[SNEK][DEBUG][one_move] Fit = 4.5721807314234635, snek moving left
+[47, 1]
+[[45, 3]]
+[SNEK][DEBUG][one_move] Fit = 3.614626246308185, snek moving up
+[47, 1]
+[[46, 3]]
+[SNEK][DEBUG][one_move] Fit = 2.2860903657117317, snek moving left
+[47, 1]
+[[46, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving up
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 7.837149999999999, snek moving up
+[47, 1]
+[[48, 2]]
+[SNEK][DEBUG][one_move] Fit = 2.8684, snek moving down
+J'AI MANGE LOL
+[47, 1]
+[[47, 2]]
+[SNEK][DEBUG][one_move] Fit = 3.45796, snek moving up
+[SNEK][DEBUG][best] Score du snek 20 : -1
+[SNEK][DEBUG][max] Max de la population : 
+S id:1 p:[[5, 15]] w:[2.63077, 0.31701, 1.98401, 2.50551, 4.38065, 3.65761]
+S id:2 p:[[14, 26]] w:[0.73258, 3.45323, 1.80746, 3.33622, 3.27369, 0.38527]
+S id:3 p:[[8, 32]] w:[1.80671, 1.83736, 4.77868, 0.73559, 2.80165, 0.17311]
+S id:4 p:[[33, 25]] w:[1.56329, 2.66591, 4.68408, 4.72042, 4.57593, 3.62057]
+S id:5 p:[[45, 1]] w:[0.85329, 3.50134, 4.001, 1.62315, 4.29601, 3.81051]
+S id:6 p:[[31, 23]] w:[1.22807, 2.69077, 3.01011, 4.54569, 3.67373, 4.76939]
+S id:7 p:[[21, 23]] w:[4.04772, 4.99122, 2.52039, 0.50731, 0.66106, 3.98675]
+S id:8 p:[[19, 25]] w:[4.11053, 3.74313, 0.72854, 1.67149, 0.79044, 0.20131]
+S id:9 p:[[25, 27]] w:[2.61754, 4.26759, 1.73074, 0.04776, 4.51595, 1.89999]
+S id:10 p:[[27, 33]] w:[0.14784, 2.44389, 1.69301, 0.60274, 1.45645, 4.49199]
+S id:11 p:[[34, 30]] w:[2.39471, 3.57239, 2.50305, 1.03553, 4.67884, 1.27408]
+S id:12 p:[[34, 10]] w:[2.13012, 1.31107, 1.07754, 0.4771, 3.4944, 3.36569]
+S id:13 p:[[37, 23]] w:[3.34334, 3.40513, 1.27713, 0.9588, 1.93883, 4.99412]
+S id:14 p:[[31, 15]] w:[2.29921, 3.32305, 2.37872, 0.7993, 4.53004, 1.06602]
+S id:15 p:[[36, 4]] w:[1.8958, 3.28327, 0.61416, 0.97751, 3.70587, 3.57934]
+S id:16 p:[[25, 43]] w:[0.46238, 4.00221, 4.91806, 4.02722, 4.8087, 4.31572]
+S id:17 p:[[16, 2]] w:[4.22007, 3.40437, 4.62878, 0.03972, 3.57722, 1.11385]
+S id:18 p:[[26, 10]] w:[2.61559, 1.1064, 0.22497, 1.93934, 1.5231, 3.96461]
+S id:19 p:[[46, 28]] w:[3.0677, 3.00934, 0.00876, 3.19211, 2.23157, 1.18894]
+S id:20 p:[[48, 2]] w:[1.61651, 4.37919, 3.10223, 2.20607, 1.25189, 3.21703]
+[SNEK][DEBUG][max] Best snek de la population : 
+[SNEK][DEBUG][max] Max de la population : 
+S id:1 p:[[5, 15]] w:[2.63077, 0.31701, 1.98401, 2.50551, 4.38065, 3.65761]
+S id:2 p:[[14, 26]] w:[0.73258, 3.45323, 1.80746, 3.33622, 3.27369, 0.38527]
+S id:3 p:[[8, 32]] w:[1.80671, 1.83736, 4.77868, 0.73559, 2.80165, 0.17311]
+S id:4 p:[[33, 25]] w:[1.56329, 2.66591, 4.68408, 4.72042, 4.57593, 3.62057]
+S id:5 p:[[45, 1]] w:[0.85329, 3.50134, 4.001, 1.62315, 4.29601, 3.81051]
+S id:6 p:[[31, 23]] w:[1.22807, 2.69077, 3.01011, 4.54569, 3.67373, 4.76939]
+S id:7 p:[[21, 23]] w:[4.04772, 4.99122, 2.52039, 0.50731, 0.66106, 3.98675]
+S id:8 p:[[19, 25]] w:[4.11053, 3.74313, 0.72854, 1.67149, 0.79044, 0.20131]
+S id:9 p:[[25, 27]] w:[2.61754, 4.26759, 1.73074, 0.04776, 4.51595, 1.89999]
+S id:10 p:[[27, 33]] w:[0.14784, 2.44389, 1.69301, 0.60274, 1.45645, 4.49199]
+S id:11 p:[[34, 30]] w:[2.39471, 3.57239, 2.50305, 1.03553, 4.67884, 1.27408]
+S id:12 p:[[34, 10]] w:[2.13012, 1.31107, 1.07754, 0.4771, 3.4944, 3.36569]
+S id:13 p:[[37, 23]] w:[3.34334, 3.40513, 1.27713, 0.9588, 1.93883, 4.99412]
+S id:14 p:[[31, 15]] w:[2.29921, 3.32305, 2.37872, 0.7993, 4.53004, 1.06602]
+S id:15 p:[[36, 4]] w:[1.8958, 3.28327, 0.61416, 0.97751, 3.70587, 3.57934]
+S id:16 p:[[25, 43]] w:[0.46238, 4.00221, 4.91806, 4.02722, 4.8087, 4.31572]
+S id:17 p:[[16, 2]] w:[4.22007, 3.40437, 4.62878, 0.03972, 3.57722, 1.11385]
+S id:18 p:[[26, 10]] w:[2.61559, 1.1064, 0.22497, 1.93934, 1.5231, 3.96461]
+S id:19 p:[[46, 28]] w:[3.0677, 3.00934, 0.00876, 3.19211, 2.23157, 1.18894]
+S id:20 p:[[48, 2]] w:[1.61651, 4.37919, 3.10223, 2.20607, 1.25189, 3.21703]
+[SNEK][DEBUG][max] Best snek de la population : 
+[SNEK][DEBUG][rand_population] Population :
+S id:21 p:[[25, 25]] w:[4.55835, 4.47781, 0.86249, 0.53656, 3.68399, 4.78434]
+S id:22 p:[[25, 25]] w:[1.25767, 1.68421, 0.29675, 2.11445, 2.89396, 3.19785]
+S id:23 p:[[25, 25]] w:[2.63829, 4.05484, 2.92537, 3.80787, 1.23453, 0.62829]
+S id:24 p:[[25, 25]] w:[2.78953, 2.12015, 0.12666, 0.9705, 1.84635, 3.56068]
+S id:25 p:[[25, 25]] w:[2.03732, 3.72595, 2.33196, 4.06168, 1.29153, 3.60795]
+S id:26 p:[[25, 25]] w:[2.65932, 0.19796, 1.75419, 1.11927, 3.85579, 1.16316]
+S id:27 p:[[25, 25]] w:[3.21773, 3.16121, 1.78767, 4.9671, 0.50888, 3.23051]
+S id:28 p:[[25, 25]] w:[4.60536, 4.45275, 3.27933, 3.89419, 2.40594, 0.50858]
+S id:29 p:[[25, 25]] w:[4.3283, 2.38594, 2.40383, 0.70097, 3.41379, 2.95552]
+S id:30 p:[[25, 25]] w:[3.47533, 2.73206, 2.33395, 1.84124, 1.15316, 4.0442]
+S id:31 p:[[25, 25]] w:[3.73265, 4.54161, 2.89358, 0.55705, 4.03899, 4.07976]
+S id:32 p:[[25, 25]] w:[0.89249, 0.1544, 0.25653, 1.39675, 0.40045, 4.81047]
+S id:33 p:[[25, 25]] w:[2.01873, 3.22209, 4.06354, 0.44375, 3.73172, 1.13194]
+S id:34 p:[[25, 25]] w:[1.71044, 1.9877, 0.39506, 4.50265, 3.22192, 3.28723]
+S id:35 p:[[25, 25]] w:[1.32076, 2.60132, 1.29932, 0.05559, 4.65145, 0.33368]
+S id:36 p:[[25, 25]] w:[2.65848, 2.95536, 2.39769, 1.85778, 0.69263, 1.32358]
+S id:37 p:[[25, 25]] w:[1.18104, 3.62887, 2.2231, 4.02553, 2.50814, 0.01262]
+S id:38 p:[[25, 25]] w:[4.0865, 0.53254, 4.47351, 0.76407, 4.20896, 4.77697]
+[SNEK][DEBUG][genetic_algorithm] Iteration 0
+[SNEK][DEBUG][genetic_algorithm] Best sneks :
+
+
+[SNEK][DEBUG][genetic_algorithm] Children of best sneks
+S id:21 p:[[25, 25]] w:[4.55835, 4.47781, 0.86249, 0.53656, 3.68399, 4.78434]
+S id:22 p:[[25, 25]] w:[1.25767, 1.68421, 0.29675, 2.11445, 2.89396, 3.19785]
+S id:23 p:[[25, 25]] w:[2.63829, 4.05484, 2.92537, 3.80787, 1.23453, 0.62829]
+S id:24 p:[[25, 25]] w:[2.78953, 2.12015, 0.12666, 0.9705, 1.84635, 3.56068]
+S id:25 p:[[25, 25]] w:[2.03732, 3.72595, 2.33196, 4.06168, 1.29153, 3.60795]
+S id:26 p:[[25, 25]] w:[2.65932, 0.19796, 1.75419, 1.11927, 3.85579, 1.16316]
+S id:27 p:[[25, 25]] w:[3.21773, 3.16121, 1.78767, 4.9671, 0.50888, 3.23051]
+S id:28 p:[[25, 25]] w:[4.60536, 4.45275, 3.27933, 3.89419, 2.40594, 0.50858]
+S id:29 p:[[25, 25]] w:[4.3283, 2.38594, 2.40383, 0.70097, 3.41379, 2.95552]
+S id:30 p:[[25, 25]] w:[3.47533, 2.73206, 2.33395, 1.84124, 1.15316, 4.0442]
+S id:31 p:[[25, 25]] w:[3.73265, 4.54161, 2.89358, 0.55705, 4.03899, 4.07976]
+S id:32 p:[[25, 25]] w:[0.89249, 0.1544, 0.25653, 1.39675, 0.40045, 4.81047]
+S id:33 p:[[25, 25]] w:[2.01873, 3.22209, 4.06354, 0.44375, 3.73172, 1.13194]
+S id:34 p:[[25, 25]] w:[1.71044, 1.9877, 0.39506, 4.50265, 3.22192, 3.28723]
+S id:35 p:[[25, 25]] w:[1.32076, 2.60132, 1.29932, 0.05559, 4.65145, 0.33368]
+S id:36 p:[[25, 25]] w:[2.65848, 2.95536, 2.39769, 1.85778, 0.69263, 1.32358]
+S id:37 p:[[25, 25]] w:[1.18104, 3.62887, 2.2231, 4.02553, 2.50814, 0.01262]
+S id:38 p:[[25, 25]] w:[4.0865, 0.53254, 4.47351, 0.76407, 4.20896, 4.77697]
+[SNEK][DEBUG][mutate] On mute la population : 
+
+
