@@ -136,6 +136,7 @@ class Game
     @score -= 1 if @moves_since_food > 100
   	@moves_since_food += 1
     if @just_ate
+		puts "J'AI MANGE LOL"
       @score += 1
       @moves_since_food = 0
       new_food

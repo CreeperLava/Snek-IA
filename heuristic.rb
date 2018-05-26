@@ -23,11 +23,10 @@ class Heuristic
 		end
 
 		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime" if @debug
-		@nb_heuristic = 6
+		@nb_heuristic = 1
 		@heuristic = Array.new(@nb_heuristic)
 
 		@moves=["\e[A","\e[B","\e[C","\e[D"]   # up, down, right, left
-
 		@game = Game.new(true, true, Snek.new(25, 25, []))
 		@food = @game.food
 		puts "[SNEK][DEBUG][initialize] Initial position of food : #{@food}" if @debug
@@ -37,15 +36,15 @@ class Heuristic
 	end
 
 
-	#Fitnesse pour chacun des moves du snek
+	# Fitness pour chacun des moves du snek
 	def calcFitness(game_sim)
 		fitness = 0
 		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
-		@heuristic[1] = game_sim.snek.weights[1]*game_sim.score
-		@heuristic[2] = game_sim.snek.weights[2]*game_sim.squareness
-		@heuristic[3] = game_sim.snek.weights[3]*game_sim.compactness
-		@heuristic[4] = game_sim.snek.weights[4]*game_sim.food_ahead
-		@heuristic[5] = game_sim.snek.weights[5]*game_sim.dead_end
+		#@heuristic[1] = game_sim.snek.weights[1]*game_sim.score
+		#@heuristic[2] = game_sim.snek.weights[2]*game_sim.squareness
+		#@heuristic[3] = game_sim.snek.weights[3]*game_sim.compactness
+		#@heuristic[4] = game_sim.snek.weights[4]*game_sim.food_ahead
+		#@heuristic[5] = game_sim.snek.weights[5]*game_sim.dead_end
 
 		@heuristic.each do |h|
 			fitness += h
@@ -129,7 +128,7 @@ class Heuristic
 	end
 
 	def one_move
-		best_fit=["",-1]
+		best_fit=["",1000000000000000]
 
 		#faire jouer le snek
 		@moves.each do |m|
@@ -139,10 +138,15 @@ class Heuristic
 			game_sim.snek.pos = @game_snek.snek.pos.clone
 			game_sim.moves_since_food = @game_snek.moves_since_food.clone
 			game_sim.next_frame(m)
+			game_sim.food = @game_snek.food.clone # don't touch this, used so that we don't fuck up the distance_from_food
+			
 			@fitness = calcFitness(game_sim)
 
-			best_fit = [m, @fitness] if @fitness > best_fit[1]
+			best_fit = [m, @fitness] if @fitness < best_fit[1]
 		end
+		
+		p @game_snek.food
+		p @game_snek.snek.pos
 
 		if @debug
 			move = ""
@@ -188,6 +192,7 @@ class Heuristic
 		#on prend le meilleur et on l'enlève de la pop, pour recommencer jusqu'à temps qu'on ai les 10% de meilleurs sneks dans 'sneks_to_breed'
 		@nb_breeding_pool.times do
 			best = max(pop)
+			puts "[SNEK][DEBUG][max] Best snek de la population : #{best}" if @debug
 			pop.delete best
 			sneks_to_breed.push best
 		end
