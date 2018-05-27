@@ -35,7 +35,7 @@ class Game
     # init to ' ' except for borders (*,|,_), food(x) and snek head (^)
     # create array to store list of free tiles -> avoid looking up the whole matrix
 
-    @board = Array.new(@size_x, ' ') { Array.new(@size_y, ' ') } # store the game's board in a matrix, stored line by line. board[2][14] -> line 2, column 14
+    @board = Array.new(@size_x) { Array.new(@size_y, ' ') } # store the game's board in a matrix, stored line by line. board[2][14] -> line 2, column 14
     init_snek
     new_food
 
