@@ -215,10 +215,11 @@ class Heuristic
 				snek.weights.each do |w| # do random number of modifications on random indexes
 					w += @random.rand(5.0)*@random.rand(-1..1)
 					w = 5.0 if w > 5.0
+					w = 0.0 if w < 0.0
 				end
 			end
 		end
 	end
 end
 
-Heuristic.new(false)
+Heuristic.new(true)
