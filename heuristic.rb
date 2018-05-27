@@ -119,7 +119,7 @@ class Heuristic
 
 			# On merge les enfants et les parents
 			population = children + sneks_to_breed
-			@percent_best_snek+=@percent_best_snek*2*@percent_best_snek
+			@percent_best_snek += @percent_best_snek if (i % (@nb_iterations/10) == 0)
 		end
 		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek}, with a score of #{@score_pop[@best_snek.id]}"
 	end
