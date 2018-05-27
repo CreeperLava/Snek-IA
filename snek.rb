@@ -43,10 +43,10 @@ class Snek
 	end
 
 	def to_s
-		return "S id:#{@id} p:#{@pos} w:#{@weights}"
+		return "S id:#{@id} size:#{@pos.length} w:#{@weights}"
 	end
 
 	def to_str
-		return "S id:#{@id} p:#{@pos} w:#{@weights}"
+		return "S id:#{@id} p:#{@pos.length} w:#{@weights}"
 	end
 end
