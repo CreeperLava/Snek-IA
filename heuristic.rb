@@ -8,6 +8,7 @@ class Heuristic
 		@nb_iterations = 50
 		@taille_pop = 20
 		@percent_best_snek = 0.1
+		@mutate_rate = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
 		custom = ' ' # scanf("%c").first
@@ -69,11 +70,9 @@ class Heuristic
 	# crée un enfant, (un tableau de poids donc) à partir de deux parents
 	def child(s1,s2)
 		poids = []
-		#pour chaque poids dans chaque tableau de pois des deux sneks
-		[s1.weights,s2.weights].each_with_index  do |w1,w2, i|
+		#pour chaque poids dans chaque tableau de poids des deux sneks
+		[s1.weights,s2.weights].each_with_index  do |w1,w2,i|
 			poids[i] = [w1,w2].sample
-
-			#Mutation à rajouter
 		end
 		return poids
 	end
@@ -176,14 +175,14 @@ class Heuristic
 			# le snek est mort, l'ajouter à la hash map
 			@score_pop[snek.id] = @game_snek.score
 		end
-		sickestest_sneks = sickestest(pop, 0.1)
+		sickestest_sneks = sickestest pop
 		return sickestest_sneks
 	end
 
-	# Rend les meilleurs sneks parmis une population de snek et score, avec pourvent le pourcentage des meilleurs
-	def sickestest(pop, pourcent)
+	# Rend les meilleurs sneks parmis une population de snek et score, avec pourcent le pourcentage des meilleurs
+	def sickestest pop
 		#nb de meilleurs snek à garder
-		@nb_breeding_pool = (pourcent*pop.length.to_f).round
+		@nb_breeding_pool = (@percent_best_snek*pop.length.to_f).round
 
 		sneks_to_breed = []
 		#on prend le meilleur et on l'enlève de la pop, pour recommencer jusqu'à temps qu'on ai les 10% de meilleurs sneks dans 'sneks_to_breed'
@@ -196,7 +195,7 @@ class Heuristic
 		return sneks_to_breed
 	end
 
-	def max(pop)
+	def max pop
 		puts "[SNEK][DEBUG][max] Max de la population : " if @debug
 		puts pop if @debug
 		max, max_snek = -1, nil
@@ -206,14 +205,17 @@ class Heuristic
 		return max_snek
 	end
 
-	def mutate(sneks)
+	def mutate sneks
 		puts "[SNEK][DEBUG][mutate] On mute la population : " if @debug
 		puts sneks if @debug
 		sneks.each do |snek|
-			snek.pos = [[25,25]]
+			if(@random.rand(1.0) > (1.0 - @mutate_rate)) # mutate 10% of sneks
+				snek.pos = [[25,25]]
 
-			@random.rand(snek.weights.length).times do # do random number of modifications on random indexes
-				snek.weights[@random.rand(snek.weights.length)] += @random.rand(5.0)*@percent_best_snek*@random.rand(-1..1)
+				snek.weights.each do |w| # do random number of modifications on random indexes
+					w += @random.rand(5.0)*@random.rand(-1..1)
+					w = 5.0 if w > 5.0
+				end
 			end
 		end
 	end
