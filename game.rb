@@ -21,6 +21,7 @@ class Game
     @ai = ai # is snek controlled by an AI or a human
     @size_x = 50 # initial size of game grid
     @size_y = 50 # coordinates 0,y, 50,y and 0,x, x,50 are borders
+	@diag = Math.sqrt(@size_x**2+@size_y**2)
     @scale = @size_x/@size_y  #scale of the window, used for now in heuristic
     @snek = snek
 
@@ -136,7 +137,6 @@ class Game
     @score -= 1 if @moves_since_food > 100
   	@moves_since_food += 1
     if @just_ate
-		puts "J'AI MANGE LOL"
       @score += 1
       @moves_since_food = 0
       new_food
@@ -171,7 +171,7 @@ class Game
   end
 
   def distance_from_food
-    return Math.sqrt(((@snek.head[0] - @food[0])**2)+((@snek.head[1] - @food[1])**2)).to_f
+    return @diag - Math.sqrt(((@snek.head[0] - @food[0])**2)+((@snek.head[1] - @food[1])**2)).to_f
   end
 
   def squareness

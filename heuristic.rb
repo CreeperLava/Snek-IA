@@ -7,8 +7,8 @@ class Heuristic
 
 	def initialize(debug)
 		@debug = debug
-		@nb_iterations = 50
-		@taille_pop = 20
+		@nb_iterations = 1000
+		@taille_pop = 50
 		@percent_best_snek = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
@@ -126,7 +126,7 @@ class Heuristic
 	end
 
 	def one_move
-		best_fit=["",1000000000000000]
+		best_fit=["",-1]
 
 		#faire jouer le snek
 		@moves.each do |m|
@@ -140,11 +140,9 @@ class Heuristic
 			
 			@fitness = calcFitness(game_sim)
 
-			best_fit = [m, @fitness] if @fitness < best_fit[1]
+			best_fit = [m, @fitness] if @fitness >= best_fit[1]
 		end
 		
-		p @game_snek.food
-		p @game_snek.snek.pos
 
 		if @debug
 			move = ""
@@ -161,6 +159,7 @@ class Heuristic
 			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}, snek moving #{move}"
 		end
 
+		p @game_snek.snek.pos
 		return best_fit[0]
 	end
 
@@ -221,4 +220,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(true)
+Heuristic.new(false)
