@@ -3,12 +3,10 @@ require './snek.rb'
 require 'scanf'
 
 class Heuristic
-	@@mutation_rate = 0.9
-
 	def initialize(debug)
 		@debug = debug
-		@nb_iterations = 1000
-		@taille_pop = 50
+		@nb_iterations = 50
+		@taille_pop = 20
 		@percent_best_snek = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
@@ -163,7 +161,7 @@ class Heuristic
 		return best_fit[0]
 	end
 
-	#On va faire jouer tous les sneks et voir qui sont les meilleurs avec sickestest
+	# On va faire jouer tous les sneks et voir qui sont les meilleurs avec sickestest
 	def best(pop)
 		@score_pop = Hash.new
 		pop.each do |snek|
@@ -180,7 +178,7 @@ class Heuristic
 		return sickestest_sneks
 	end
 
-	#Rend les meilleurs sneks parmis une population de snek et score, avec pourvent le pourcentage des meilleurs
+	# Rend les meilleurs sneks parmis une population de snek et score, avec pourvent le pourcentage des meilleurs
 	def sickestest(pop, pourcent)
 		#nb de meilleurs snek à garder
 		@nb_breeding_pool = (pourcent*pop.length.to_f).round
@@ -212,9 +210,8 @@ class Heuristic
 		sneks.each do |snek|
 			snek.pos = [[25,25]]
 
-			next if @random.rand(1.0) <= @@mutation_rate
 			@random.rand(snek.weights.length).times do # do random number of modifications on random indexes
-				snek.weights[@random.rand(snek.weights.length)] = @random.rand(5.0).round(5)
+				snek.weights[@random.rand(snek.weights.length)] += @random.rand(5.0)*@percent_best_snek*@random.rand(-1..1)
 			end
 		end
 	end
