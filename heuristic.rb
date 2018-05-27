@@ -126,9 +126,11 @@ class Heuristic
 
 	def one_move
 		best_fit=["",-1]
+		moves = @moves & @game_snek.possible_moves # remove moves that result in game over
+		return @moves[0] if moves.length == 0 # if no move possible, return any move and kill yourself
 
 		#faire jouer le snek
-		@moves.each do |m|
+		moves.each do |m|
 			game_sim = Game.new(false,true,@game_snek.snek.clone)
 			game_sim.score = @game_snek.score.clone
 			game_sim.food = @game_snek.food.clone

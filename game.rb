@@ -158,6 +158,26 @@ class Game
    # str.rewind
    # str
   end
+  
+  #@moves=["\e[A","\e[B","\e[C","\e[D"]  # up, down, right, lef
+  def possible_moves
+	moves = []
+  
+	head_x = @snek.head[0]
+    head_y = @snek.head[1]
+    hit = @snek.pos.select { |e| e == [head_x, head_y] } # we hit ourselves if there is another tile of the snek with the coordinates of the head
+    # if we hit a wall or ourselves, return true
+	moves.push "\e[A" unless (hit([head_x, head_y + 1])) || (head_y + 1 >= @size_y)
+    moves.push "\e[B" unless (hit([head_x, head_y - 1])) || (head_y - 1 < 0)
+	moves.push "\e[C" unless (hit([head_x + 1, head_y])) || (head_x + 1 >= @size_x)
+	moves.push "\e[D" unless (hit([head_x - 1, head_y])) || (head_x - 1 < 0)
+	
+	return moves
+  end
+  
+  def hit position
+	return @snek.pos.include? position
+  end
 
   def game_over?
     head_x = @snek.head[0]
@@ -169,7 +189,7 @@ class Game
     end
     false
   end
-
+  
   def distance_from_food
     return @diag - Math.sqrt(((@snek.head[0] - @food[0])**2)+((@snek.head[1] - @food[1])**2)).to_f
   end
