@@ -156,10 +156,10 @@ class Heuristic
 			when "\e[D" # left
 				move = "left"
 			end
-			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}, snek moving #{move}"
+			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}, snek moving #{move}" if @debug
 		end
 
-		p @game_snek.snek.pos
+		p @game_snek.snek.pos if @debug
 		return best_fit[0]
 	end
 
@@ -223,4 +223,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(true)
+Heuristic.new(false)
