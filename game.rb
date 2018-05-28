@@ -19,8 +19,8 @@ class Game
   def initialize(display, ai, snek)
     @display = display # is display of the game activated or not
     @ai = ai # is snek controlled by an AI or a human
-    @size_x = 50 # initial size of game grid
-    @size_y = 50 # coordinates 0,y, 50,y and 0,x, x,50 are borders
+    @size_x = 20 # initial size of game grid
+    @size_y = 20 # coordinates 0,y, 50,y and 0,x, x,50 are borders
 	@diag = Math.sqrt(@size_x**2+@size_y**2)
     @scale = @size_x/@size_y  #scale of the window, used for now in heuristic
     @snek = snek
@@ -224,25 +224,25 @@ class Game
   	count = 0.0
   	1.upto(@snek.size-1) do |i|
   		1.upto(@snek.size-1) do |j|
-  			if ((@snek.pos[i][0] + @scale == @snek.pos[j][0] && @snek.pos[i][1] == @snek.pos[j][1]) ||
-  			 (@snek.pos[i][0] - @scale == @snek.pos[j][0] && @snek.pos[i][1] == @snek.pos[j][1]) ||
-  			 (@snek.pos[i][0] == @snek.pos[j][0] && @snek.pos[i][1] + @scale == @snek.pos[j][1]) ||
-  			 (@snek.pos[i][0] == @snek.pos[j][0] && @snek.pos[i][1] - @scale == @snek.pos[j][1]))
+  			if (((@snek.pos[i][0] + @scale == @snek.pos[j][0]) && (@snek.pos[i][1] == @snek.pos[j][1])) ||
+  			    ((@snek.pos[i][0] - @scale == @snek.pos[j][0]) && (@snek.pos[i][1] == @snek.pos[j][1])) ||
+  			    ((@snek.pos[i][0] == @snek.pos[j][0]) && (@snek.pos[i][1] + @scale == @snek.pos[j][1])) ||
+  			    ((@snek.pos[i][0] == @snek.pos[j][0]) && (@snek.pos[i][1] - @scale == @snek.pos[j][1])))
           		count += 1
           	end
   		end
-  		if ((@snek.pos[i][0] + @scale == @snek.head[0] && @snek.pos[i][1] == @snek.head[1]) ||
-  		 (@snek.pos[i][0] - @scale == @snek.head[0] && @snek.pos[i][1] == @snek.head[1]) ||
-  		 (@snek.pos[i][0] == @snek.head[0] && @snek.pos[i][1] + @scale == @snek.head[1]) ||
-  		 (@snek.pos[i][0] == @snek.head[0] && @snek.pos[i][1] - @scale == @snek.head[1]))
+  		if (((@snek.pos[i][0] + @scale == @snek.head[0]) && (@snek.pos[i][1] == @snek.head[1])) ||
+  		    ((@snek.pos[i][0] - @scale == @snek.head[0]) && (@snek.pos[i][1] == @snek.head[1])) ||
+  		    ((@snek.pos[i][0] == @snek.head[0]) && (@snek.pos[i][1] + @scale == @snek.head[1])) ||
+  		    ((@snek.pos[i][0] == @snek.head[0]) && (@snek.pos[i][1] - @scale == @snek.head[1])))
        		count += 1
 		end
   	end
   	1.upto(@snek.size-1) do |j|
-      if ((@snek.head[0] + @scale == @snek.pos[j][0] && @snek.head[1] == @snek.pos[j][1]) ||
-       (@snek.head[0] - @scale == @snek.pos[j][0] && @snek.head[1] == @snek.pos[j][1]) ||
-       (@snek.head[0] == @snek.pos[j][0] && @snek.head[1] + @scale == @snek.pos[j][1]) ||
-       (@snek.head[0] == @snek.pos[j][0] && @snek.head[1] - @scale == @snek.pos[j][1]))
+      if (((@snek.head[0] + @scale == @snek.pos[j][0]) && (@snek.head[1] == @snek.pos[j][1])) ||
+          ((@snek.head[0] - @scale == @snek.pos[j][0]) && (@snek.head[1] == @snek.pos[j][1])) ||
+          ((@snek.head[0] == @snek.pos[j][0]) && (@snek.head[1] + @scale == @snek.pos[j][1])) ||
+          ((@snek.head[0] == @snek.pos[j][0]) && (@snek.head[1] - @scale == @snek.pos[j][1])))
         	count += 1
       end
   	end

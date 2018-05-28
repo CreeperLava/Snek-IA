@@ -7,7 +7,7 @@ class Heuristic
 		@debug = debug
 		@nb_iterations = 50
 		@taille_pop = 20
-		@percent_best_snek = 0.1
+		@percent_best_snek = 0.5
 		@mutate_rate = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
@@ -83,7 +83,7 @@ class Heuristic
 		#On rempli avec des nouveaux sneks random
 		children = rand_population(@taille_pop-pop.length)
 		#On rempli la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
-		(@taille_pop-1).upto(pop.length) do |i|
+		0.upto(@taille_pop-pop.length-1) do |i|
 			if i < pop.length
 				children[i] = Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[i+1]))
 			else
@@ -212,15 +212,10 @@ class Heuristic
 		sneks.each do |snek|
 			if(@random.rand(1.0) > (1.0 - @mutate_rate)) # mutate 10% of sneks
 				snek.pos = [[25,25]]
-
-				snek.weights.each do |w| # do random number of modifications on random indexes
-					w += @random.rand(5.0)*@random.rand(-1..1)
-					w = 5.0 if w > 5.0
-					w = 0.0 if w < 0.0
-				end
+				snek.weights[@random.rand(@nb_heuristic)] = @random.rand(5.0).round(5) # do random number of modifications on random indexes
 			end
 		end
 	end
 end
 
-Heuristic.new(false)
+Heuristic.new(true)
