@@ -4,8 +4,8 @@ require 'scanf'
 
 class Heuristic
 	def initialize(debug)
-		@debug = debug
-		@nb_iterations = 50
+		@debug = !debug
+		@nb_iterations = 100
 		@taille_pop = 20
 		@percent_best_snek = 0.5
 		@mutate_rate = 0.1
@@ -72,7 +72,7 @@ class Heuristic
 		poids = []
 		#pour chaque poids dans chaque tableau de poids des deux sneks
 		[s1.weights,s2.weights].each_with_index  do |w1,w2,i|
-			poids[i] = [w1,w2].sample
+			poids[i] = [(w1+w2)/2]
 		end
 		return poids
 	end
@@ -119,6 +119,7 @@ class Heuristic
 			# On merge les enfants et les parents
 			population = children + sneks_to_breed
 			@percent_best_snek += @percent_best_snek if (i % (@nb_iterations/10) == 0) && (@percent_best_snek < 0.8)
+			puts "#{i} : #{@percent_best_snek}"
 		end
 		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek}, with a score of #{@score_pop[@best_snek.id]}"
 	end
@@ -156,10 +157,10 @@ class Heuristic
 			when "\e[D" # left
 				move = "left"
 			end
-			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}, snek moving #{move}" if @debug
+			puts "[SNEK][DEBUG][one_move] Fit = #{@fitness}, snek moving #{move}"
 		end
 
-		p @game_snek.snek.pos if @debug
+		p @game_snek.snek.pos
 		return best_fit[0]
 	end
 
