@@ -187,9 +187,10 @@ class Heuristic
 
 		sneks_to_breed = []
 		#on prend le meilleur et on l'enlève de la pop, pour recommencer jusqu'à temps qu'on ai les 10% de meilleurs sneks dans 'sneks_to_breed'
+		puts "[SNEK][DEBUG][max] Best sneks de la population" if @debug
 		@nb_breeding_pool.times do
 			best = max(pop)
-			puts "[SNEK][DEBUG][max] Best snek de la population : #{best}" if @debug
+			puts best if @debug
 			pop.delete best
 			sneks_to_breed.push best
 		end
@@ -197,8 +198,6 @@ class Heuristic
 	end
 
 	def max pop
-		puts "[SNEK][DEBUG][max] Max de la population : " if @debug
-		puts pop if @debug
 		max, max_snek = -1, nil
 		pop.each do |snek|
 			max, max_snek = @score_pop[snek.id], snek if @score_pop[snek.id] >= max
