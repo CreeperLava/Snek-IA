@@ -18,7 +18,7 @@ class Heuristic
 			puts "[SNEK][RUN][initialize] Type how many times the algorithm must iterate"
 			@nb_iterations = scanf("%d").first
 			puts "[SNEK][RUN][initialize] Type the percentage of best sneks that must be used for the next generation"
-			@percent_best_snek = scanf("%d").first
+			@percent_best_snek = scanf("%lf").first
 		end
 
 		puts "[SNEK][DEBUG][initialize] Creating most smart snek with #{@nb_iterations} iterations of smart algorime" if @debug
@@ -71,8 +71,8 @@ class Heuristic
 	def child(s1,s2)
 		poids = []
 		#pour chaque poids dans chaque tableau de poids des deux sneks
-		[s1.weights,s2.weights].each_with_index  do |w1,w2,i|
-			poids[i] = [(w1+w2)/2]
+		s1.weights.zip(s2.weights).each do |w, i|
+			poids[i] = [(w[0]+w[1])/2]
 		end
 		return poids
 	end
@@ -84,7 +84,7 @@ class Heuristic
 		children = rand_population(@taille_pop-pop.length)
 		#On rempli la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
 		0.upto(@taille_pop-pop.length-1) do |i|
-			if i < pop.length
+			if i < pop.length - 1
 				children[i] = Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[i+1]))
 			else
 				children[i] = Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[0]))
@@ -118,7 +118,7 @@ class Heuristic
 
 			# On merge les enfants et les parents
 			population = children + sneks_to_breed
-			@percent_best_snek += @percent_best_snek if (i % (@nb_iterations/10) == 0) && (@percent_best_snek < 0.8)
+			@percent_best_snek += @percent_best_snek if (i % (@nb_iterations/10.0).ceil == 0) && (@percent_best_snek < 0.8)
 		end
 		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek}, with a score of #{@score_pop[@best_snek.id]}"
 	end
