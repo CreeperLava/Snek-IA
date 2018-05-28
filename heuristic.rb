@@ -27,6 +27,8 @@ class Heuristic
 
 		@moves=["\e[A","\e[B","\e[C","\e[D"]   # up, down, right, left
 		@game = Game.new(true, true, Snek.new(25, 25, []))
+		@start_x = @game.size_x/2
+		@start_y = @game.size_y/2
 		@food = @game.food
 		puts "[SNEK][DEBUG][initialize] Initial position of food : #{@food}" if @debug
 		@random = Random.new
@@ -80,14 +82,16 @@ class Heuristic
 	#crée tous les enfants et remplissasse la population
 	def children(pop)
 		children = []
-		#On rempli avec des nouveaux sneks random
-		children = rand_population(@taille_pop-pop.length)
-		#On rempli la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
-		0.upto(@taille_pop-pop.length-1) do |i|
-			if i < pop.length - 1
-				children[i] = Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[i+1]))
+		#On remplit avec des nouveaux sneks random
+		nb_random = ((1-@percent_best_snek)*@taille_pop).to_i
+		children = rand_population(nb_random)
+		#On remplit la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
+		puts "CHILDREN #{nb_random} #{pop.length}"
+		0.upto(@taille_pop - nb_random - 1) do |i|
+			if i == pop.length - 1
+				children[i + nb_random] = Snek.new(@start_x,@start_y,child(pop[i],pop[0]))
 			else
-				children[i] = Snek.new(((@game.size_x)/2),((@game.size_y)/2),child(pop[i],pop[0]))
+				children[i + nb_random] = Snek.new(@start_x,@start_y,child(pop[i],pop[i+1]))
 			end
 		end
 		return children
