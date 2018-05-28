@@ -71,8 +71,8 @@ class Heuristic
 	def child(s1,s2)
 		poids = []
 		#pour chaque poids dans chaque tableau de poids des deux sneks
-		s1.weights.zip(s2.weights).each do |w, i|
-			poids[i] = [(w[0]+w[1])/2]
+		[s1.weights,s2.weights].each_with_index  do |w1,w2,i|
+			poids[i] = [(w1+w2)/2]
 		end
 		return poids
 	end
