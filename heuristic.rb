@@ -1,13 +1,15 @@
 require './game.rb'
 require './snek.rb'
 require 'scanf'
+require 'rubystats'
 
 class Heuristic
 	def initialize(debug)
 		@debug = debug
 		@nb_iterations = 50
 		@taille_pop = 20
-		@percent_best_snek = 0.5
+		@percent_best_snek = 0.25
+		@percent_enfants = 0.25
 		@mutate_rate = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
@@ -79,6 +81,37 @@ class Heuristic
 		return poids
 	end
 
+	def gaus(poids)
+
+		#moyenne
+		mean = 0
+		poids.each do |poids_|
+			mean += poids_
+		end
+		mean = mean/(poids.length)
+
+		#variance
+		variance =0 
+		poids.each do |poids_|
+			variance += poids_*poids_
+		end
+		variance = (variance/poids.length)-(mean*mean)
+
+		#ecart-type
+		sd= Math.sqrt(variance)
+
+		#generation de la loi normale
+		gen = Rubystats::NormalDistribution.new(mean, sd)
+		poids_child =[]
+
+		poids_child=gen.rng(@percent_enfants*@taille_pop)
+
+		return poids_childs
+
+
+	end 
+
+
 	#crée tous les enfants et remplissasse la population
 	def children(pop)
 		children = []
@@ -87,13 +120,27 @@ class Heuristic
 		children = rand_population(nb_random)
 		#On remplit la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
 		puts "CHILDREN #{nb_random} #{pop.length}"
-		0.upto(@taille_pop - nb_random - 1) do |i|
-			if i == pop.length - 1
-				children[i + nb_random] = Snek.new(@start_x,@start_y,child(pop[i],pop[0]))
-			else
-				children[i + nb_random] = Snek.new(@start_x,@start_y,child(pop[i],pop[i+1]))
-			end
+
+
+		#Création d'un tableua de poids créés avec une loi normale
+		new_gen_poids = [][]     #double tableau, colonnes = poids , ligne = sneks
+
+		0.upto(@percent_enfants*@taille_pop) do |i|  
+			new_gen_poids[i]=gaus((pop.map{ |w| w.weights[i]}).flatten)
 		end
+
+		temp_snek = []
+		temp_poids = []
+		0.upto(@percent_enfants*@taille_pop) do |i|
+			0.upto(new_gen_poids.length) do |k|
+				temp_poids=new_gen_poids[k][i]     # on rempli un tableau de poids pour UN seul snek, le snek i 
+			end
+			temp_snek[i]= Snek.new(@start_x,@start_y,temp_poids[i])   #on créé les fameux sneks
+		end
+
+		#concaténation des sneks avec les randoms et pop (pop étant les sneks to breed, les @percent_best_sneks meilleurs)
+		children+=temp_snek + pop
+
 		return children
 	end
 
