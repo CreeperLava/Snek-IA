@@ -5,7 +5,7 @@ require 'rubystats'
 
 class Heuristic
 	def initialize(debug)
-		@debug = debug
+		@debug = !debug
 		@nb_iterations = 50
 		@taille_pop = 20
 		@percent_best_snek = 0.25
@@ -94,7 +94,7 @@ class Heuristic
 		gen = Rubystats::NormalDistribution.new(mean, sd)
 		poids_child = gen.rng(@percent_enfants*@taille_pop)
 
-		return poids_childs
+		return poids_child
 	end 
 
 
@@ -102,30 +102,33 @@ class Heuristic
 	def children(pop)
 		children = []
 		#On remplit avec des nouveaux sneks random
-		nb_random = ((1-@percent_best_snek)*@taille_pop).to_i
-		children = rand_population(nb_random)
+		
 		#On remplit la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
-		puts "CHILDREN #{nb_random} #{pop.length}"
-
+		nb_best = (@percent_best_snek*@taille_pop).round
+		nb_crossover =  (@percent_enfants*@taille_pop).round
 
 		#Création d'un tableua de poids créés avec une loi normale
-		new_gen_poids = [][]     #double tableau, colonnes = poids , ligne = sneks
-
-		0.upto(@percent_enfants*@taille_pop) do |i|  
-			new_gen_poids[i]=gaus((pop.map{ |w| w.weights[i]}).flatten)
+		new_gen_poids = [[]]     #double tableau, colonnes = poids , ligne = sneks
+		puts "sneks_to_breed : #{pop.each{ |s| s.id}}"
+		0.upto(@nb_heuristic-1) do |i|  
+			#puts " poids des meilleurs #{pop.id}"
+			new_gen_poids[i]=gauss((pop.map{ |w| w.weights[i]}).flatten)
 		end
 
 		temp_snek = []
 		temp_poids = []
-		0.upto(@percent_enfants*@taille_pop) do |i|
-			0.upto(new_gen_poids.length) do |k|
-				temp_poids=new_gen_poids[k][i]     # on rempli un tableau de poids pour UN seul snek, le snek i 
+		0.upto(nb_best-1) do |i|
+			0.upto(new_gen_poids.length-1) do |k|
+				temp_poids[k]=new_gen_poids[k][i]     # on rempli un tableau de poids pour UN seul snek, le snek i 
 			end
 			temp_snek[i]= Snek.new(@start_x,@start_y,temp_poids[i])   #on créé les fameux sneks
 		end
 
 		#concaténation des sneks avec les randoms et pop (pop étant les sneks to breed, les @percent_best_sneks meilleurs)
 		children+=temp_snek + pop
+
+		nb_random = @taille_pop-nb_best-nb_crossover
+		children += rand_population(nb_random)
 
 		return children
 	end
@@ -134,11 +137,14 @@ class Heuristic
 		population = rand_population(@taille_pop)
 		@nb_iterations.times do |i|
 			# Le meilleur snek
-
+			puts"gen numéro : #{i}"
 			# Renvoie les 10% des meilleurs individus
 			sneks_to_breed = best(population)
 			@best_snek = max(sneks_to_breed) if (i+1) == @nb_iterations
 			# On génére une nouvelle population à partir de ceux-là
+
+
+			
 			children = children(sneks_to_breed)
 
 			puts "[SNEK][DEBUG][genetic_algorithm] Iteration #{i}" if @debug
@@ -153,6 +159,7 @@ class Heuristic
 			puts "[SNEK][DEBUG][genetic_algorithm] Mutated sneks :" if @debug
 			puts sneks_to_breed if @debug
 
+			puts " scord de la pop :#{@score_pop}"
 			# On merge les enfants et les parents
 			population = children + sneks_to_breed
 			@percent_best_snek += @percent_best_snek if (i % (@nb_iterations/10.0).ceil == 0) && (@percent_best_snek < 0.8)
