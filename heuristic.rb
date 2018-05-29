@@ -81,7 +81,7 @@ class Heuristic
 		return poids
 	end
 
-	def gaus(poids)
+	def gauss(poids)
 
 		#moyenne
 		mean = 0
