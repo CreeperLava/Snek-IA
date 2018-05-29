@@ -82,33 +82,19 @@ class Heuristic
 	end
 
 	def gauss(poids)
+		# moyenne
+		mean = poids.sum / poids.length
+		# variance
+		variance = poids.map {|p| p**2 }.sum # somme des poids au carré
+		variance = (variance/poids.length) - (mean**2)
+		# écart-type
+		sd = Math.sqrt(variance)
 
-		#moyenne
-		mean = 0
-		poids.each do |poids_|
-			mean += poids_
-		end
-		mean = mean/(poids.length)
-
-		#variance
-		variance =0 
-		poids.each do |poids_|
-			variance += poids_*poids_
-		end
-		variance = (variance/poids.length)-(mean*mean)
-
-		#ecart-type
-		sd= Math.sqrt(variance)
-
-		#generation de la loi normale
+		# génération de la loi normale
 		gen = Rubystats::NormalDistribution.new(mean, sd)
-		poids_child =[]
-
-		poids_child=gen.rng(@percent_enfants*@taille_pop)
+		poids_child = gen.rng(@percent_enfants*@taille_pop)
 
 		return poids_childs
-
-
 	end 
 
 
