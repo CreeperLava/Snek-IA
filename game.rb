@@ -21,7 +21,6 @@ class Game
     @ai = ai # is snek controlled by an AI or a human
     @size_x = 20 # initial size of game grid
     @size_y = 20 # coordinates 0,y, 50,y and 0,x, x,50 are borders
-	@diag = @size_x + @size_y
     @scale = @size_x / @size_y  #scale of the window, used for now in heuristic
     @snek = snek
     @border = ['*'] + Array.new(@size_x, '-') + ['*']

@@ -41,20 +41,18 @@ class Heuristic
 
 	# Fitness pour chacun des moves du snek
 	def calcFitness(game_sim)
-		@heuristic = Marshal.load(Marshal.dump(game_sim.snek.weights))
-		@heuristic[0] *= game_sim.distance_from_food
-		@heuristic[1] *= game_sim.squareness
-		@heuristic[2] *= game_sim.compactness
-		@heuristic[3] *= game_sim.score
-		@heuristic[4] *= game_sim.connectivity
-		@heuristic[5] *= game_sim.dead_end
-
+		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
+		@heuristic[1] = game_sim.snek.weights[1]*game_sim.squareness
+		@heuristic[2] = game_sim.snek.weights[2]*game_sim.compactness
+		@heuristic[3] = game_sim.snek.weights[3]*game_sim.score
+		@heuristic[4] = game_sim.snek.weights[4]*game_sim.connectivity
+		@heuristic[5] = game_sim.snek.weights[5]*game_sim.dead_end
 		return @heuristic.sum # sum of heuristics = fitness
 	end
 
 	# returns random population of n sneks with default start coordinates and random array of weights
 	def rand_population(n)
-		return Array.new(n) { Snek.new(@start_x,@start_y, Array.new(@nb_heuristic) { @random.rand(5.0) }) }
+		return Array.new(n) { Snek.new(@start_x,@start_y, Array.new(@nb_heuristic) { @random.rand(-5.0..5.0) }) }
 	end
 
 	def gauss(weights, nb_children)
@@ -71,7 +69,7 @@ class Heuristic
 		gen = Rubystats::NormalDistribution.new(mean, sd)
 
 		# return nb samples of gaussian law
-		return gen.rng(nb_children).map!{|w| w < 0 ? 0 : w}
+		return gen.rng(nb_children)
 	end
 
 
@@ -222,4 +220,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(false, false) # debug, display
+Heuristic.new(true, true) # debug, display
