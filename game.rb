@@ -74,7 +74,6 @@ class Game
   # returns a random empty space on the board
   def empty_space
 	i = @rng.rand((@size_x-1)*(@size_y-1) - @snek.size - 1) # i-ième case vide du board
-
 	0.upto(@size_x) do |x|
 		0.upto(@size_y) do |y|
 			if i <= 0 && @board[x][y] == ' '
@@ -103,7 +102,7 @@ class Game
       move_snek move
       sleep(1) # 1 FPS 1080p
     end
-
+	
     if @display
       draw! # update game display on console
     end
@@ -256,23 +255,19 @@ class Game
   end
   
 	def dead_end
-		@tempGrid = @board.clone
 		h = @snek.head.map { |c| c/@scale } # divides coords of snek head by scale
+		@tempGrid = Marshal.load(Marshal.dump(@board)) # clean clone of object
 		
-		propagate(h[0] + 1, h[1]) if( (h[0] !== @size_x) && (@tempGrid[h[0]+1][h[1]] == ' ') )
-		propagate(h[0] - 1, h[1]) if( (h[0] !== -1) && (@tempGrid[h[0]-1][h[1]] == ' ') )
-		propagate(h[0], h[1] + 1) if( (h[1] !== @size_y) && (@tempGrid[h[0]][h[1]+1] == ' ') )
-		propagate(h[0], h[1] - 1) if( (h[1] !== -1) && (@tempGrid[h[0]][h[1]-1] == ' ') )
-		
+		propagate(h[0],h[1])
 		return blankcount
 	end
 	
 	# how much the snek separates the board
 	def connectivity
 		coords = empty_space
-		@tempGrid = @board.clone
+		@tempGrid = Marshal.load(Marshal.dump(@board))
 		
-		propagate(coords)
+		propagate(coords[0],coords[1])
 		return blankcount
 	end
 	
@@ -280,14 +275,12 @@ class Game
 		return @tempGrid.flatten.count(' ')
 	end
 	
-	def propagate(coords)
-		x = coords[0]
-		y = coords[1]
+	def propagate(x,y)
 		@tempGrid[x][y] = 'x'
 		
-		propagate([x + 1,y]) if( (x !== @size_x - 1) && (@tempGrid[x + 1][y] == ' ') )
-		propagate([x,y + 1]) if( (y !== @size_y - 1) && (@tempGrid[x][y + 1] == ' ') )
-		propagate([x - 1,y]) if( (x !== 0) && (@tempGrid[x - 1][y] == ' ') )
-		propagate([x,y - 1]) if( (y !== 0) && (@tempGrid[x][y - 1] == ' ') )
+		propagate(x + 1,y) if( (x != @size_x - 1) && (@tempGrid[x + 1][y] == ' ') )
+		propagate(x,y + 1) if( (y != @size_y - 1) && (@tempGrid[x][y + 1] == ' ') )
+		propagate(x - 1,y) if( (x != 0) && (@tempGrid[x - 1][y] == ' ') )
+		propagate(x,y - 1) if( (y != 0) && (@tempGrid[x][y - 1] == ' ') )
 	end
 end

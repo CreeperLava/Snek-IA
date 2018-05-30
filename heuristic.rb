@@ -42,7 +42,7 @@ class Heuristic
 
 	# Fitness pour chacun des moves du snek
 	def calcFitness(game_sim)
-		@heuristic = game_sim.snek.weights.clone
+		@heuristic = Marshal.load(Marshal.dump(game_sim.snek.weights))
 		@heuristic[0] *= game_sim.distance_from_food
 		@heuristic[1] *= game_sim.squareness
 		@heuristic[2] *= game_sim.compactness
@@ -144,23 +144,19 @@ class Heuristic
 	end
 
 	def one_move
-		best_fit=["",-1]
+		best_fit=["",nil]
 		moves = @moves & @game_snek.possible_moves # remove moves that result in game over
 		return @moves[0] if moves.length == 0 # if no move possible, return any move and kill yourself
 
 		#faire jouer le snek
 		moves.each do |m|
-			game_sim = Game.new(false,true,@game_snek.snek.clone)
-			game_sim.score = @game_snek.score.clone
-			game_sim.food = @game_snek.food.clone
-			game_sim.snek.pos = @game_snek.snek.pos.clone
-			game_sim.moves_since_food = @game_snek.moves_since_food.clone
+			game_sim = Marshal.load(Marshal.dump(@game_snek))
 			game_sim.next_frame(m)
-			game_sim.food = @game_snek.food.clone # don't touch this, used so that we don't fuck up the distance_from_food
+			game_sim.food = @game_snek.food # don't touch this, used so that we don't fuck up the distance_from_food
 
 			@fitness = calcFitness(game_sim)
 
-			best_fit = [m, @fitness] if @fitness >= best_fit[1]
+			best_fit = [m, @fitness] if (best_fit[1].nil? || @fitness >= best_fit[1])
 		end
 
 
@@ -226,4 +222,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(false, true)
+Heuristic.new(true, false) # debug, display
