@@ -155,17 +155,14 @@ class Game
   def draw!
     # check if it is possible to keep the StringIO from frame to frame and just edit what changed, then rewind and read
 	
-	string = ""
+	string = "\"Keep quiet, THE snek is training...\n"
 	string += "#{@border.join}\n"
     @size_x.times do |x|
       string += "|#{@board[x].join}|\n"
     end
-    string += "#{@border.join}\nScore : #{@score}\nLength : #{@snek.size}\n"
-	system("printf '\033[;H'")
-	
-	printf string
-
-  	sleep 0.001
+    string += "#{@border.join}\nScore : #{@score}\nLength : #{@snek.size}\n\""
+	system("printf '\033[;H';printf '\e[?25l'")
+	system("printf #{string}")
   end
 
   #@moves=["\e[A","\e[B","\e[C","\e[D"]  # up, down, right, lef
