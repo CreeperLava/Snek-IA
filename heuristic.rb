@@ -51,7 +51,7 @@ class Heuristic
 
 	# returns random population of n sneks with default start coordinates and random array of weights
 	def rand_population(n)
-		return Array.new(n) { Snek.new(@start_x,@start_y, Array.new(@nb_heuristic) { rand(5.0).round(5) }) }
+		return Array.new(n) { Snek.new(@start_x,@start_y, Array.new(@nb_heuristic) { @random.rand(5.0).round(5) }) }
 	end
 
 	def gauss(weights, nb_children)
@@ -80,13 +80,13 @@ class Heuristic
 		#On remplit la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
 		nb_old_sneks = (@percent_best_snek*@taille_pop).round
 		nb_children = (@percent_enfants*@taille_pop).round
-		nb_random = @taille_pop - nb_best - nb_crossover
+		nb_random = @taille_pop - nb_old_sneks - nb_children
 
+		# on crée une loi normale à partir du tableau du i-ème poids des sneks de pop
+		# chaque ligne correspond à un nb_children poids générés à partir de cette loi normale
 		new_gen_weights = []
 		0.upto(@nb_heuristic-1) do |i|
-			# on crée une loi normale à partir du tableau du i-ème poids des sneks de pop
-			# chaque ligne correspond à un nb_children poids générés à partir de cette loi normale
-			new_gen_weights[i]=gauss((pop.map{ |w| w.weights[i]}).flatten, nb_children)
+			new_gen_weights[i] = gauss((pop.map{ |w| w.weights[i]}).flatten, nb_children)
 		end
 
 		# each line corresponds to the weights of one snek
