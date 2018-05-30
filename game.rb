@@ -148,7 +148,7 @@ class Game
   end
 
   def draw!
-  	sleep 0.1
+  	sleep 0.001
   	system('clear')
     # check if it is possible to keep the StringIO from frame to frame and just edit what changed, then rewind and read
 	puts @border.join
@@ -156,6 +156,7 @@ class Game
       puts "|#{@board[x].join}|"
     end
     puts @border.join
+    puts "Score : #{@score}"
 
    # str.rewind
    # puts str.read

@@ -4,8 +4,9 @@ require 'scanf'
 require 'rubystats'
 
 class Heuristic
-	def initialize(debug)
+	def initialize(debug, display)
 		@debug = debug
+		@display = display
 		@nb_iterations = 50
 		@taille_pop = 30
 		@percent_best_snek = 0.25
@@ -183,7 +184,7 @@ class Heuristic
 	def best(pop)
 		@score_pop = Hash.new
 		pop.each do |snek|
-			@game_snek = Game.new(true, true, snek)
+			@game_snek = Game.new(@display, true, snek)
 			puts "[SNEK][DEBUG][best] On joue avec : #{snek}" if @debug
 			# On joue jusqu'à la mort
 			@game_snek.next_frame one_move until @game_snek.game_over?
@@ -222,4 +223,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(false)
+Heuristic.new(false, true)
