@@ -5,7 +5,7 @@ require 'rubystats'
 
 class Heuristic
 	def initialize(debug)
-		@debug = !debug
+		@debug = debug
 		@nb_iterations = 50
 		@taille_pop = 20
 		@percent_best_snek = 0.25
@@ -41,32 +41,17 @@ class Heuristic
 
 	# Fitness pour chacun des moves du snek
 	def calcFitness(game_sim)
-		fitness = 0
 		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
 		@heuristic[1] = game_sim.snek.weights[1]*game_sim.score
 		@heuristic[2] = game_sim.snek.weights[2]*game_sim.squareness
 		@heuristic[3] = game_sim.snek.weights[3]*game_sim.compactness
 
-		@heuristic.each do |h|
-			fitness += h
-		end
-		return fitness
+		return @heuristic.sum # sum of heuristics = fitness
 	end
 
+	# returns random population of n sneks with default start coordinates and random array of weights
 	def rand_population(n)
-		pop = []
-
-		n.times do
-			weights = []
-			@nb_heuristic.times do
-				weights.push @random.rand(5.0).round(5)
-			end
-			pop.push Snek.new(@start_x,@start_y,weights)
-		end
-
-		puts "[SNEK][DEBUG][rand_population] Population :" if @debug
-		puts pop if @debug
-		return pop
+		return Array.new(n) { Snek.new(@start_x,@start_y, Array.new(@nb_heuristic) { rand(5.0).round(5) }) }
 	end
 
 	def gauss(weights, nb_children)
@@ -234,17 +219,6 @@ class Heuristic
 			max, max_snek = @score_pop[snek.id], snek if @score_pop[snek.id] >= max
 		end
 		return max_snek
-	end
-
-	def mutate sneks
-		puts "[SNEK][DEBUG][mutate] On mute la population : " if @debug
-		puts sneks if @debug
-		sneks.each do |snek|
-			if(@random.rand(1.0) > (1.0 - @mutate_rate)) # mutate 10% of sneks
-				snek.pos = [[25,25]]
-				snek.weights[@random.rand(@nb_heuristic)] = @random.rand(5.0).round(5) # do random number of modifications on random indexes
-			end
-		end
 	end
 end
 
