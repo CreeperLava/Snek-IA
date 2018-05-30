@@ -254,6 +254,18 @@ class Game
 	
 	return count/@snek.size
   end
+  
+	def dead_end
+		@tempGrid = @board.clone
+		h = @snek.head.map { |c| c/@scale } # divides coords of snek head by scale
+		
+		propagate(h[0] + 1, h[1]) if( (h[0] !== @size_x) && (@tempGrid[h[0]+1][h[1]] == ' ') )
+		propagate(h[0] - 1, h[1]) if( (h[0] !== -1) && (@tempGrid[h[0]-1][h[1]] == ' ') )
+		propagate(h[0], h[1] + 1) if( (h[1] !== @size_y) && (@tempGrid[h[0]][h[1]+1] == ' ') )
+		propagate(h[0], h[1] - 1) if( (h[1] !== -1) && (@tempGrid[h[0]][h[1]-1] == ' ') )
+		
+		return blankcount
+	end
 	
 	# how much the snek separates the board
 	def connectivity
@@ -261,6 +273,10 @@ class Game
 		@tempGrid = @board.clone
 		
 		propagate(coords)
+		return blankcount
+	end
+	
+	def blankcount
 		return @tempGrid.flatten.count(' ')
 	end
 	
