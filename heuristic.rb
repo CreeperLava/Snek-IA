@@ -7,7 +7,7 @@ class Heuristic
 	def initialize(debug)
 		@debug = debug
 		@nb_iterations = 50
-		@taille_pop = 20
+		@taille_pop = 30
 		@percent_best_snek = 0.25
 		@percent_enfants = 0.25
 		@mutate_rate = 0.1
@@ -42,16 +42,16 @@ class Heuristic
 	# Fitness pour chacun des moves du snek
 	def calcFitness(game_sim)
 		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
-		@heuristic[1] = game_sim.snek.weights[1]*game_sim.score
-		@heuristic[2] = game_sim.snek.weights[2]*game_sim.squareness
-		@heuristic[3] = game_sim.snek.weights[3]*game_sim.compactness
+		@heuristic[3] = game_sim.snek.weights[3]*game_sim.score
+		@heuristic[1] = game_sim.snek.weights[1]*game_sim.squareness
+		@heuristic[2] = game_sim.snek.weights[2]*game_sim.compactness
 
 		return @heuristic.sum # sum of heuristics = fitness
 	end
 
 	# returns random population of n sneks with default start coordinates and random array of weights
 	def rand_population(n)
-		return Array.new(n) { Snek.new(@start_x,@start_y, Array.new(@nb_heuristic) { @random.rand(5.0).round(5) }) }
+		return Array.new(n) { Snek.new(@start_x,@start_y, Array.new(@nb_heuristic) { @random.rand(5.0) }) }
 	end
 
 	def gauss(weights, nb_children)
@@ -68,7 +68,7 @@ class Heuristic
 		gen = Rubystats::NormalDistribution.new(mean, sd)
 
 		# return nb samples of gaussian law
-		return gen.rng(nb_children)
+		return gen.rng(nb_children).map!{|w| w < 0 ? 0 : w}
 	end
 
 
@@ -99,19 +99,19 @@ class Heuristic
 			new_sneks.push Snek.new(@start_x,@start_y,snek_weights)
 		end
 		puts "[SNEK][DEBUG][children] New sneks + gaussian sneks :" if @debug
-		p new_sneks if @debug
+		puts new_sneks if @debug
 
 		# keep best sneks from one gen to the next
 		pop.each do |old_snek|
 			new_sneks.push Snek.new(@start_x,@start_y,old_snek.weights)
 		end
 		puts "[SNEK][DEBUG][children] New sneks + old sneks :" if @debug
-		p new_sneks if @debug
+		puts new_sneks if @debug
 
 		# add random sneks to complete population
 		new_sneks += rand_population(nb_random)
 		puts "[SNEK][DEBUG][children] New sneks + random sneks :" if @debug
-		p new_sneks if @debug
+		puts new_sneks if @debug
 
 		return new_sneks
 	end
@@ -183,7 +183,7 @@ class Heuristic
 	def best(pop)
 		@score_pop = Hash.new
 		pop.each do |snek|
-			@game_snek = Game.new(false, true, snek)
+			@game_snek = Game.new(true, true, snek)
 			puts "[SNEK][DEBUG][best] On joue avec : #{snek}" if @debug
 			# On joue jusqu'à la mort
 			@game_snek.next_frame one_move until @game_snek.game_over?
@@ -222,4 +222,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(true)
+Heuristic.new(false)

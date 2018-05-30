@@ -24,6 +24,7 @@ class Game
 	@diag = Math.sqrt(@size_x**2+@size_y**2)
     @scale = @size_x/@size_y  #scale of the window, used for now in heuristic
     @snek = snek
+    @border = ['*'] + Array.new(@size_x, '-') + ['*']
 
     @moves_since_food = 0
 
@@ -127,12 +128,11 @@ class Game
   # edit matrix
   # edit snek pos
   def move_snek move
-    @just_ate,old_head = @snek.move(move,food)
+    @just_ate,old_head,old_tail = @snek.move(move,food)
 
     return if game_over?
     @board[old_head[0]][old_head[1]] = ' '
     @board[@snek.head[0]][@snek.head[1]] = '^' # move head to new position
-
     # if snek just ate, it grew, so leave tail
     @score -= 1 if @moves_since_food > 100
   	@moves_since_food += 1
@@ -141,28 +141,32 @@ class Game
       @moves_since_food = 0
       new_food
       @just_ate = false
-	  @board[@snek.tail[0]][@snek.tail[1]] = ' ' # remove tail
     end
 
-    @board[@snek.pos[1][0]][@snek.pos[1][1]] = '~' unless @snek.pos.length == 1
+	@board[old_tail[0]][old_tail[1]] = ' ' # remove tail
+    @board[@snek.pos[1][0]][@snek.pos[1][1]] = 'o' unless @snek.pos.length == 1
   end
 
   def draw!
+  	sleep 0.1
+  	system('clear')
     # check if it is possible to keep the StringIO from frame to frame and just edit what changed, then rewind and read
+	puts @border.join
     @size_x.times do |x|
-      puts @board[x].join
+      puts "|#{@board[x].join}|"
     end
+    puts @border.join
 
    # str.rewind
    # puts str.read
    # str.rewind
    # str
   end
-  
+
   #@moves=["\e[A","\e[B","\e[C","\e[D"]  # up, down, right, lef
   def possible_moves
 	moves = []
-  
+
 	head_x = @snek.head[0]
     head_y = @snek.head[1]
     hit = @snek.pos.select { |e| e == [head_x, head_y] } # we hit ourselves if there is another tile of the snek with the coordinates of the head
@@ -171,10 +175,10 @@ class Game
     moves.push "\e[B" unless (hit([head_x, head_y - 1])) || (head_y - 1 < 0)
 	moves.push "\e[C" unless (hit([head_x + 1, head_y])) || (head_x + 1 >= @size_x)
 	moves.push "\e[D" unless (hit([head_x - 1, head_y])) || (head_x - 1 < 0)
-	
+
 	return moves
   end
-  
+
   def hit position
 	return @snek.pos.include? position
   end
@@ -189,7 +193,7 @@ class Game
     end
     false
   end
-  
+
   def distance_from_food
     return @diag - Math.sqrt(((@snek.head[0] - @food[0])**2)+((@snek.head[1] - @food[1])**2)).to_f
   end

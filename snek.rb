@@ -14,6 +14,7 @@ class Snek
 
 	def move(key,food)
 		old_head = head
+		old_tail = tail
 		puts "YOU IDIOT TELL ME WHERE TO MOVE" if key == ""
 		case key # and move head
 			when "\e[A" # up
@@ -27,7 +28,7 @@ class Snek
 		end
 		snake_ate = (head == food)
 		@pos.pop unless snake_ate # remove tail
-		return snake_ate,old_head
+		return snake_ate,old_head,old_tail
 	end
 
 	def head
