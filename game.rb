@@ -17,6 +17,7 @@ class Game
   attr_accessor :size_x, :size_y, :food, :score, :snek, :moves_since_food, :display
 
   def initialize(display, ai, snek)
+	system("clear")
     @display = display # is display of the game activated or not
     @ai = ai # is snek controlled by an AI or a human
     @size_x = 20 # initial size of game grid
@@ -152,20 +153,19 @@ class Game
   end
 
   def draw!
-  	sleep 0.001
-  	system('clear')
     # check if it is possible to keep the StringIO from frame to frame and just edit what changed, then rewind and read
-	puts @border.join
+	
+	string = ""
+	string += "#{@border.join}\n"
     @size_x.times do |x|
-      puts "|#{@board[x].join}|"
+      string += "|#{@board[x].join}|\n"
     end
-    puts @border.join
-    puts "Score : #{@score}"
+    string += "#{@border.join}\nScore : #{@score}\nLength : #{@snek.size}\n"
+	system("printf '\033[;H'")
+	
+	printf string
 
-   # str.rewind
-   # puts str.read
-   # str.rewind
-   # str
+  	sleep 0.001
   end
 
   #@moves=["\e[A","\e[B","\e[C","\e[D"]  # up, down, right, lef
