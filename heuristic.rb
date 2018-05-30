@@ -57,13 +57,11 @@ class Heuristic
 		pop = []
 
 		n.times do
-			weight = []
-
+			weights = []
 			@nb_heuristic.times do
-				p = @random.rand(5.0).round(5)
-				weight.push p
+				weights.push @random.rand(5.0).round(5)
 			end
-			pop.push Snek.new(((@game.size_x)/2),((@game.size_y)/2), weight)
+			pop.push Snek.new(@start_x,@start_y,weights)
 		end
 
 		puts "[SNEK][DEBUG][rand_population] Population :" if @debug
@@ -71,104 +69,87 @@ class Heuristic
 		return pop
 	end
 
-	# crée un enfant, (un tableau de poids donc) à partir de deux parents
-	def child(s1,s2)
-		poids = []
-		#pour chaque poids dans chaque tableau de poids des deux sneks
-		s1.weights.zip(s2.weights).each_with_index do |w,i|
-			poids[i] = ((w[0]+w[1])/2).round(5)
-		end
-		return poids
-	end
-
-	def gauss(poids)
+	def gauss(weights, nb_children)
 		# moyenne
-		mean = poids.sum / poids.length
+		mean = weights.sum / weights.length
 
 		# variance
-		variance = poids.map {|p| p**2 }.sum # somme des poids au carré
-		variance = (variance/poids.length) - (mean**2)
+		variance = weights.map {|w| w**2 }.sum # somme des weights au carré
+		variance = (variance/weights.length) - (mean**2)
 		# écart-type
 		sd = Math.sqrt(variance)
 
 		# génération de la loi normale
 		gen = Rubystats::NormalDistribution.new(mean, sd)
-		poids_child = gen.rng(@percent_enfants*@taille_pop)
-		return poids_child
-	end 
+
+		# return nb samples of gaussian law
+		return gen.rng(nb_children)
+	end
 
 
 	#crée tous les enfants et remplissasse la population
 	def children(pop)
-		children = []
+		new_sneks = []
 		#On remplit avec des nouveaux sneks random
-		
+
 		#On remplit la population avec les enfants des meilleurs, chaque meilleur va se reproduire avec deux autres meilleurs, un genre de polygamisme quoi
-		nb_best = (@percent_best_snek*@taille_pop).round
-		nb_crossover =  (@percent_enfants*@taille_pop).round
+		nb_old_sneks = (@percent_best_snek*@taille_pop).round
+		nb_children = (@percent_enfants*@taille_pop).round
+		nb_random = @taille_pop - nb_best - nb_crossover
 
-		#Création d'un tableua de poids créés avec une loi normale
-		new_gen_poids = [[]]     #double tableau, colonnes = poids , ligne = sneks
-		0.upto(@nb_heuristic-1) do |i|  
-			#puts " poids des meilleurs #{pop.id}"
-			new_gen_poids[i]=gauss((pop.map{ |w| w.weights[i]}).flatten)
-			
+		new_gen_weights = []
+		0.upto(@nb_heuristic-1) do |i|
+			# on crée une loi normale à partir du tableau du i-ème poids des sneks de pop
+			# chaque ligne correspond à un nb_children poids générés à partir de cette loi normale
+			new_gen_weights[i]=gauss((pop.map{ |w| w.weights[i]}).flatten, nb_children)
 		end
 
-		temp_snek = []
-		temp_poids = []
+		# each line corresponds to the weights of one snek
+		new_gen_weights = new_gen_weights.transpose
+		puts "[SNEK][DEBUG][children] New weights for new sneks :" if @debug
+		p new_gen_weights if @debug
 
-		0.upto(nb_best-1) do |i|
-			0.upto(new_gen_poids.length-1) do |k|
-				temp_poids[k]=new_gen_poids[k][i]     # on rempli un tableau de poids pour UN seul snek, le snek i 
-				
-			end
-			
-			temp_snek[i]= Snek.new(@start_x,@start_y,temp_poids)   #on créé les fameux sneks
+		# children of best sneks through gaussian law
+		new_gen_weights.each do |snek_weights|
+			new_sneks.push Snek.new(@start_x,@start_y,snek_weights)
 		end
+		puts "[SNEK][DEBUG][children] New sneks + gaussian sneks :" if @debug
+		p new_sneks if @debug
 
-		old_gen_rebirth=[]
-		#concaténation des sneks avec les randoms et pop (pop étant les sneks to breed, les @percent_best_sneks meilleurs)
-		pop.each_with_index do |snek , i|
-			old_gen_rebirth[i]= Snek.new(@start_x,@start_y, snek.weights)
+		# keep best sneks from one gen to the next
+		pop.each do |old_snek|
+			new_sneks.push Snek.new(@start_x,@start_y,old_snek.weights)
 		end
+		puts "[SNEK][DEBUG][children] New sneks + old sneks :" if @debug
+		p new_sneks if @debug
 
-		puts"old_gen_rebirth = #{old_gen_rebirth}"
-		children+=temp_snek + old_gen_rebirth
+		# add random sneks to complete population
+		new_sneks += rand_population(nb_random)
+		puts "[SNEK][DEBUG][children] New sneks + random sneks :" if @debug
+		p new_sneks if @debug
 
-		nb_random = @taille_pop-nb_best-nb_crossover
-		children += rand_population(nb_random)
-
-		return children
+		return new_sneks
 	end
 
 	def genetic_algorithm
+		# on génère initialement une population aléatoire
 		population = rand_population(@taille_pop)
 		@nb_iterations.times do |i|
-			# Le meilleur snek
-			puts"gen numéro : #{i}"
-			# Renvoie les 10% des meilleurs individus
+			# Renvoie les meilleurs individus
 			sneks_to_breed = best(population)
 			@best_snek = max(sneks_to_breed) if (i+1) == @nb_iterations
-			# On génére une nouvelle population à partir de ceux-là
 
-
-			population = children(sneks_to_breed)
-
-			puts "nouvelle gen = #{population}"
-
+			# On génére une nouvelle population à partir des meilleurs
 			puts "[SNEK][DEBUG][genetic_algorithm] Iteration #{i}" if @debug
 			puts "[SNEK][DEBUG][genetic_algorithm] Best sneks :" if @debug
 			puts sneks_to_breed if @debug
-			puts "[SNEK][DEBUG][genetic_algorithm] Children of best sneks" if @debug
-			puts children if @debug
+			population = children(sneks_to_breed)
 
+			puts "[SNEK][DEBUG][genetic_algorithm] New population for next iteration" if @debug
+			puts population if @debug
+			puts "[SNEK][DEBUG][genetic_algorithm] Score de la population :" if @debug
+			p @score_pop if @debug
 
-			puts "[SNEK][DEBUG][genetic_algorithm] Mutated sneks :" if @debug
-			puts sneks_to_breed if @debug
-
-			puts " scord de la pop :#{@score_pop}"
-			#@percent_best_snek += @percent_best_snek if (i % (@nb_iterations/10.0).ceil == 0) && (@percent_best_snek < 0.8)
 		end
 		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek}, with a score of #{@score_pop[@best_snek.id]}"
 	end
@@ -187,12 +168,12 @@ class Heuristic
 			game_sim.moves_since_food = @game_snek.moves_since_food.clone
 			game_sim.next_frame(m)
 			game_sim.food = @game_snek.food.clone # don't touch this, used so that we don't fuck up the distance_from_food
-			
+
 			@fitness = calcFitness(game_sim)
 
 			best_fit = [m, @fitness] if @fitness >= best_fit[1]
 		end
-		
+
 
 		if @debug
 			move = ""
