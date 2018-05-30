@@ -14,7 +14,7 @@ require 'io/console'
 #
 
 class Game
-  attr_accessor :size_x, :size_y, :food, :score, :snek, :moves_since_food
+  attr_accessor :size_x, :size_y, :food, :score, :snek, :moves_since_food, :display
 
   def initialize(display, ai, snek)
     @display = display # is display of the game activated or not
@@ -138,7 +138,7 @@ class Game
     @board[old_head[0]][old_head[1]] = ' '
     @board[@snek.head[0]][@snek.head[1]] = '^' # move head to new position
     # if snek just ate, it grew, so leave tail
-    @score -= 1 if @moves_since_food > 100
+    @score -= 1 if @moves_since_food > 30
   	@moves_since_food += 1
     if @just_ate
       @score += 1

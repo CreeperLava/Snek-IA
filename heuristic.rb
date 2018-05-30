@@ -11,7 +11,6 @@ class Heuristic
 		@taille_pop = 30
 		@percent_best_snek = 0.25
 		@percent_enfants = 0.25
-		@mutate_rate = 0.1
 
 		puts "[SNEK][RUN][initialize] Type y if you want custom values for the snek gaem"
 		custom = ' ' # scanf("%c").first
@@ -151,6 +150,7 @@ class Heuristic
 		#faire jouer le snek
 		moves.each do |m|
 			game_sim = Marshal.load(Marshal.dump(@game_snek))
+			game_sim.display = false
 			game_sim.next_frame(m)
 			game_sim.food = @game_snek.food # don't touch this, used so that we don't fuck up the distance_from_food
 
@@ -222,4 +222,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(true, false) # debug, display
+Heuristic.new(false, false) # debug, display
