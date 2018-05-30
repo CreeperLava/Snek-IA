@@ -70,22 +70,27 @@ class Game
     # check if game is over each frame
     next_frame @last_key_pressed until game_over?
   end
-
-  def new_food
-  	i = @rng.rand((@size_x-1)*(@size_y-1) - @snek.size - 1) # i-ième case du board
+  
+  # returns a random empty space on the board
+  def empty_space
+	i = @rng.rand((@size_x-1)*(@size_y-1) - @snek.size - 1) # i-ième case vide du board
 
 	0.upto(@size_x) do |x|
 		0.upto(@size_y) do |y|
 			if i <= 0 && @board[x][y] == ' '
-				@board[@food[0]][@food[1]] = ' ' unless @food.nil?
-				@food = [x,y]
-				@board[x][y] = 'x'
-				return
+				return [x,y]
 			else
 				i -= 1
 			end
 		end
 	end
+	return nil # no more space
+  end
+
+  def new_food
+	@board[@food[0]][@food[1]] = ' ' unless @food.nil?
+	@food = empty_space
+	@board[@food[0]][@food[1]] = 'x'
   end
 
   # for each frame, run game logic
@@ -206,15 +211,16 @@ class Game
   	ymin = @snek.head[1]
   	blankcount = 0
 
-  	1.upto(@snek.size-1) do |i|
-  		xmax = (xmax < @snek.pos[i][0])? @snek.pos[i][0] : xmax;
-      	xmin = (xmin > @snek.pos[i][0])? @snek.pos[i][0] : xmin;
-      	ymax = (ymax < @snek.pos[i][1])? @snek.pos[i][1] : ymax;
-		ymin = (ymin > @snek.pos[i][1])? @snek.pos[i][1] : ymin;
-  	end
-
-  	row = (ymin/@scale)
-  	col = (xmin/@scale)
+	tail = @snek.pos.drop(1)
+	tail.each do |i|
+		xmax = (xmax < i[0]) ? i[0] : xmax;
+      	xmin = (xmin > i[0]) ? i[0] : xmin;
+      	ymax = (ymax < i[1]) ? i[1] : ymax;
+		ymin = (ymin > i[1]) ? i[1] : ymin;
+	end
+	
+  	row = ymin/@scale
+  	col = xmin/@scale
 
   	row.upto(ymax/@scale-1) do |r|
   		col.upto(xmax/@scale-1) do |c|
@@ -222,35 +228,59 @@ class Game
   		end
   	end
 
-  	return blankcount / @snek.size*2
+  	return blankcount / @snek.size * 2
   end
 
   def compactness
   	count = 0.0
-  	1.upto(@snek.size-1) do |i|
-  		1.upto(@snek.size-1) do |j|
-  			if (((@snek.pos[i][0] + @scale == @snek.pos[j][0]) && (@snek.pos[i][1] == @snek.pos[j][1])) ||
-  			    ((@snek.pos[i][0] - @scale == @snek.pos[j][0]) && (@snek.pos[i][1] == @snek.pos[j][1])) ||
-  			    ((@snek.pos[i][0] == @snek.pos[j][0]) && (@snek.pos[i][1] + @scale == @snek.pos[j][1])) ||
-  			    ((@snek.pos[i][0] == @snek.pos[j][0]) && (@snek.pos[i][1] - @scale == @snek.pos[j][1])))
-          		count += 1
-          	end
-  		end
-  		if (((@snek.pos[i][0] + @scale == @snek.head[0]) && (@snek.pos[i][1] == @snek.head[1])) ||
-  		    ((@snek.pos[i][0] - @scale == @snek.head[0]) && (@snek.pos[i][1] == @snek.head[1])) ||
-  		    ((@snek.pos[i][0] == @snek.head[0]) && (@snek.pos[i][1] + @scale == @snek.head[1])) ||
-  		    ((@snek.pos[i][0] == @snek.head[0]) && (@snek.pos[i][1] - @scale == @snek.head[1])))
-       		count += 1
+	h = @snek.head
+	tail = @snek.pos.drop(1)
+	tail.each do |i|
+		tail.each do |j|
+			if(( (i[0] + @scale == j[0]) && (i[1] == j[1]) ) ||
+			   ( (i[0] - @scale == j[0]) && (i[1] == j[1]) ) ||
+			   ( (i[0] == j[0]) && (i[1] + @scale == j[1]) ) ||
+			   ( (i[0] == j[0]) && (i[1] - @scale == j[1]) ))
+				count += 1.0
+			end
 		end
-  	end
-  	1.upto(@snek.size-1) do |j|
-      if (((@snek.head[0] + @scale == @snek.pos[j][0]) && (@snek.head[1] == @snek.pos[j][1])) ||
-          ((@snek.head[0] - @scale == @snek.pos[j][0]) && (@snek.head[1] == @snek.pos[j][1])) ||
-          ((@snek.head[0] == @snek.pos[j][0]) && (@snek.head[1] + @scale == @snek.pos[j][1])) ||
-          ((@snek.head[0] == @snek.pos[j][0]) && (@snek.head[1] - @scale == @snek.pos[j][1])))
-        	count += 1
+		if (( (i[0] + @scale == h[0]) && (i[1] == h[1]) ) ||
+			( (i[0] - @scale == h[0]) && (i[1] == h[1]) ) ||
+			( (i[0] == h[0]) && (i[1] + @scale == h[1]) ) ||
+			( (i[0] == h[0]) && (i[1] - @scale == h[1]) ))
+			count += 1.0
+		end
+	end
+	
+	tail.each do |i|
+		if (( (h[0] + @scale == i[0]) && (h[1] == i[1]) ) ||
+            ( (h[0] - @scale == i[0]) && (h[1] == i[1]) ) ||
+            ( (h[0] == i[0]) && (h[1] + @scale == i[1]) ) ||
+            ( (h[0] == i[0]) && (h[1] - @scale == i[1]) ))
+        	count += 1.0
       end
-  	end
+	end
+
 	return count/@snek.size
   end
+	
+	# how much the snek separates the board
+	def connectivity
+		coords = empty_space
+		@tempGrid = @board.clone
+		
+		propagate(coords)
+		return @tempGrid.flatten.count(' ')
+	end
+	
+	def propagate(coords)
+		x = coords[0]
+		y = coords[1]
+		@tempGrid[x][y] = 'x'
+		
+		propagate([x + 1,y]) if( (x !== @size_x - 1) && (@tempGrid[x + 1][y] == ' ') )
+		propagate([x - 1,y]) if( (x !== 0) && (@tempGrid[x - 1][y] == ' ') )
+		propagate([x,y + 1]) if( (y !== @size_y - 1) && (@tempGrid[x][y + 1] == ' ') )
+		propagate([x,y - 1]) if( (y !== 0) && (@tempGrid[x][y - 1] == ' ') )
+	end
 end
