@@ -21,8 +21,8 @@ class Game
     @ai = ai # is snek controlled by an AI or a human
     @size_x = 20 # initial size of game grid
     @size_y = 20 # coordinates 0,y, 50,y and 0,x, x,50 are borders
-	@diag = Math.sqrt(@size_x**2+@size_y**2)
-    @scale = @size_x/@size_y  #scale of the window, used for now in heuristic
+	@diag = @size_x + @size_y
+    @scale = @size_x / @size_y  #scale of the window, used for now in heuristic
     @snek = snek
     @border = ['*'] + Array.new(@size_x, '-') + ['*']
 
@@ -192,16 +192,16 @@ class Game
   def game_over?
     head_x = @snek.head[0]
     head_y = @snek.head[1]
-    hit = @snek.pos.select { |e| e == [head_x, head_y] } # we hit ourselves if there is another tile of the snek with the coordinates of the head
+    hit = @snek.pos.count(@snek.head) # we hit ourselves if there is another tile of the snek with the coordinates of the head
     # if we hit a wall or ourselves, return true
-    if head_x < 0 || head_x >= @size_x || head_y < 0 || head_y >= @size_y || hit.length != 1 || @score < 0
+    if(head_x < 0 || head_x >= @size_x || head_y < 0 || head_y >= @size_y || hit != 1 || @score < 0)
       return true
     end
     false
   end
 
   def distance_from_food
-    return @diag - Math.sqrt(((@snek.head[0] - @food[0])**2)+((@snek.head[1] - @food[1])**2)).to_f
+	return ((@food[0] - @snek.head[0]).abs + (@food[1] - @snek.head[1]).abs)/@scale
   end
 
   def squareness
@@ -252,15 +252,6 @@ class Game
 		end
 	end
 	
-	tail.each do |i|
-		if (( (h[0] + @scale == i[0]) && (h[1] == i[1]) ) ||
-            ( (h[0] - @scale == i[0]) && (h[1] == i[1]) ) ||
-            ( (h[0] == i[0]) && (h[1] + @scale == i[1]) ) ||
-            ( (h[0] == i[0]) && (h[1] - @scale == i[1]) ))
-        	count += 1.0
-      end
-	end
-
 	return count/@snek.size
   end
 	
@@ -279,8 +270,8 @@ class Game
 		@tempGrid[x][y] = 'x'
 		
 		propagate([x + 1,y]) if( (x !== @size_x - 1) && (@tempGrid[x + 1][y] == ' ') )
-		propagate([x - 1,y]) if( (x !== 0) && (@tempGrid[x - 1][y] == ' ') )
 		propagate([x,y + 1]) if( (y !== @size_y - 1) && (@tempGrid[x][y + 1] == ' ') )
+		propagate([x - 1,y]) if( (x !== 0) && (@tempGrid[x - 1][y] == ' ') )
 		propagate([x,y - 1]) if( (y !== 0) && (@tempGrid[x][y - 1] == ' ') )
 	end
 end
