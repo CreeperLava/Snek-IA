@@ -135,10 +135,13 @@ class Game
     @board[old_head[0]][old_head[1]] = ' '
     @board[@snek.head[0]][@snek.head[1]] = '^' # move head to new position
     # if snek just ate, it grew, so leave tail
-    @score -= 1 if @moves_since_food > 30
+	if @moves_since_food > 30
+		@score -= 1
+		@moves_since_food = 0
+	end
   	@moves_since_food += 1
     if @just_ate
-      @score += 1
+      @score += 10
       @moves_since_food = 0
       new_food
       @just_ate = false

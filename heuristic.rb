@@ -7,8 +7,8 @@ class Heuristic
 	def initialize(debug, display)
 		@debug = debug
 		@display = display
-		@nb_iterations = 50
-		@taille_pop = 30
+		@nb_iterations = 100
+		@taille_pop = 50
 		@percent_best_snek = 0.25
 		@percent_enfants = 0.25
 
@@ -214,4 +214,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(true, false) # debug, display
+Heuristic.new(false, true) # debug, display
