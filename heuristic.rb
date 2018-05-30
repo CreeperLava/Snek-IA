@@ -99,20 +99,16 @@ class Heuristic
 		new_gen_weights.each do |snek_weights|
 			new_sneks.push Snek.new(@start_x,@start_y,snek_weights)
 		end
-		puts "[SNEK][DEBUG][children] New sneks + gaussian sneks :" if @debug
-		puts new_sneks if @debug
 
 		# keep best sneks from one gen to the next
 		pop.each do |old_snek|
 			new_sneks.push Snek.new(@start_x,@start_y,old_snek.weights)
 		end
-		puts "[SNEK][DEBUG][children] New sneks + old sneks :" if @debug
+		puts "[SNEK][DEBUG][children] Gaussian sneks + old sneks :" if @debug
 		puts new_sneks if @debug
 
 		# add random sneks to complete population
 		new_sneks += rand_population(nb_random)
-		puts "[SNEK][DEBUG][children] New sneks + random sneks :" if @debug
-		puts new_sneks if @debug
 
 		return new_sneks
 	end
@@ -135,7 +131,6 @@ class Heuristic
 			puts population if @debug
 			puts "[SNEK][DEBUG][genetic_algorithm] Score de la population :" if @debug
 			p @score_pop if @debug
-
 		end
 		puts "Sickestest snek after #{@nb_iterations} iterations : #{@best_snek}, with a score of #{@score_pop[@best_snek.id]}"
 	end
@@ -201,7 +196,6 @@ class Heuristic
 
 		sneks_to_breed = []
 		#on prend le meilleur et on l'enlève de la pop, pour recommencer jusqu'à temps qu'on ai les 10% de meilleurs sneks dans 'sneks_to_breed'
-		puts "[SNEK][DEBUG][max] Best sneks de la population" if @debug
 		@nb_breeding_pool.times do
 			best = max(pop)
 			puts best if @debug
@@ -220,4 +214,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(true, true) # debug, display
+Heuristic.new(true, false) # debug, display

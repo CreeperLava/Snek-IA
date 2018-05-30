@@ -26,9 +26,7 @@ class Game
     @border = ['*'] + Array.new(@size_x, '-') + ['*']
 
     @moves_since_food = 0
-
     @score = 0
-
     @rng = Random.new
 
     # create size_x*size_y matrix
