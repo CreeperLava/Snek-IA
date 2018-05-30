@@ -24,17 +24,19 @@ class Game
     @size_y = 20 # coordinates 0,y, 50,y and 0,x, x,50 are borders
     @scale = @size_x / @size_y  #scale of the window, used for now in heuristic
     @snek = snek
-    @border = ['*'] + Array.new(@size_x, '-') + ['*']
+    @border = ['＊'] + Array.new(@size_x, '－') + ['＊']
 
+	@max_moves = @size_x*@size_y
+	@moves_since_food2 = 0
     @moves_since_food = 0
     @score = 0
     @rng = Random.new
 
     # create size_x*size_y matrix
-    # init to ' ' except for borders (*,|,_), food(x) and snek head (^)
+    # init to '　' except for borders (*,|,_), food(x) and snek head (^)
     # create array to store list of free tiles -> avoid looking up the whole matrix
 
-    @board = Array.new(@size_x) { Array.new(@size_y, ' ') } # store the game's board in a matrix, stored line by line. board[2][14] -> line 2, column 14
+    @board = Array.new(@size_x) { Array.new(@size_y, '　') } # store the game's board in a matrix, stored line by line. board[2][14] -> line 2, column 14
     init_snek
     new_food
 
@@ -56,11 +58,11 @@ class Game
   def init_snek
     return if game_over?
   	h = @snek.head
-  	@board[h[0]][h[1]] = '^'
+  	@board[h[0]][h[1]] = '＾'
   end
 
   def free_tile?(x, y)
-    return @board[x][y] == ' '
+    return @board[x][y] == '　'
   end
 
   # play the game
@@ -68,13 +70,13 @@ class Game
     # check if game is over each frame
     next_frame @last_key_pressed until game_over?
   end
-  
+
   # returns a random empty space on the board
   def empty_space
 	i = @rng.rand((@size_x-1)*(@size_y-1) - @snek.size - 1) # i-ième case vide du board
 	0.upto(@size_x) do |x|
 		0.upto(@size_y) do |y|
-			if i <= 0 && @board[x][y] == ' '
+			if i <= 0 && @board[x][y] == '　'
 				return [x,y]
 			else
 				i -= 1
@@ -85,9 +87,9 @@ class Game
   end
 
   def new_food
-	@board[@food[0]][@food[1]] = ' ' unless @food.nil?
+	@board[@food[0]][@food[1]] = '　' unless @food.nil?
 	@food = empty_space
-	@board[@food[0]][@food[1]] = 'x'
+	@board[@food[0]][@food[1]] = 'Ｘ'
   end
 
   # for each frame, run game logic
@@ -100,7 +102,7 @@ class Game
       move_snek move
       sleep(1) # 1 FPS 1080p
     end
-	
+
     if @display
       draw! # update game display on console
     end
@@ -133,36 +135,40 @@ class Game
     @just_ate,old_head,old_tail = @snek.move(move,food)
 
     return if game_over?
-    @board[old_head[0]][old_head[1]] = ' '
-    @board[@snek.head[0]][@snek.head[1]] = '^' # move head to new position
+    @board[old_head[0]][old_head[1]] = '　'
+    @board[@snek.head[0]][@snek.head[1]] = '＾' # move head to new position
     # if snek just ate, it grew, so leave tail
+    @score = -1 if @moves_since_food2 > @max_moves
 	if @moves_since_food > 30
 		@score -= 1
 		@moves_since_food = 0
 	end
   	@moves_since_food += 1
+  	@moves_since_food2 += 1 # avoid looping at high scores
     if @just_ate
       @score += 10
       @moves_since_food = 0
+      @moves_since_food2 = 0
       new_food
       @just_ate = false
     end
 
-	@board[old_tail[0]][old_tail[1]] = ' ' # remove tail
-    @board[@snek.pos[1][0]][@snek.pos[1][1]] = 'o' unless @snek.pos.length == 1
+	@board[old_tail[0]][old_tail[1]] = '　' # remove tail
+    @board[@snek.pos[1][0]][@snek.pos[1][1]] = 'Ｏ' unless @snek.pos.length == 1
   end
 
   def draw!
     # check if it is possible to keep the StringIO from frame to frame and just edit what changed, then rewind and read
-	
+
 	string = "\"Keep quiet, THE snek is training...\n"
 	string += "#{@border.join}\n"
     @size_x.times do |x|
-      string += "|#{@board[x].join}|\n"
+      string += "￤#{@board[x].join}￤\n"
     end
     string += "#{@border.join}\nScore : #{@score}\nLength : #{@snek.size}\n\""
 	system("printf '\033[;H';printf '\e[?25l'")
 	system("printf #{string}")
+	sleep 1.0/20.0
   end
 
   #@moves=["\e[A","\e[B","\e[C","\e[D"]  # up, down, right, lef
@@ -214,13 +220,13 @@ class Game
       	ymax = (ymax < i[1]) ? i[1] : ymax;
 		ymin = (ymin > i[1]) ? i[1] : ymin;
 	end
-	
+
   	row = ymin/@scale
   	col = xmin/@scale
 
   	row.upto(ymax/@scale-1) do |r|
   		col.upto(xmax/@scale-1) do |c|
-  			blankcount += 1 if @board[row][col] == ' '
+  			blankcount += 1 if @board[row][col] == '　'
   		end
   	end
 
@@ -247,37 +253,37 @@ class Game
 			count += 1.0
 		end
 	end
-	
+
 	return count/@snek.size
   end
-  
+
 	def dead_end
 		h = @snek.head.map { |c| c/@scale } # divides coords of snek head by scale
 		@tempGrid = Marshal.load(Marshal.dump(@board)) # clean clone of object
-		
+
 		propagate(h[0],h[1])
 		return blankcount
 	end
-	
+
 	# how much the snek separates the board
 	def connectivity
 		coords = empty_space
 		@tempGrid = Marshal.load(Marshal.dump(@board))
-		
+
 		propagate(coords[0],coords[1])
 		return blankcount
 	end
-	
+
 	def blankcount
-		return @tempGrid.flatten.count(' ')
+		return @tempGrid.flatten.count('　')
 	end
-	
+
 	def propagate(x,y)
 		@tempGrid[x][y] = 'x'
-		
-		propagate(x + 1,y) if( (x != @size_x - 1) && (@tempGrid[x + 1][y] == ' ') )
-		propagate(x,y + 1) if( (y != @size_y - 1) && (@tempGrid[x][y + 1] == ' ') )
-		propagate(x - 1,y) if( (x != 0) && (@tempGrid[x - 1][y] == ' ') )
-		propagate(x,y - 1) if( (y != 0) && (@tempGrid[x][y - 1] == ' ') )
+
+		propagate(x + 1,y) if( (x != @size_x - 1) && (@tempGrid[x + 1][y] == '　') )
+		propagate(x,y + 1) if( (y != @size_y - 1) && (@tempGrid[x][y + 1] == '　') )
+		propagate(x - 1,y) if( (x != 0) && (@tempGrid[x - 1][y] == '　') )
+		propagate(x,y - 1) if( (y != 0) && (@tempGrid[x][y - 1] == '　') )
 	end
 end

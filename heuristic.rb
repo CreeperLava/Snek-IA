@@ -7,7 +7,7 @@ class Heuristic
 	def initialize(debug, display)
 		@debug = debug
 		@display = display
-		@nb_iterations = 100
+		@nb_iterations = 50
 		@taille_pop = 50
 		@percent_best_snek = 0.25
 		@percent_enfants = 0.25
@@ -152,7 +152,6 @@ class Heuristic
 			best_fit = [m, @fitness] if (best_fit[1].nil? || @fitness >= best_fit[1])
 		end
 
-
 		if @debug
 			move = ""
 			case best_fit[0]
@@ -214,4 +213,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(false, true) # debug, display
+Heuristic.new(false, false) # debug, display
