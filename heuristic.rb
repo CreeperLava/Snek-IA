@@ -151,7 +151,7 @@ class Heuristic
 
 			best_fit = [m, @fitness] if (best_fit[1].nil? || @fitness >= best_fit[1])
 		end
-
+		=begin
 		if @debug
 			move = ""
 			case best_fit[0]
@@ -168,6 +168,7 @@ class Heuristic
 		end
 
 		p @game_snek.snek.pos if @debug
+		=end
 		return best_fit[0]
 	end
 
@@ -213,4 +214,4 @@ class Heuristic
 	end
 end
 
-Heuristic.new(false, false) # debug, display
+Heuristic.new(true, false) # debug, display
