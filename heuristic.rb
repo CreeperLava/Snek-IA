@@ -28,7 +28,7 @@ class Heuristic
 		@heuristic = Array.new(@nb_heuristic)
 
 		@moves=["\e[A","\e[B","\e[C","\e[D"]   # up, down, right, left
-		@game = Game.new(true, true, Snek.new(25, 25, []))
+		@game = Game.new(true, true, Snek.new(25, 25, []))  # if not in AI mode, put the choosen weights in the tab, for example to test a snek
 		@start_x = @game.size_x/2
 		@start_y = @game.size_y/2
 		@food = @game.food
@@ -151,7 +151,7 @@ class Heuristic
 
 			best_fit = [m, @fitness] if (best_fit[1].nil? || @fitness >= best_fit[1])
 		end
-		=begin
+		begin
 		if @debug
 			move = ""
 			case best_fit[0]
@@ -168,7 +168,7 @@ class Heuristic
 		end
 
 		p @game_snek.snek.pos if @debug
-		=end
+		end
 		return best_fit[0]
 	end
 
