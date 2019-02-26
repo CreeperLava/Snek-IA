@@ -7,8 +7,8 @@ class Heuristic
 	def initialize(debug, display)
 		@debug = debug
 		@display = display
-		@nb_iterations = 50
-		@taille_pop = 50
+		@nb_iterations = 20
+		@taille_pop = 4
 		@percent_best_snek = 0.25
 		@percent_enfants = 0.25
 
@@ -39,7 +39,7 @@ class Heuristic
 	end
 
 
-	# Fitness pour chacun des moves du snek
+	# Fitness for each moves of the snek
 	def calcFitness(game_sim)
 		@heuristic[0] = game_sim.snek.weights[0]*game_sim.distance_from_food
 		@heuristic[1] = game_sim.snek.weights[1]*game_sim.squareness
